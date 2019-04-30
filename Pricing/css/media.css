@@ -1,0 +1,47 @@
+@media (max-width: 1699px){
+	*{
+		transition: .1s;
+	}
+	html{
+		font-size: 20px;
+	}
+	.menu{
+		width:65%;
+	}
+	.table .down{
+		display: none;
+	}
+}
+@media (max-width: 1429px){
+.menu{
+	}
+	.fotter_info{
+		flex-direction: column;
+	}
+	.copy{
+		font-size: 2rem;
+	}
+	.social a{
+		font-size: 5rem;
+		margin: 1.5rem;
+	}
+	.price-tags{
+		flex-direction: column;
+	}
+	.price-tag{
+	    width: 90%;
+		margin-bottom: 20px;
+	}
+	.menu{
+		display: none;
+	}
+	.m-menu-link{
+		display: block;	
+	}
+	.m-menu .get-started-btn{
+		margin: 6rem auto;
+	}
+	.m-menu li:hover{
+		text-shadow: #fff 0 0 20px;
+	}
+}

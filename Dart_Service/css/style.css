@@ -1,0 +1,132 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+	transition: .2s;
+	 -webkit-transition:.2s;
+	 -o-transition: .2s;
+	 -moz-transition: .2s;
+	transition-timing-function: linear;	
+}
+body{
+	margin:0;
+	font-family: 'Raleway', sans-serif; 
+}
+html{
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+li,p{
+	font-size: 1.5rem;
+}
+h4{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+.header-overley{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-linear-gradient(53deg, rgb(0,184,212) 0%, rgb(29,233,182) 100%);
+	background-image: -o-linear-gradient(53deg, rgb(0,184,212) 0%, rgb(29,233,182) 100%);
+	background-image: linear-gradient(143deg, rgb(0,184,212) 0%, rgb(29,233,182) 100%);
+  	opacity: 0.802;
+  	z-index: -1;
+  	left: 0; 
+	top: 0; 
+}
+#header{
+	background: url(../img/top-bg.png) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	-ms-align-items: center;
+	  align-items: center;  
+}
+.header-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	align-items: center;
+	height: 10vh;
+	padding-top: 50px;
+	margin-bottom: 16rem;
+}
+.logo a{
+	height: 30px;
+	width: 30px;
+	margin-right: 1rem;
+}
+.logo{
+	margin: 0;
+	padding: 0; 
+	display: flex;
+	justify-content: space-between;
+}
+.menu{
+	width: 70%;
+}
+.menu ul{
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+}
+.menu li:last-child{
+	padding-left: 41.5rem;
+}
+.menu a:hover{
+	color: #061e37;
+}
+.sign_up{
+	padding: 7px 20px;
+	border:  1px solid #fff;
+	font-weight: 400;
+}
+.sign_up:hover{
+	background-color: #fff;
+}
+.main-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+.main-text h1{
+	font-size: 5.5rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+}
+.main-text p{
+	font-size: 1.8rem;
+	color: #fff;
+}
+/* .Ellipse_3_copy {
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  left: 700px;
+  top: 3406px;
+  width: 179px;
+  height: 179px;
+  z-index: 218;
+}
+ */

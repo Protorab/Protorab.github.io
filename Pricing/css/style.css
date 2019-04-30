@@ -41,8 +41,6 @@ h1,h2,h3{
 	height: 100%;
 	opacity: .8;
 	z-index: 0;
-	background-image: -webkit-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
-	background-image: -o-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
     background-image: linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
 }
 .logo{
@@ -99,10 +97,12 @@ h1,h2,h3{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
 }
 .m-menu__active{
-	transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
 }
 .m-menu li{
 	display: flex;
@@ -297,8 +297,7 @@ h1,h2,h3{
 	transition: .3s;
 }
 .map-bg{
- 	background: url(../img/Map.png)no-repeat center;;
-  	-webkit-background-size: cover;
+ 	background: url(../img/Map.png)no-repeat center;
   	background-size: cover;
   	color: #fff;
 	display: flex;

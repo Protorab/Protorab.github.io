@@ -14,7 +14,7 @@ span{
 	font-size: 1.6rem;
 	text-transform: uppercase;
 }
-p{
+p,li{
 	font-size: 1.6rem;
 }
 h1,h2,h3{

@@ -247,13 +247,14 @@ button{
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+	background: linear-gradient(to right, #80d8ff 50%, #ea80fc  50%);
 }
 .items{
 	display: flex;
 	justify-content: space-around;
 	-ms-align-items: center;
 	align-items: center;
-	width: 100%;
+	width: 80%;
 
 }
 .item{
@@ -267,11 +268,11 @@ button{
 }
 .building{
 	background-color: #80d8ff;
-	padding-left: 80px;
+	
 }
 
 .second_angle{
-	padding-right: 80px;
+	
 	background-color: #ea80fc;
 }
 /* .Ellipse_3_copy {

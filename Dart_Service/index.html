@@ -3,16 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dart service manager</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  	<script>
+  	$(function() {
+  		 var close = $('.close-menu');
+  		 var link = $('.m-menu-link');
+  		 var menu = $('.m-menu');
+  		 link.on('click', function(event) {
+  		 	event.preventDefault();
+  		 	menu.toggleClass('m-menu__active');
+  		 	/* Act on the event */
+  		 });
+  		 close.on('click', function(event) {
+  		 	event.preventDefault();
+  		 	menu.toggleClass('m-menu__active');
+  		 	/* Act on the event */
+  		 });
+  		});	
+  	</script>
 	<script>function view(n) {
 		style = document.getElementById(n).style;
 		style.display = (style.display == 'flex') ? 'none' : 'flex';
 	}</script>
 </head>
 <body>
+	<!-- мобильное меню -->
+	<ul class="m-menu">
+		<li class="close-menu">&times;</li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Extension</a></li>
+		<li><a href="#">Pricing</a></li>
+		<li><a href="#">Help</a></li>
+		<li><a class="sign_up" href="#">sign up</a></li>
+	</ul>
 	<!-------------------------------------------------------- header --------------------------------------------------------------------->
 	<header class="header" >
 		<div class="header_overley"></div> 
@@ -26,6 +59,9 @@
 					<h4>service manager</h4>
 				</div>
 			</div>
+			<a href="#" class="m-menu-link">
+					<i class="fa fa-bars"></i>
+				</a>
 			<div class="menu">
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -182,7 +218,7 @@
 				<button>Get started</button>
 			</div>
 			<div class="feedback-feed-blocks-block-posted">
-				<a href="#" title="Start" class="arrow up"></a>
+				<a title="preview" class="arrow up"></a>
 				<div class="feedback-feed-blocks-block-comment">
 					<div class="feedback-feed-blocks-block-comment avatar">
 						<img src="resources/avatr-1.png" alt="feedback-avatar">
@@ -201,7 +237,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatibus earum expedita atque pariatur enim, placeat unde fugit iste dignissimos consequatur quaerat ut. Iste, natus? Excepturi vitae cumque a rerum!.</p>
 					</div>
 				</div>
-				<a href="#" title="End" class="arrow down"></a>
+				<a title="next" class="arrow down"></a>
 			</div>
 		</div>
 	</div>
@@ -215,11 +251,11 @@
 			</div>
 			<div class="profile-info">
 				<div class="photo">
-					<a href="#" title="Start" class="arrow left"></a>
+					<a title="preview" class="arrow left"></a>
 					<img src="resources/Team_Avatar-1.png" alt="">
 					<img src="resources/Team_Avatar-2.png" alt="">
 					<img src="resources/Team_Avatar-3.png" alt="">
-					<a href="#" title="End" class="arrow right"></a>
+					<a title="next" class="arrow right"></a>
 				</div>
 				<div class="profile head">
 					<h3>Sophie Turner</h3>

@@ -58,6 +58,9 @@ button,input[type="button"]{
     border-radius: 5px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15);
 }
+/*================================================================================================================================================
+============================================================<!-- mobile menu part -->====================================================================
+==================================================================================================================================================*/
 .m-menu-link{
 	display: none;
 	color: #fff;
@@ -106,12 +109,15 @@ button,input[type="button"]{
 	color: #fff;
 	font-weight: 700;
 }
+.m-menu .sign_up{
+		margin: 6rem auto;
+	}
 .close-menu:hover{
 	cursor: pointer;
 }
 
 /*================================================================================================================================================
-============================================================<!-- 1-st part -->====================================================================
+============================================================<!-- header part -->====================================================================
 ==================================================================================================================================================*/
 .header{
     position: relative;
@@ -199,13 +205,11 @@ button,input[type="button"]{
 
     color: #fff;
 }
-.main-block .menu li:last-child{
-    margin-left: 420px;
-}
 .menu a:hover{
     color: #061e37;
 }
 .sign_up{
+	margin-left: 420px;
     font-weight: 400;
 
     padding: 7px 20px;
@@ -267,16 +271,20 @@ button,input[type="button"]{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	width: 40%;
-	height: 80%;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 45%;
+	height: 65%;
 }
 .video-block-content{
     width: 100%;
     height: 100%;
-    /* height: 320px; */
-
     border: 1px solid rgb(6, 30, 55);
     border-radius: 5px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15);
@@ -401,6 +409,8 @@ button,input[type="button"]{
     justify-content: center;
     -ms-align-items: center ;
         align-items: center;
+    -ms-align-items: center;
+        align-items: center;
 }
 .item:hover{
 	width: 40%;
@@ -415,7 +425,7 @@ button,input[type="button"]{
 
     width: 6rem;
     height: 6rem;
-    margin-right: 2rem;
+    margin-right: 20px;
 
     border-radius: 50%;
     background: #fff;
@@ -544,6 +554,9 @@ button,input[type="button"]{
 {
     padding-bottom: 25px;
 }
+/*================================================================================================================================================
+============================================================<!-- .feedback-feed-blocks part -->====================================================================
+==================================================================================================================================================*/
 .feedback
 {
     position: relative;
@@ -553,8 +566,6 @@ button,input[type="button"]{
     display: flex;
     flex-direction: column;
 
-    height: 560px;
-
     background: url(../img/feedback-bg.png) no-repeat center;
     background-size: cover;
 
@@ -562,9 +573,6 @@ button,input[type="button"]{
     -ms-align-items: center;
         align-items: center;
 }
-/*================================================================================================================================================
-============================================================<!-- .feedback-feed-blocks part -->====================================================================
-==================================================================================================================================================*/
 .feedback-feed-blocks
 {
     display: flex;
@@ -622,8 +630,7 @@ button,input[type="button"]{
     background-color: #fff;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .15);
 }
-.feedback-feed-blocks-block-posted
-{
+.feedback-feed-blocks-block-posted{
     display: flex;
     flex-direction: column;
 
@@ -633,8 +640,13 @@ button,input[type="button"]{
     justify-content: space-around;
     align-items: center;
 }
-.arrow
-{
+.feedback-feed-blocks-block-posted a:first-child{
+	 margin-bottom: 20px;
+}
+.feedback-feed-blocks-block-posted a:last-child{
+	 margin-top: -20px;
+}
+.arrow{
     display: inline-block;
 
     width: 15px;
@@ -645,22 +657,18 @@ button,input[type="button"]{
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
 }
-.arrow:hover
-{
+.arrow:hover{
     border-width: 5px;
     border-color: #061e37;
 }
-.arrow.up
-{
+.arrow.up{
     transform: rotate(45deg);
 }
 
-.arrow.down
-{
+.arrow.down{
     transform: rotate(-135deg);
 }
-.feedback-feed-blocks-block-comment
-{
+.feedback-feed-blocks-block-comment{
     display: flex;
     flex-direction: row;
 
@@ -668,7 +676,9 @@ button,input[type="button"]{
 
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
+
 .avatar
 {
     flex-direction: column;
@@ -680,14 +690,14 @@ button,input[type="button"]{
 }
 .avatar img
 {
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
 
     border-radius: 50%;
 }
 .avatar img:hover{
-	width: 100px;
-	height: 100px;
+	width: 10rem;
+	height: 10rem;
 	cursor: pointer;
 }
 .post
@@ -798,16 +808,14 @@ button,input[type="button"]{
 	     -o-transform: rotate(135deg);
 	        transform: rotate(135deg);
 }
-.photo img
-{
+.photo img{
     width: 100px;
     height: 100px;
 
     opacity: .2;
     border-radius: 50%;
 }
-.photo img:nth-child(3)
-{
+.photo img:nth-child(3){
     width: 180px;
     height: 180px;
     margin-bottom: 60px;
@@ -816,21 +824,7 @@ button,input[type="button"]{
     border: 10px solid #000;
     box-shadow: 0 0 55px 15px rgba(0, 0, 0, .4);
 }
-.profile
-{
-    line-height: 1.6;
-
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-    margin-bottom: 30px;
-
-    -ms-align-items: center;
-        align-items: center;
-    justify-content: space-around;
-}
-.profile.head
+.profile-info .head
 {
     width: 55%;
 }
@@ -980,7 +974,6 @@ textarea::placeholder{
 input[type="checkbox"]{
 	position: relative;
 	overflow: hidden;
-	position: relative;
 }
 input[type="checkbox"] {
     position: absolute;
@@ -1006,7 +999,7 @@ input[type="checkbox"]:checked + label::after {
    position: absolute;
    width: 7px;
    height: 5px;
-   top: 3px;
+   top: 4px;
    left: 2px;
    border: 1px solid rgb( 6, 30, 55 );
    border-top: none;

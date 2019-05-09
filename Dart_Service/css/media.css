@@ -47,6 +47,9 @@
 	.header-video-block{
 		display: none;
 	}
+	.head{
+		width: 80%;
+	}
 	.blocks{
 		width: 80%;
 	}
@@ -95,25 +98,11 @@
   }
 }
 @media (max-width: 960px){
-	.items{
-		width: 100%;
-	}
-	.social{
-		width: 25%;
-	}
-	.policy{
-  	width: 50%;
-  }
-}
-@media (max-width: 760px){
-	html{
+  html{
 		font-size: 15px;
 	}
 	.header {
 		height: auto;
-	}
-	.head{
-		width: 80%;
 	}
 	.titles{
 		-webkit-flex-direction: column;
@@ -145,6 +134,7 @@
 		justify-content: center;
 		-ms-align-items: center;
 		align-items: center;
+		width: 100%;
 	}
 	.item{
 		-webkit-flex-direction: column;
@@ -163,7 +153,6 @@
 	.item:hover{
 		width: 100%;
 		height: 100%;
-		cursor: pointer;
 		box-shadow:none;
 	}
 	.block_hide{
@@ -177,11 +166,10 @@
 		margin-top: 20px;
 		margin-left: 20px;
 	}
-	.photo{
-		padding: 90px;
-	}
+	
 	.profile-info .head{
 		width: 80%;
+		height: auto;
 	}
 	.contact-us-block-content.head h2~p{
   	width: 100%;
@@ -201,12 +189,73 @@
   	margin-bottom: 40px;
   }
   .social{
-		width: 60%;
+		width: 50%;
 	}
 }
 @media (max-width: 480px){
-	
+
+.text-block-buttons button{
+	margin-bottom: 20px;
 }
-@media (max-width: 320px){
-	
+.head{
+	width: 90%;
+}
+.head h2{
+	text-align: center;
+}
+.block{
+	width: 100%;
+}
+.feedback-feed-blocks-block-comment{
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.feedback-feed-blocks-block-posted .up,.down{
+	display: none;
+}
+.photo{
+		padding: 9rem;
+	}
+.policy ul{
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;	
+  }
+.policy li:first-child{
+	padding-bottom: 20px;
+}
+.policy li{
+	list-style: none;
+	padding-left: 0;
+	padding-bottom: 20px;
+}
+.social{
+		width: 80%;
+	}
+}
+@media (max-width: 379px){
+
+	.m-menu{
+	width: 100%;
+	}
+	.close-menu{
+	}
+	.block a::after{
+		display: none;
+	}
+	.block_hide img{
+		width: 200px;
+		height: 105px;
+	}
+	.feedback-feed-blocks-block h2{
+    font-size: 3.5rem;
+	}
+	 .contact-form{
+  	width: 90%;
+  }
 }

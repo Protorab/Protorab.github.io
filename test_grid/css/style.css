@@ -1,0 +1,12 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	font-family: 'Maven Pro', sans-serif; 
+
+}
+html{
+	font-size: 10px;
+	scroll-behavior: smooth;
+}

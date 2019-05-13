@@ -9,32 +9,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-	<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  	<script>
-  	$(function() {
-  		 var close = $('.close-menu');
-  		 var link = $('.m-menu-link');
-  		 var menu = $('.m-menu');
-  		 link.on('click', function(event) {
-  		 	event.preventDefault();
-  		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
-  		 });
-  		 close.on('click', function(event) {
-  		 	event.preventDefault();
-  		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
-  		 });
-  		});	
-  	</script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
 	<script>
-		function view(n) {
-		style = document.getElementById(n).style;
-		style.display = (style.display == 'flex') ? 'none' : 'flex';
-		}
+		
 	</script>
 </head>
 <body>
@@ -245,7 +223,7 @@
 	</div>
 <!----------------------------------------- end feedback part --------------------------------------------------------------------------->
 <!------------------------------------------our-team-block part ------------------------------------------------------------------------------>
-	<div class="our-team-block">
+	<div id="team" class="our-team-block">
 		<div class="our-team-content">
 			<div class="our-team-block head">
 				<h2>Our Team</h2>
@@ -253,11 +231,11 @@
 			</div>
 			<div class="profile-info">
 				<div class="photo">
-					<a title="preview" class="arrow left"></a>
+					<a href="#team" title="preview" class="arrow left"></a>
 					<img src="resources/Team_Avatar-1.png" alt="">
 					<img src="resources/Team_Avatar-2.png" alt="">
 					<img src="resources/Team_Avatar-3.png" alt="">
-					<a title="next" class="arrow right"></a>
+					<a href="#team" title="next" class="arrow right"></a>
 				</div>
 				<div class="profile-info head">
 					<h3>Sophie Turner</h3>

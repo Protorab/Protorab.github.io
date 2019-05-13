@@ -278,8 +278,8 @@ button,input[type="button"]{
 	-o-flex-direction: row;
 	flex-direction: row;
 	justify-content: flex-end;
-	width: 45%;
-	height: 65%;
+	width: 600px;
+	height: 320px;
 }
 .video-block-content{
     width: 100%;
@@ -812,15 +812,17 @@ button,input[type="button"]{
 
     opacity: .2;
     border-radius: 50%;
+    margin-bottom: 60px;
+    box-shadow: 0 0 55px 15px rgba(0, 0, 0, .4);
 }
 .photo img:nth-child(3){
     width: 180px;
     height: 180px;
-    margin-bottom: 60px;
+    
 
     opacity: 1;
     border: 10px solid #000;
-    box-shadow: 0 0 55px 15px rgba(0, 0, 0, .4);
+    
 }
 .profile-info .head
 {

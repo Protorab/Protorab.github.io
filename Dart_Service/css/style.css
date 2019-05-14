@@ -280,8 +280,8 @@ input[type="button"]{
 	-o-flex-direction: row;
 	flex-direction: row;
 	justify-content: flex-end;
-	width: 45%;
-	height: 65%;
+	width: 600px;
+	height: 320px;
 }
 .video-block-content{
     width: 100%;
@@ -814,11 +814,13 @@ input[type="button"]{
 
     opacity: .2;
     border-radius: 50%;
+    margin-bottom: 60px;
+    
 }
 .photo img:nth-child(3){
     width: 180px;
     height: 180px;
-    margin-bottom: 60px;
+    
 
     opacity: 1;
     border: 10px solid #000;

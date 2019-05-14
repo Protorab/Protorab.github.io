@@ -46,7 +46,8 @@ h4{
 
     color: #fff;
 }
-button,input[type="button"]{
+button,
+input[type="button"]{
     font-weight: 700;
 
     width: 160px;
@@ -135,7 +136,8 @@ button,input[type="button"]{
     -ms-align-items: center;
         align-items: center;
 }
-.header_overley,.feedback_overley{
+.header_overley,
+.feedback_overley{
     position: absolute;
     z-index: -1;
     top: 0;
@@ -591,7 +593,7 @@ button,input[type="button"]{
 
     width: 45%;
     height: 100%;
-
+	
     justify-content: center;
     align-items: flex-start;
 }

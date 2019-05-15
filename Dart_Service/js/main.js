@@ -5,17 +5,15 @@ $(function() {
   		 link.on('click', function(event) {
   		 	event.preventDefault();
   		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
   		 });
   		 close.on('click', function(event) {
   		 	event.preventDefault();
-  		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
+  		 	menu.toggleClass('m-menu__active');	
   		 });
   		});
 //======================================================================================================
-$(function view(n) {
+function view(n) {
     style = document.getElementById(n).style;
     style.display = (style.display == 'flex') ? 'none' : 'flex';
-    });	
+    }	
 //======================================================================================================

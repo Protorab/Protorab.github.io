@@ -1,0 +1,99 @@
+@media(max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .profile-photo {
+        background-position: center;
+        margin: 10px auto;
+        border: 2px solid #fff;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .conteiner {
+        flex-direction: column;
+    }
+    .profile {
+        flex-basis: 100%
+    }
+    .lines {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .conteiner {
+        width: 80%;
+    }
+    .resume-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .list-item__title {
+        font-size: 14px;
+    }
+    .list-item__date {
+        font-size: 14px;
+    }
+    .list-item__text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .about-contacts a {
+        font-size: 12px;
+        display: block;
+        border: none;
+    }
+}
+
+@media(max-width: 567px) {
+    html {
+        font-size: 18px;
+    }
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+    .logo-lines {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media(max-width: 480px) {
+    html {
+        font-size: 19px;
+    }
+    .logotype {
+        display: none;
+    }
+    .name {
+        letter-spacing: normal;
+    }
+    .conteiner {
+        min-width: 320px;
+    }
+    .level {
+        width: 50%;
+    }
+    .mental .level {
+        width: 30%;
+    }
+}

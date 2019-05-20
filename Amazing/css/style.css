@@ -84,11 +84,11 @@ h3 {
 
 .logo {
     grid-column: 2/2;
-    position: relative;
 }
 
 .logo p {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     width: 80px;
     height: 80px;
     background-color: #000;

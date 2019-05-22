@@ -33,6 +33,7 @@ ul {
 
 p {
     font-size: 3.6rem;
+    font-weight: 300;
 }
 
 h1 {
@@ -145,7 +146,7 @@ h3 {
 
 .about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 800px));
     grid-template-rows: minmax(min-content, max-content);
 }
 
@@ -157,8 +158,8 @@ h3 {
 
 .galery {
     display: grid;
-    grid-template-columns: repeat(4, 400px);
-    grid-template-rows: repeat(2, 515px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+    grid-template-rows: repeat(auto-fill, minmax(515px, max-content));
 }
 
 .galery-content {
@@ -177,7 +178,6 @@ h3 {
 .instagram P {
     padding-top: 40px;
     margin-bottom: 40px;
-    font-weight: 300;
 }
 
 .button {
@@ -201,7 +201,7 @@ h3 {
 .music {
     background: url(../img/music_bg.png) no-repeat top;
     display: grid;
-    grid-template-columns: repeat(4, 400px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
     grid-template-rows: 497px 400px;
 }
 
@@ -238,4 +238,32 @@ h3 {
     color: #2ebd59;
     border-color: #2ebd59;
     width: 180px;
+}
+
+.music-follow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(800px, max-content));
+}
+
+.music-follow .music-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #f9f9f9;
+}
+
+.music-follow .music-content:first-child {
+    background-color: #2ebd59;
+    padding-left: 210px;
+}
+
+.music-follow .music-content h2,
+p {
+    margin-bottom: 40px;
+}
+
+.music-follow .music-content:last-child {
+    background-color: #282b2f;
+    padding-left: 60px;
 }

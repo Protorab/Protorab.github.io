@@ -74,7 +74,11 @@ h3 {
     grid-template-columns: 200px repeat(12, 100px) 200px;
     width: 100%;
     position: relative;
-    z-index: -1;
+    z-index: 1;
+}
+
+.header p {
+    font-weight: 400;
 }
 
 .header_overley {
@@ -82,7 +86,7 @@ h3 {
     position: absolute;
     top: 0px;
     left: 471px;
-    z-index: 5;
+    z-index: 1;
     border-bottom: 900px solid rgb(66, 183, 200);
     border-left: 1130px solid transparent;
 }
@@ -91,6 +95,7 @@ h3 {
     margin-top: 90px;
     grid-column: 1/-1;
     display: grid;
+    z-index: 1;
     grid-template-columns: 200px repeat(12, 100px) 200px;
     grid-template-rows: minmax(min-content, max-content);
 }

@@ -242,7 +242,6 @@
     
     .services>.container {
         flex-direction: column;
-        align-items: center;
     }
     
     .services-item {
@@ -375,4 +374,20 @@
     
     .item:hover a {
         justify-content: space-between;
+    }
+    /* =============================================================================================================================================================price */
+    
+    .price {
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 220px;
+        background: #48c8f5;
+    }
+    
+    .price>.container {
+        flex-direction: column;
     }

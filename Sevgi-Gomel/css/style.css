@@ -58,7 +58,8 @@
     a {
         text-decoration: none;
     }
-    /* =================================================================================================================================================================================================================header */
+    /* =================================================================================================================================================================================================================
+    header */
     
     .main {
         display: flex;
@@ -154,8 +155,6 @@
     }
     
     .menu li:not(:last-child)>a:hover {
-        /* border-top: 5px solid #1f2b30;
-    padding-top: 5px; */
         color: #52C3E8;
     }
     
@@ -217,9 +216,45 @@
         background: #f0efef;
     }
     
-    .slideshow {
-        width: 745px;
-        height: 480px;
+    .slider-box {
+        position: relative;
+        overflow: hidden;
+        width: 730px;
+    }
+    
+    .slider {
+        position: relative;
+        width: 10000px;
+    }
+    
+    .slider img {
+        float: left;
+        width: 730px;
+        height: 400px;
+    }
+    
+    .slider-box .prev,
+    .slider-box .next {
+        position: absolute;
+        top: 200px;
+        display: block;
+        color: #f0efef;
+        cursor: pointer;
+    }
+    
+    .slider-box .prev i,
+    .slider-box .next i {
+        font-size: 50px;
+    }
+    
+    .slider-box .prev {
+        left: 10px;
+        font-size: 2rem;
+    }
+    
+    .slider-box .next {
+        right: 10px;
+        font-size: 2rem;
     }
     /*  ===================================================================================================================== header end ========================================== */
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ service ++++++++++++++++++++++++++++++++++++++++++++++++ */

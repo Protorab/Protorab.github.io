@@ -220,7 +220,7 @@
         position: relative;
         overflow: hidden;
         z-index: 0;
-        width: 730px;
+        width: 530px;
     }
     
     .slider {
@@ -232,7 +232,7 @@
     .slider img {
         position: relative;
         float: left;
-        width: 730px;
+        width: 530px;
         height: 400px;
         z-index: -1;
     }
@@ -261,36 +261,7 @@
         right: 10px;
         font-size: 2rem;
     }
-    
-    .slide-button {
-        position: absolute;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        width: 190px;
-        height: 70px;
-        color: #f0efef;
-        background: #52C3E8;
-        text-decoration: none;
-        font-size: 30px;
-        text-transform: uppercase;
-        top: 0px;
-        z-index: 2;
-        right: 800px;
-    }
-    
-    .slide-button-top {
-        top: 150px;
-    }
-    
-    .button-left {
-        right: 150px;
-    }
-    
-    .button-right {
-        right: 50px;
-    }
-    /*  ===================================================================================================================== header end ========================================== */
+    /* =====================================================================================================================header end==========================================*/
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ service ++++++++++++++++++++++++++++++++++++++++++++++++ */
     
     .services {

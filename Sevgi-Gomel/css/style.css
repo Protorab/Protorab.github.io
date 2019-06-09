@@ -621,3 +621,7 @@
     .footer-bottom .social a {
         color: #1f2b30;
     }
+    
+    .author:hover {
+        color: #52C3E8;
+    }

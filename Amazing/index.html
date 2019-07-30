@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="amazing_icon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
@@ -31,9 +32,9 @@
                 </a>
                 <ul class="menu ">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">photo</a></li>
-                    <li><a href="#">music</a></li>
-                    <li><a href="#">about</a></li>
+                    <li><a href="#galery">photo</a></li>
+                    <li><a href="#music">music</a></li>
+                    <li><a href="#footer">about</a></li>
                 </ul>
             </div>
             <div class="header-content">
@@ -80,7 +81,8 @@
                 <h2>Self-Effacing Rage </h2>
                 <h2>FT.Fascinating Collision </h2>
                 <p>Director: James G. Rohrer Production Company: Sycamore Producer: Laura S. Carlton Executive Producer: Jack M. Heckart</p>
-                <a href="#music" class="button music-button">click to play <i class="fas fa-play"></i></a>
+                <a href="#music" class="button music-button-click">click to play <i class="fas fa-play play"></i>
+                        <i class="stop hide fas fa-stop"></i></a>
             </div>
         </div>
         <div class="music-follow">
@@ -88,15 +90,17 @@
                 <h2>SPOTIFY</h2>
                 <p>Follow me, stream and add my songs to your Spotify playlist.
                 </p>
-                <a href="#music" class="button music-button">FOLLOW ON SPOTIFY</a>
+                <a href="https://open.spotify.com/artist/0gxyHStUsqpMadRV0Di1Qt" class="button music-button-follow">FOLLOW ON SPOTIFY</a>
             </div>
             <div class="music-content">
                 <h2>itunes</h2>
                 <p>Buy and download my songs <br> from iTunes.</p>
-                <a href="#music" class="button music-button itunes">buy from itunes </a>
+                <a href="https://music.apple.com/us/artist/rick-astley/669771" class="button music-button-buy">buy
+                        from
+                        itunes </a>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer-content">
                 <h3>AMAZING DUDE. <br>AMAZING LIFE.</h3>
                 <p>Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus
@@ -115,10 +119,16 @@
                     <div class="follow">
                         <h3>FOLLOW ME ON</h3>
                         <ul class="social">
-                            <li><i class="fab fa-facebook-square"></i>FACEBOOK</li>
-                            <li><i class="fab fa-twitter"></i>TWITTER</li>
-                            <li><i class="fab fa-instagram"></i>INSTAGRAM</li>
-                            <li><i class="fab fa-spotify"></i>SPOTIFY</li>
+                            <li>
+                                <a href="#"> <i class="fab fa-facebook-square"></i>FACEBOOK</a>
+                            </li>
+                            <li> <a href="#"><i class="fab fa-twitter"></i>TWITTER</a> </li>
+                            <li>
+                                <a href="#"> <i class="fab fa-instagram"></i>INSTAGRAM</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fab fa-spotify"></i>SPOTIFY</a>
+                            </li>
                         </ul>
                     </div>
 

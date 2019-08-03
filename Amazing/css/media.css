@@ -209,6 +209,16 @@
             width: 720px;
         }
 
+
+        .header_overley {
+            border-left: 700px solid transparent;
+        }
+
+        .header_overley__active {
+
+            border-left: 250px solid rgb(66, 183, 200);
+        }
+
         .m-menu-link {
             grid-column: 9/9;
         }
@@ -280,6 +290,101 @@
 
         .subscribe i {
             left: -45px;
+            top: 15px;
+        }
+    }
+
+    @media (max-width: 719px) {
+        html {
+            font-size: 8px;
+        }
+
+        .wrappper {
+            max-width: 600px;
+            grid-template-rows: 900px repeat(5, max-content);
+        }
+
+        .header {
+            grid-template-columns: repeat(10, 60px);
+            width: 600px;
+        }
+
+        .top_content {
+            grid-template-columns: repeat(10, 60px);
+        }
+
+        .logo {
+            grid-column: 2/5;
+        }
+
+        .menu {
+            left: 350px;
+        }
+
+        .header_overley {
+            border-left: 600px solid transparent;
+
+        }
+
+        .header_overley__active {
+
+            border-left: 250px solid rgb(66, 183, 200);
+        }
+
+        .about {
+            grid-template-columns: repeat(auto-fit, minmax(min-content, 600px));
+        }
+
+        .galery {
+            grid-template-columns: minmax(600px, 600px);
+            grid-template-rows: repeat(auto-fit, minmax(min-content, 414px));
+        }
+
+        .galery-photo img,
+        .photo-4 {
+            width: 600px;
+        }
+
+        .instagram,
+        .music .music-content:nth-child(2) {
+            grid-column: 1/-1;
+            padding: 85px 20px 55px 60px;
+            max-width: 600px;
+        }
+
+        .music {
+            grid-template-rows: 497px 400px;
+        }
+
+
+
+        .music-follow {
+            grid-template-columns: repeat(auto-fit, minmax(600px, 600px));
+        }
+
+        .music-follow .music-content:first-child,
+        .music-follow .music-content:last-child {
+            padding: 85px 20px 42px 60px;
+        }
+
+        .button {
+            width: 250px;
+        }
+
+        .footer {
+            grid-template-columns: 60px repeat(3, minmax(85px, max-content)) 60px;
+        }
+
+        .subscribe p {
+            max-width: 260px;
+        }
+
+        input[type="text"] {
+            width: 400px;
+        }
+
+        .subscribe i {
+            left: -25px;
             top: 15px;
         }
     }

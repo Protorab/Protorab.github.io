@@ -261,8 +261,8 @@ h3 {
 
 .galery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
-    grid-template-rows: repeat(auto-fill, minmax(515px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+    grid-template-rows: repeat(auto-fill, minmax(515px, 770px));
 }
 
 .galery-content {
@@ -323,7 +323,7 @@ h3 {
     background: url(../img/music_bg.png) no-repeat top;
     widows: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
     grid-template-rows: 497px 400px;
 }
 
@@ -383,8 +383,9 @@ h3 {
 .music-follow .music-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 80px;
     color: #f9f9f9;
 }
 

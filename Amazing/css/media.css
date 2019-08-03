@@ -284,27 +284,27 @@
         }
     }
 
-    @media (max-width: 439px) {
+    @media (max-width: 329px) {
         html {
-            font-size: 10px;
+            font-size: 8px;
         }
 
         .wrappper {
-            max-width: 420px;
+            max-width: 320px;
             grid-template-rows: 900px repeat(5, max-content);
         }
 
         .header {
-            grid-template-columns: repeat(10, 42px);
-            width: 420px;
+            grid-template-columns: repeat(10, 32px);
+            width: 320px;
         }
 
         .top_content {
-            grid-template-columns: repeat(10, 42px);
+            grid-template-columns: repeat(10, 32px);
         }
 
         .logo {
-            grid-column: 2/4;
+            grid-column: 2/5;
         }
 
         .menu {
@@ -313,54 +313,64 @@
 
         .header_overley__active {
             opacity: 1;
-            border-left: 200px solid rgb(66, 183, 200);
+            border-left: 150px solid rgb(66, 183, 200);
         }
 
         .about {
-            grid-template-columns: repeat(auto-fit, minmax(min-content, 420px));
+            grid-template-columns: repeat(auto-fit, minmax(min-content, 320px));
         }
 
         .galery {
-            grid-template-columns: minmax(min-content, 420px);
-            grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+            grid-template-columns: minmax(min-320px, 320px);
+            grid-template-rows: repeat(auto-fit, minmax(min-content, 414px));
         }
 
         .galery-photo img,
         .photo-4 {
-            width: 420px;
+            width: 320px;
         }
 
-        .instagram {
+        .instagram,
+        .music .music-content:nth-child(2) {
             grid-column: 1/-1;
-            padding: 85px 0 85px 42px;
-            max-width: 420px;
+            padding: 85px 20px 55px 32px;
+            max-width: 320px;
         }
 
         .music {
-            max-width: 420px;
             grid-template-rows: 497px 400px;
         }
 
+
+
         .music-follow {
-            grid-template-columns: repeat(auto-fit, minmax(420px, 420px));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
         }
 
         .music-follow .music-content:first-child,
         .music-follow .music-content:last-child {
-            padding: 85px 0 42px 42px;
+            padding: 85px 20px 42px 32px;
+        }
+
+        .button {
+            width: 250px;
         }
 
         .footer {
-            grid-template-columns: 42px repeat(3, minmax(112px, max-content)) 42px;
+            grid-template-columns: 32px repeat(3, minmax(85px, max-content)) 32px;
         }
 
         .subscribe p {
-            min-width: 360px;
+            min-width: 260px;
         }
 
         input[type="text"] {
-            width: 300px;
+            width: 280px;
         }
 
+        .subscribe i {
+            left: 255px;
+            top: -40px;
+        }
     }
 }

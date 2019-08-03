@@ -158,6 +158,10 @@ h3 {
     border-bottom: 900px solid rgb(66, 183, 200);
     border-left: 1130px solid transparent;
     transition: linear .2s;
+    -webkit-transition: linear .2s;
+    -moz-transition: linear .2s;
+    -ms-transition: linear .2s;
+    -o-transition: linear .2s;
 }
 
 .header_overley__active {

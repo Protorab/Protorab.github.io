@@ -284,7 +284,7 @@
         }
     }
 
-    @media (max-width: 329px) {
+    @media (max-width: 429px) {
         html {
             font-size: 8px;
         }
@@ -309,6 +309,11 @@
 
         .menu {
             left: 200px;
+        }
+
+        .header_overley {
+            border-left: 300px solid transparent;
+
         }
 
         .header_overley__active {

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Test-work</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/medias.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper head">
+                <div class="logo"><a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a></div>
+                <div class="phone">
+                    <a href="tel:+7(499) 777-77-77">
+                        +7(499) 777-77-77
+                    </a><br>
+                    <a href="tel:+7(499) 777-77-77">
+                        +7(499)777-77-77
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="contact-us">
+            <div class="wrapper contact-form-conteiner">
+                <div class="contact-form-conetnt">
+                    <h3 class="contact-form-title">форма с кнопкой</h3>
+                    <div class="contact-form">
+                        <h3>оставь телефон и получи
+                            <br>что-то офигенное</h3>
+                        <input type="text" name="phone-number" value="Введите номер">
+                        <button class="get-button">получить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h3>Тут у нас слайдер</h3>
+                <div class="slider-box">
+                    <div class="slide fade">
+                        <img src="img/slide/slide-1.png" alt="слайд-1" class="slide1"></div>
+                    <div class="slide fade">
+                        <img src="img/slide/slide-2.png" alt="слайд-2" class="slide2 fade"></div>
+                    <div class="slide fade">
+                        <img src="img/slide/slide-3.png" alt="слайд-3" class="slide3"></div>
+                </div>
+                <div class="slider-control">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="content-text">
+                <h3>просто текстовый блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime distinctio vero doloremque
+                    sequi cumque, odio eius quisquam consectetur voluptatem mollitia unde dolor facere autem magni
+                    exercitationem molestias est similique corrupti sit nam quidem? Velit sint quae aut rerum iure eaque
+                    quaerat odio iusto magni doloribus deserunt excepturi id accusamus ipsum, dolores laborum minima
+                    laboriosam ad eveniet voluptatum labore eius! Laudantium reprehenderit saepe quia quis reiciendis
+                    voluptas, est id praesentium. Repellat obcaecati fugiat dignissimos, beatae minima cupiditate facere
+                    laudantium voluptatem molestiae quas odio autem. Totam provident, sequi natus nam doloremque
+                    consequatur voluptatum minima cumque fuga, laudantium sunt a ad minus, nostrum incidunt aperiam.
+                </p>
+            </div>
+            <div class="colculator">
+                <h3 class="calculator-form-title">Калькулятор <br>(стоимость пользователь узнает по телефону)</h3>
+                <div class="calculator-form">
+                    <div class="calculate-form-navigate">
+                        <button class="tablink " onclick="openPage('sinle-leaf', this)" id="defaultOpen"><img
+                                src="img/sinle-leaf.png" alt="Одностворчатое">Одностворчатое</button>
+                        <button class="tablink" onclick="openPage('double-leaf', this)"><img src="img/double-leaf.png"
+                                alt="Одностворчатое">Двухстворчатое</button>
+                        <button class="tablink" onclick="openPage('tripple-leaf', this)"><img src="img/tripple-leaf.png"
+                                alt="Одностворчатое">Трехстворчатое</button>
+                        <button class="tablink" onclick="openPage('balcony-block', this)"><img
+                                src="img/balcony-block.png" alt="Одностворчатое">Балконный блок</button>
+                        <button class="tablink" onclick="openPage('balcony-glazing', this)"><img
+                                src="img/balcony-glazing.png" alt="Одностворчатое">Остекление
+                            балкона</button>
+                    </div>
+                    <div id="sinle-leaf" class="tabcontent">
+                        <div class="windows-size">
+                            <p></p>
+                            <p></p>
+                            <img src="" alt="" class="window">
+                            <p></p>
+                            <p></p>
+                            <input type="text" name="window-width" value="120">
+                            <input type="text" name="window-height" value="120">
+                        </div>
+                        <div class="windows-option">
+
+                        </div>
+                        <h3 class="tabcontent-title">Одностворчатое KBE</h3>
+                        <ol>
+                            <li>Критерии выбора</li>
+                            <input type="radio">пункт выбора 1
+                            <input type="radio">пункт выбора 2
+                            <input type="radio">пункт выбора 3
+                            <li>Выберите открывание створки</li>
+                            <select>
+                                <option>Не открывается</option>
+                                <option>Открывается</option>
+                            </select>
+                        </ol>
+                        <div class="calculate-button"><input type="text" class="send-calculate"
+                                value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                    </div>
+                    <div id="double-leaf" class="tabcontent">
+                        <div class="windows-size">
+                            <p></p>
+                            <p></p>
+                            <img src="" alt="" class="window">
+                            <p></p>
+                            <p></p>
+                            <input type="text" name="window-width" value="120">
+                            <input type="text" name="window-height" value="120">
+                        </div>
+                        <div class="windows-option">
+                            <h3 class="tabcontent-title">Двухстворчатое</h3>
+                            <ol>
+                                <li>Критерии выбора</li>
+                                <input type="radio">пункт выбора 1
+                                <input type="radio">пункт выбора 2
+                                <input type="radio">пункт выбора 3
+                                <li>Выберите открывание створки</li>
+                                <select>
+                                    <option>Не открывается</option>
+                                    <option>Открывается</option>
+                                </select>
+                            </ol>
+                            <div class="calculate-button"><input type="text" class="send-calculate"
+                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                        </div>
+                    </div>
+                    <div id="tripple-leaf" class="tabcontent">
+                        <div class="windows-size">
+                            <p></p>
+                            <p></p>
+                            <img src="" alt="" class="window">
+
+                            <input type="text" name="window-width" value="120">
+                            <input type="text" name="window-height" value="120">
+
+                        </div>
+                        <div class="windows-option">
+                            <h3 class="tabcontent-title">Трехстворчатое</h3>
+                            <ol>
+                                <li>Критерии выбора</li>
+                                <input type="radio">пункт выбора 1
+                                <input type="radio">пункт выбора 2
+                                <input type="radio">пункт выбора 3
+                                <li>Выберите открывание створки</li>
+                                <select>
+                                    <option>Не открывается</option>
+                                    <option>Открывается</option>
+                                </select>
+                            </ol>
+                            <div class="calculate-button"><input type="text" class="send-calculate"
+                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                        </div>
+                    </div>
+                    <div id="balcony-block" class="tabcontent">
+                        <div class="windows-size">
+                            <p></p>
+                            <p></p>
+                            <img src="" alt="" class="window">
+                            <p></p>
+                            <p></p>
+                            <input type="text" name="window-width" value="120">
+                            <input type="text" name="window-height" value="120">
+                        </div>
+                        <div class="windows-option">
+                            <h3 class="tabcontent-title">Балконный блок</h3>
+                            <ol>
+                                <li>Критерии выбора</li>
+                                <input type="radio">пункт выбора 1
+                                <input type="radio">пункт выбора 2
+                                <input type="radio">пункт выбора 3
+                                <li>Выберите открывание створки</li>
+                                <select>
+                                    <option>Не открывается</option>
+                                    <option>Открывается</option>
+                                </select>
+                            </ol>
+                            <div class="calculate-button"><input type="text" class="send-calculate"
+                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                        </div>
+                    </div>
+                    <div id="balcony-glazing" class="tabcontent">
+                        <div class="windows-size">
+                            <p></p>
+                            <p></p>
+                            <img src="" alt="" class="window">
+                            <p></p>
+                            <p></p>
+                            <input type="text" name="window-width" value="120">
+                            <input type="text" name="window-height" value="120">
+                        </div>
+                        <div class="windows-option">
+                            <h3 class="tabcontent-title">Остекление балкона</h3>
+                            <ol>
+                                <li>Критерии выбора</li>
+                                <input type="radio">пункт выбора 1
+                                <input type="radio">пункт выбора 2
+                                <input type="radio">пункт выбора 3
+                                <li>Выберите открывание створки</li>
+                                <select>
+                                    <option>Не открывается</option>
+                                    <option>Открывается</option>
+                                </select>
+                            </ol>
+                            <div class="calculate-button"><input type="text" class="send-calculate"
+                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <fotter>
+            <div class="wrapper">
+                <p>простой<br>скромный футер</p>
+            </div>
+        </fotter>
+    </body>
+
+    <script>
+        // скрипт слайдера
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        // скрипт слайдера end
+    </script>
+
+</html>

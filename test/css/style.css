@@ -34,6 +34,10 @@ p {
     font-size: 1.4rem;
 }
 
+button {
+    outline: none;
+}
+
 header {
     background-color: #dcdcdc;
 
@@ -234,11 +238,19 @@ header {
     font-family: 'Myriad Pro Semibold';
 }
 
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .calculate-form-navigate {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
     width: 100%;
+    margin-bottom: 35px;
 }
 
 .tablink {
@@ -260,4 +272,57 @@ header {
 .tablink:hover {
     color: #0099de;
     text-decoration: underline;
+}
+
+.tabcontent {
+    width: 960px;
+    height: 515px;
+    padding: 35px 25px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    background-color: rgba(232, 232, 232, 0);
+    box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.23), inset 1px 1.732px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+.windows-size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 40px);
+    width: 30%;
+    margin-right: 115px;
+    max-width: 270px;
+
+}
+
+.windows-size-width {
+    grid-column: 1/-1;
+}
+
+.windows-size-height {
+    width: 50px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+
+.windows-size-width-sm,
+.windows-size-width-input {
+    width: 100px;
+    height: 40px;
+    grid-column: 1/2;
+}
+
+.windows-size-height-sm,
+.windows-size-height-input {
+    grid-column: 3/4;
+}
+
+.window-size {
+    width: 100px;
+    height: 160px;
 }

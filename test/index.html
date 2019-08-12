@@ -78,50 +78,51 @@
                         <button class="tablink " onclick="openPage('sinle-leaf', this)" id="defaultOpen"><img
                                 src="img/sinle-leaf.png" alt="Одностворчатое">Одностворчатое</button>
                         <button class="tablink" onclick="openPage('double-leaf', this)"><img src="img/double-leaf.png"
-                                alt="Одностворчатое">Двухстворчатое</button>
+                                alt="Двухстворчатое">Двухстворчатое</button>
                         <button class="tablink" onclick="openPage('tripple-leaf', this)"><img src="img/tripple-leaf.png"
-                                alt="Одностворчатое">Трехстворчатое</button>
+                                alt="Трехстворчатое">Трехстворчатое</button>
                         <button class="tablink" onclick="openPage('balcony-block', this)"><img
-                                src="img/balcony-block.png" alt="Одностворчатое">Балконный блок</button>
+                                src="img/balcony-block.png" alt="Балконный блок">Балконный блок</button>
                         <button class="tablink" onclick="openPage('balcony-glazing', this)"><img
-                                src="img/balcony-glazing.png" alt="Одностворчатое">Остекление
+                                src="img/balcony-glazing.png" alt="Остекление балкона">Остекление
                             балкона</button>
                     </div>
                     <div id="sinle-leaf" class="tabcontent">
                         <div class="windows-size">
-                            <p></p>
-                            <p></p>
-                            <img src="" alt="" class="window">
-                            <p></p>
-                            <p></p>
-                            <input type="text" name="window-width" value="120">
-                            <input type="text" name="window-height" value="120">
+                            <p class="windows-size-width">ширина</p>
+                            <p class="windows-size-height">высота</p>
+                            <img src="img/sinle-leaf.png" alt="Одностворчатое" class="window-size">
+                            <p class="windows-size-width-sm">ширина, см</p>
+                            <p class="windows-size-height-sm">высота, см</p>
+                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
                         </div>
                         <div class="windows-option">
-
+                            <h3 class="tabcontent-title">Одностворчатое KBE</h3>
+                            <ol>
+                                <li>Критерии выбора</li>
+                                <input type="radio">пункт выбора 1
+                                <input type="radio">пункт выбора 2
+                                <input type="radio">пункт выбора 3
+                                <li>Выберите открывание створки</li>
+                                <select>
+                                    <option>Не открывается</option>
+                                    <option>Открывается</option>
+                                </select>
+                            </ol>
+                            <div class="calculate-button">
+                                <input type="text" class="send-calculate" value="Введите номер">
+                                <button class="calculate">Рассчитать</button>
+                            </div>
                         </div>
-                        <h3 class="tabcontent-title">Одностворчатое KBE</h3>
-                        <ol>
-                            <li>Критерии выбора</li>
-                            <input type="radio">пункт выбора 1
-                            <input type="radio">пункт выбора 2
-                            <input type="radio">пункт выбора 3
-                            <li>Выберите открывание створки</li>
-                            <select>
-                                <option>Не открывается</option>
-                                <option>Открывается</option>
-                            </select>
-                        </ol>
-                        <div class="calculate-button"><input type="text" class="send-calculate"
-                                value="Введите номер"><button class="calculate">Рассчитать</button></div>
                     </div>
-                    <div id="double-leaf" class="tabcontent">
+                    <div id="sinle-leaf" class="tabcontent">
                         <div class="windows-size">
-                            <p></p>
-                            <p></p>
-                            <img src="" alt="" class="window">
-                            <p></p>
-                            <p></p>
+                            <p class="windows-size-width">ширина</p>
+                            <p class="windows-size-height">высота</p>
+                            <img src="img/double-leaf.png" alt="Двухстворчатое" class="window-size">
+                            <p class="windows-size-width-sm">ширина, см</p>
+                            <p class="windows-size-height-sm">высота, см</p>
                             <input type="text" name="window-width" value="120">
                             <input type="text" name="window-height" value="120">
                         </div>
@@ -138,19 +139,21 @@
                                     <option>Открывается</option>
                                 </select>
                             </ol>
-                            <div class="calculate-button"><input type="text" class="send-calculate"
-                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                            <div class="calculate-button">
+                                <input type="text" class="send-calculate" value="Введите номер">
+                                <button class="calculate">Рассчитать</button>
+                            </div>
                         </div>
                     </div>
-                    <div id="tripple-leaf" class="tabcontent">
+                    <div id="sinle-leaf" class="tabcontent">
                         <div class="windows-size">
-                            <p></p>
-                            <p></p>
-                            <img src="" alt="" class="window">
-
+                            <p class="windows-size-width">ширина</p>
+                            <p class="windows-size-height">высота</p>
+                            <img src="img/tripple-leaf.png" alt="Трехстворчатое" class="window-size">
+                            <p class="windows-size-width-sm">ширина, см</p>
+                            <p class="windows-size-height-sm">высота, см</p>
                             <input type="text" name="window-width" value="120">
                             <input type="text" name="window-height" value="120">
-
                         </div>
                         <div class="windows-option">
                             <h3 class="tabcontent-title">Трехстворчатое</h3>
@@ -165,17 +168,19 @@
                                     <option>Открывается</option>
                                 </select>
                             </ol>
-                            <div class="calculate-button"><input type="text" class="send-calculate"
-                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                            <div class="calculate-button">
+                                <input type="text" class="send-calculate" value="Введите номер">
+                                <button class="calculate">Рассчитать</button>
+                            </div>
                         </div>
                     </div>
-                    <div id="balcony-block" class="tabcontent">
+                    <div id="sinle-leaf" class="tabcontent">
                         <div class="windows-size">
-                            <p></p>
-                            <p></p>
-                            <img src="" alt="" class="window">
-                            <p></p>
-                            <p></p>
+                            <p class="windows-size-width">ширина</p>
+                            <p class="windows-size-height">высота</p>
+                            <img src="img/balcony-block.png" alt="Балконный блок" class="window-size">
+                            <p class="windows-size-width-sm">ширина, см</p>
+                            <p class="windows-size-height-sm">высота, см</p>
                             <input type="text" name="window-width" value="120">
                             <input type="text" name="window-height" value="120">
                         </div>
@@ -192,17 +197,19 @@
                                     <option>Открывается</option>
                                 </select>
                             </ol>
-                            <div class="calculate-button"><input type="text" class="send-calculate"
-                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                            <div class="calculate-button">
+                                <input type="text" class="send-calculate" value="Введите номер">
+                                <button class="calculate">Рассчитать</button>
+                            </div>
                         </div>
                     </div>
-                    <div id="balcony-glazing" class="tabcontent">
+                    <div id="sinle-leaf" class="tabcontent">
                         <div class="windows-size">
-                            <p></p>
-                            <p></p>
-                            <img src="" alt="" class="window">
-                            <p></p>
-                            <p></p>
+                            <p class="windows-size-width">ширина</p>
+                            <p class="windows-size-height">высота</p>
+                            <img src="img/balcony-glazing.png" alt="Остекление балкона" class="window-size">
+                            <p class="windows-size-width-sm">ширина, см</p>
+                            <p class="windows-size-height-sm">высота, см</p>
                             <input type="text" name="window-width" value="120">
                             <input type="text" name="window-height" value="120">
                         </div>
@@ -219,10 +226,13 @@
                                     <option>Открывается</option>
                                 </select>
                             </ol>
-                            <div class="calculate-button"><input type="text" class="send-calculate"
-                                    value="Введите номер"><button class="calculate">Рассчитать</button></div>
+                            <div class="calculate-button">
+                                <input type="text" class="send-calculate" value="Введите номер">
+                                <button class="calculate">Рассчитать</button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

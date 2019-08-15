@@ -37,7 +37,7 @@
                         <h3>оставь телефон и получи
                             <br>что-то офигенное</h3>
                         <input type="text" name="phone-number" value="Введите номер">
-                        <button class="get-button">получить</button>
+                        <button class="get-button" onClick="alert('сообщение отправлено')">получить</button>
                     </div>
                 </div>
             </div>
@@ -88,174 +88,191 @@
                             балкона</button>
                     </div>
                     <div id="sinle-leaf" class="tabcontent">
-                        <div class="windows-size">
-                            <p class="windows-size-width">ширина</p>
-                            <p class="windows-size-height">высота</p>
-                            <img src="img/sinle-leaf.png" alt="Одностворчатое" class="window-size-img">
-                            <p class="windows-size-width-sm">ширина, см</p>
-                            <p class="windows-size-height-sm">высота, см</p>
-                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
-                            <p class="multiply-x">x</p>
-                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
-                        </div>
-                        <div class="windows-option">
-                            <h3 class="tabcontent-title">Одностворчатое KBE</h3>
-                            <ol>
-                                <li>Критерии выбора</li>
-                                <div class="criterias">
-                                    <input type="radio">пункт выбора 1
-                                    <input type="radio">пункт выбора 2
-                                    <input type="radio">пункт выбора 3
-                                </div>
-                                <li>Выберите открывание створки</li>
-                                <select>
-                                    <option>Не открывается</option>
-                                    <option>Открывается</option>
-                                </select>
-                            </ol>
-                            <div class="calculate-button">
-                                <input type="text" class="send-calculate" value="Введите номер">
-                                <button class="calculate">Рассчитать</button>
+                        <div class="windows-size-option">
+                            <div class="windows-size">
+                                <p class="windows-size-width">ширина</p>
+                                <p class="windows-size-height">высота</p>
+                                <img src="img/sinle-leaf.png" alt="Одностворчатое" class="window-size-img">
+                                <p class="windows-size-width-sm">ширина, см</p>
+                                <p class="windows-size-height-sm">высота, см</p>
+                                <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                                <p class="multiply-x">x</p>
+                                <input type="text" name="window-height" value="120" class="windows-size-height-input">
                             </div>
+                            <div class="windows-option">
+                                <h3 class="tabcontent-title">Одностворчатое KBE</h3>
+                                <ol>
+                                    <li>Критерии выбора</li>
+                                    <div class="criterias">
+                                        <input type="radio">пункт выбора 1
+                                        <input type="radio">пункт выбора 2
+                                        <input type="radio">пункт выбора 3
+                                    </div>
+                                    <li>Выберите открывание створки</li>
+                                    <select class="selection">
+                                        <option>Не открывается</option>
+                                        <option>Открывается</option>
+                                    </select>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="calculate-button">
+                            <input type="text" class="send-calculate" value="Введите номер">
+                            <button class="calculate">Рассчитать</button>
                         </div>
                     </div>
                     <div id="double-leaf" class="tabcontent">
-                        <div class="windows-size">
-                            <p class="windows-size-width">ширина</p>
-                            <p class="windows-size-height">высота</p>
-                            <img src="img/double-leaf.png" alt="Двухстворчатое" class="window-size-img">
-                            <p class="windows-size-width-sm">ширина, см</p>
-                            <p class="windows-size-height-sm">высота, см</p>
-                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
-                            <p class="multiply-x">x</p>
-                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
-                        </div>
-                        <div class="windows-option">
-                            <h3 class="tabcontent-title">Двухстворчатое</h3>
-                            <ol>
-                                <li>Критерии выбора</li>
-                                <div class="criterias">
-                                    <input type="radio">пункт выбора 1
-                                    <input type="radio">пункт выбора 2
-                                    <input type="radio">пункт выбора 3
-                                </div>
-                                <li>Выберите открывание створки</li>
-                                <select>
-                                    <option>Не открывается</option>
-                                    <option>Открывается</option>
-                                </select>
-                            </ol>
-                            <div class="calculate-button">
-                                <input type="text" class="send-calculate" value="Введите номер">
-                                <button class="calculate">Рассчитать</button>
+                        <div class="windows-size-option">
+                            <div class="windows-size">
+                                <p class="windows-size-width">ширина</p>
+                                <p class="windows-size-height">высота</p>
+                                <img src="img/double-leaf.png" alt="Двухстворчатое" class="window-size-img">
+                                <p class="windows-size-width-sm">ширина, см</p>
+                                <p class="windows-size-height-sm">высота, см</p>
+                                <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                                <p class="multiply-x">x</p>
+                                <input type="text" name="window-height" value="120" class="windows-size-height-input">
                             </div>
+                            <div class="windows-option">
+                                <h3 class="tabcontent-title">Двухстворчатое</h3>
+                                <ol>
+                                    <li>Критерии выбора</li>
+                                    <div class="criterias">
+                                        <input type="radio">пункт выбора 1
+                                        <input type="radio">пункт выбора 2
+                                        <input type="radio">пункт выбора 3
+                                    </div>
+                                    <li>Выберите открывание створки</li>
+                                    <select class="selection">
+                                        <option>Не открывается</option>
+                                        <option>Открывается</option>
+                                    </select>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="calculate-button">
+                            <input type="text" class="send-calculate" value="Введите номер">
+                            <button class="calculate">Рассчитать</button>
                         </div>
                     </div>
                     <div id="tripple-leaf" class="tabcontent">
-                        <div class="windows-size">
-                            <p class="windows-size-width">ширина</p>
-                            <p class="windows-size-height">высота</p>
-                            <img src="img/tripple-leaf.png" alt="Трехстворчатое" class="window-size-img">
-                            <p class="windows-size-width-sm">ширина, см</p>
-                            <p class="windows-size-height-sm">высота, см</p>
-                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
-                            <p class="multiply-x">x</p>
-                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
-                        </div>
-                        <div class="windows-option">
-                            <h3 class="tabcontent-title">Трехстворчатое</h3>
-                            <ol>
-                                <li>Критерии выбора</li>
-                                <div class="criterias">
-                                    <input type="radio">пункт выбора 1
-                                    <input type="radio">пункт выбора 2
-                                    <input type="radio">пункт выбора 3
-                                </div>
-                                <li>Выберите открывание створки</li>
-                                <select>
-                                    <option>Не открывается</option>
-                                    <option>Открывается</option>
-                                </select>
-                            </ol>
-                            <div class="calculate-button">
-                                <input type="text" class="send-calculate" value="Введите номер">
-                                <button class="calculate">Рассчитать</button>
+                        <div class="windows-size-option">
+                            <div class="windows-size">
+                                <p class="windows-size-width">ширина</p>
+                                <p class="windows-size-height">высота</p>
+                                <img src="img/tripple-leaf.png" alt="Трехстворчатое" class="window-size-img">
+                                <p class="windows-size-width-sm">ширина, см</p>
+                                <p class="windows-size-height-sm">высота, см</p>
+                                <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                                <p class="multiply-x">x</p>
+                                <input type="text" name="window-height" value="120" class="windows-size-height-input">
                             </div>
+                            <div class="windows-option">
+                                <h3 class="tabcontent-title">Трехстворчатое</h3>
+                                <ol>
+                                    <li>Критерии выбора</li>
+                                    <div class="criterias">
+                                        <input type="radio">пункт выбора 1
+                                        <input type="radio">пункт выбора 2
+                                        <input type="radio">пункт выбора 3
+                                    </div>
+                                    <li>Выберите открывание створки</li>
+                                    <select class="selection">
+                                        <option>Не открывается</option>
+                                        <option>Открывается</option>
+                                    </select>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="calculate-button">
+                            <input type="text" class="send-calculate" value="Введите номер">
+                            <button class="calculate">Рассчитать</button>
                         </div>
                     </div>
+
                     <div id="balcony-block" class="tabcontent">
-                        <div class="windows-size">
-                            <p class="windows-size-width">ширина</p>
-                            <p class="windows-size-height">высота</p>
-                            <img src="img/balcony-block.png" alt="Балконный блок" class="window-size-img">
-                            <p class="windows-size-width-sm">ширина, см</p>
-                            <p class="windows-size-height-sm">высота, см</p>
-                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
-                            <p class="multiply-x">x</p>
-                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
-                        </div>
-                        <div class="windows-option">
-                            <h3 class="tabcontent-title">Балконный блок</h3>
-                            <ol>
-                                <li>Критерии выбора</li>
-                                <div class="criterias">
-                                    <input type="radio">пункт выбора 1
-                                    <input type="radio">пункт выбора 2
-                                    <input type="radio">пункт выбора 3
-                                </div>
-                                <li>Выберите открывание створки</li>
-                                <select>
-                                    <option>Не открывается</option>
-                                    <option>Открывается</option>
-                                </select>
-                            </ol>
-                            <div class="calculate-button">
-                                <input type="text" class="send-calculate" value="Введите номер">
-                                <button class="calculate">Рассчитать</button>
+                        <div class="windows-size-option">
+                            <div class="windows-size">
+                                <p class="windows-size-width">ширина</p>
+                                <p class="windows-size-height">высота</p>
+                                <img src="img/balcony-block.png" alt="Балконный блок" class="window-size-img">
+                                <p class="windows-size-width-sm">ширина, см</p>
+                                <p class="windows-size-height-sm">высота, см</p>
+                                <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                                <p class="multiply-x">x</p>
+                                <input type="text" name="window-height" value="120" class="windows-size-height-input">
                             </div>
+                            <div class="windows-option">
+                                <h3 class="tabcontent-title">Балконный блок</h3>
+                                <ol>
+                                    <li>Критерии выбора</li>
+                                    <div class="criterias">
+                                        <input type="radio">пункт выбора 1
+                                        <input type="radio">пункт выбора 2
+                                        <input type="radio">пункт выбора 3
+                                    </div>
+                                    <li>Выберите открывание створки</li>
+                                    <select class="selection">
+                                        <option>Не открывается</option>
+                                        <option>Открывается</option>
+                                    </select>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="calculate-button">
+                            <input type="text" class="send-calculate" value="Введите номер">
+                            <button class="calculate">Рассчитать</button>
+
                         </div>
                     </div>
                     <div id="balcony-glazing" class="tabcontent">
-                        <div class="windows-size">
-                            <p class="windows-size-width">ширина</p>
-                            <p class="windows-size-height">высота</p>
-                            <img src="img/balcony-glazing.png" alt="Остекление балкона" class="window-size-img">
-                            <p class="windows-size-width-sm">ширина, см</p>
-                            <p class="windows-size-height-sm">высота, см</p>
-                            <input type="text" name="window-width" value="120" class="windows-size-width-input">
-                            <p class="multiply-x">x</p>
-                            <input type="text" name="window-height" value="120" class="windows-size-height-input">
-                        </div>
-                        <div class="windows-option">
-                            <h3 class="tabcontent-title">Остекление балкона</h3>
-                            <ol>
-                                <li>Критерии выбора</li>
-                                <div class="criterias">
-                                    <input type="radio">пункт выбора 1
-                                    <input type="radio">пункт выбора 2
-                                    <input type="radio">пункт выбора 3
-                                </div>
-                                <li>Выберите открывание створки</li>
-                                <select>
-                                    <option>Не открывается</option>
-                                    <option>Открывается</option>
-                                </select>
-                            </ol>
-                            <div class="calculate-button">
-                                <input type="text" class="send-calculate" value="Введите номер">
-                                <button class="calculate">Рассчитать</button>
+                        <div class="windows-size-option">
+                            <div class="windows-size">
+                                <p class="windows-size-width">ширина</p>
+                                <p class="windows-size-height">высота</p>
+                                <img src="img/balcony-glazing.png" alt="Остекление балкона" class="window-size-img">
+                                <p class="windows-size-width-sm">ширина, см</p>
+                                <p class="windows-size-height-sm">высота, см</p>
+                                <input type="text" name="window-width" value="120" class="windows-size-width-input">
+                                <p class="multiply-x">x</p>
+                                <input type="text" name="window-height" value="120" class="windows-size-height-input">
                             </div>
+                            <div class="windows-option">
+                                <h3 class="tabcontent-title">Остекление балкона</h3>
+                                <ol>
+                                    <li>Критерии выбора</li>
+                                    <div class="criterias">
+                                        <input type="radio">пункт выбора 1
+                                        <input type="radio">пункт выбора 2
+                                        <input type="radio">пункт выбора 3
+                                    </div>
+                                    <li>Выберите открывание створки</li>
+                                    <select class="selection">
+                                        <option>Не открывается</option>
+                                        <option>Открывается</option>
+                                    </select>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="calculate-button">
+                            <input type="text" class="send-calculate" value="Введите номер">
+                            <button class="calculate">
+                                Рассчитать
+                            </button>
+
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <fotter>
+        <footer>
             <div class="wrapper">
                 <p>простой<br>скромный футер</p>
             </div>
-        </fotter>
+        </footer>
     </body>
 
     <script>
@@ -291,6 +308,21 @@
             dots[slideIndex - 1].className += " active";
         }
         // скрипт слайдера end
+        //скрипт калькулятора
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+        }
+        document.getElementById("defaultOpen").click();
+        //скрипт калькулятора end
     </script>
 
 </html>

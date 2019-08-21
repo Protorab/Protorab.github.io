@@ -1,175 +1,183 @@
 <!DOCTYPE html>
 <html lang="auto">
-<head>
-	<meta charset="UTF-8">
-	<title>Pricing</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  	<script>
-  	$(function() {
-  		 var close = $('.close-menu');
-  		 var link = $('.m-menu-link');
-  		 var menu = $('.m-menu');
-  		 link.on('click', function(event) {
-  		 	event.preventDefault();
-  		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
-  		 });
-  		 close.on('click', function(event) {
-  		 	event.preventDefault();
-  		 	menu.toggleClass('m-menu__active');
-  		 	/* Act on the event */
-  		 });
-  		});	
-  	</script>
-</head>
-<body>
-	<!-- плавующее меню -->
-	<ul class="m-menu">
-		<li class="close-menu">&times;</li>
-		<li><a href="#" class="menu-link">Home</a></li>
-		<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
-		<li><a href="#" class="menu-link">Features</a></li>
-		<li><a href="#" class="menu-link">Articles</a></li>
-		<li><a href="#" class="menu-link">Pricing</a></li>
-		<li><a href="#" class="get-started-btn menu-link" >Get started</a></li>
-	</ul>
-	<header>
-		<div id="main" class="main">	
-			<div class="main-overlay"></div>
-			<div class="header">
-				<!-- логитип+ -->
-				<div class="logo">
-					<a title="Pricing" href="#"><img src="img/logo.png" alt="logo">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Pricing</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script>
+			$(function () {
+				var close = $('.close-menu');
+				var link = $('.m-menu-link');
+				var menu = $('.m-menu');
+				link.on('click', function (event) {
+					event.preventDefault();
+					menu.toggleClass('m-menu__active');
+					/* Act on the event */
+				});
+				close.on('click', function (event) {
+					event.preventDefault();
+					menu.toggleClass('m-menu__active');
+					/* Act on the event */
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- плавующее меню -->
+		<ul class="m-menu">
+			<li class="close-menu">&times;</li>
+			<li><a href="#" class="menu-link">Home</a></li>
+			<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
+			<li><a href="#" class="menu-link">Features</a></li>
+			<li><a href="#" class="menu-link">Articles</a></li>
+			<li><a href="#" class="menu-link">Pricing</a></li>
+			<li><a href="#" class="get-started-btn menu-link">Get started</a></li>
+		</ul>
+		<header>
+			<div id="main" class="main">
+				<div class="main-overlay"></div>
+				<div class="header">
+					<!-- логитип+ -->
+					<div class="logo">
+						<a title="Pricing" href="#"><img src="img/logo.png" alt="logo">
+						</a>
+						<h2 class="logo-header">misocial</h2>
+					</div>
+					<!-- меню бургер -->
+					<a href="#" class="m-menu-link">
+						<i class="fa fa-bars"></i>
 					</a>
-					<h2 class="logo-header">misociaal</h2>
+					<!-- основное меню -->
+					<div class="header_menu menu">
+						<ul>
+							<li><a href="#" class="menu-link">Home</a></li>
+							<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
+							<li><a href="#" class="menu-link">Features</a></li>
+							<li><a href="#" class="menu-link">Articles</a></li>
+							<li><a href="#" class="menu-link">Pricing</a></li>
+							<li><a href="#" class="get-started-btn menu-link">Get started</a></li>
+						</ul>
+					</div>
 				</div>
-				<!-- меню бургер -->
-				<a href="#" class="m-menu-link">
-					<i class="fa fa-bars"></i> 		
-				</a>
-				<!-- основное меню -->
-				<div class="header_menu menu">
-					<ul>
-						<li><a href="#" class="menu-link">Home</a></li>
-						<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
-						<li><a href="#" class="menu-link">Features</a></li>
-						<li><a href="#" class="menu-link">Articles</a></li>
-						<li><a href="#" class="menu-link">Pricing</a></li>
-						<li><a href="#" class="get-started-btn menu-link" >Get started</a></li>
-					</ul>
+				<!-- главный заголовок -->
+				<div class="main-text">
+					<span>SOCIAL MARKETING & ANALYTICS</span>
+					<h1>Pricing Table</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
+				</div>
+				<div class="main-arrow">
+					<a href="#table" class="arrow down">
+						<img src="img/arrow-down.png" alt="arrow-down">
+					</a>
 				</div>
 			</div>
-			<!-- главный заголовок -->
-			<div class="main-text">
-				<span>SOCIAL MARKETING & ANALYTICS</span>
-				<h1>Pricing Table</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae.</p>
+		</header>
+		<!--content -->
+		<div id="table" class="table">
+			<div class="main-arrow">
+				<a href="#main" class="arrow up">
+					<img src="img/arrow-up.png" alt="arrow-up">
+				</a>
+			</div>
+			<div class="table-header">
+				<span>Misocial</span>
+				<h2>Select a Plan</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, neque.</p>
+			</div>
+			<div class="price-tags">
+				<div class="price-tag">
+					<img src="img/Asset 1x.png" alt="Asset 1x">
+					<span>personal</span>
+					<h3><sup>$</sup>0<sub>/month</sub></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias obcaecati velit facere animi aspernatur
+						architecto qui! Dolorum suscipit fuga consequatur veritatis iste magnam, ea esse expedita. Dolorum quod
+						provident incidunt.</p>
+					<button class="price-btn">select plan</button>
+				</div>
+				<div class="price-tag">
+					<img src="img/Asset 2x.png" alt="Asset 1x">
+					<span>personal</span>
+					<h3><sup>$</sup>29<sub>/month</sub></h3>
+					<p>Molestias eum doloremque voluptas porro magnam magni ex nobis possimus fuga saepe, debitis nemo eveniet
+						cupiditate, voluptates, excepturi quibusdam. Porro sint deleniti vel, debitis quae rem nulla impedit quod
+						in.</p>
+					<button class="price-btn">select plan</button>
+				</div>
+				<div class="price-tag">
+					<img src="img/Asset 3x.png" alt="Asset 3x">
+					<span>personal</span>
+					<h3><sup>$</sup>49<sub>/month</sub></h3>
+					<p>Nulla minima dolorem, doloribus sequi tempore perspiciatis eum, dolore laudantium, inventore, quis ipsum in
+						nam. Ducimus omnis, tempora accusantium officia mollitia quisquam voluptas beatae laboriosam nulla enim
+						pariatur, sunt vitae.</p>
+					<button class="price-btn">select plan</button>
+				</div>
 			</div>
 			<div class="main-arrow">
-				<a href="#table" class="arrow down">
-					<img src="img/arrow-down.png" alt="arrow-down">
+				<a href="#map" class="arrow down">
+					<img src="img/arrow-down.png" alt="arrow-up">
 				</a>
 			</div>
 		</div>
-	</header>
-	<!--content -->
-	<div id="table" class="table">
-		<div  class="main-arrow">
-			<a href="#main" class="arrow up">
-				<img src="img/arrow-up.png" alt="arrow-up">
-			</a>
-		</div>
-		<div class="table-header">
-			<span>Misocial</span>
-			<h2>Select a Plan</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, neque.</p>
-		</div>
-		<div class="price-tags">
-			<div class="price-tag">
-				<img src="img/Asset 1x.png" alt="Asset 1x">
-				<span>personal</span>
-				<h3><sup>$</sup>0<sub>/month</sub></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias obcaecati velit facere animi aspernatur architecto qui! Dolorum suscipit fuga consequatur veritatis iste magnam, ea esse expedita. Dolorum quod provident incidunt.</p>
-				<button class="price-btn">select plan</button>
+		<div id="map" class="map-bg">
+			<div class="overley_map-bg"></div>
+			<div class="main-arrow">
+				<a href="#main" class="arrow up">
+					<img src="img/arrow-up.png" alt="arrow-up">
+				</a>
 			</div>
-			<div class="price-tag">
-				<img src="img/Asset 2x.png" alt="Asset 1x">
-				<span>personal</span>
-				<h3><sup>$</sup>29<sub>/month</sub></h3>
-				<p>Molestias eum doloremque voluptas porro magnam magni ex nobis possimus fuga saepe, debitis nemo eveniet cupiditate, voluptates, excepturi quibusdam. Porro sint deleniti vel, debitis quae rem nulla impedit quod in.</p>
-				<button class="price-btn">select plan</button>
-			</div>
-			<div class="price-tag">
-				<img src="img/Asset 3x.png" alt="Asset 3x">
-				<span>personal</span>
-				<h3><sup>$</sup>49<sub>/month</sub></h3>
-				<p>Nulla minima dolorem, doloribus sequi tempore perspiciatis eum, dolore laudantium, inventore, quis ipsum in nam. Ducimus omnis, tempora accusantium officia mollitia quisquam voluptas beatae laboriosam nulla enim pariatur, sunt vitae.</p>
-				<button class="price-btn">select plan</button>
-			</div>
-		</div>
-		<div class="main-arrow">
-			<a href="#map" class="arrow down">
-				<img src="img/arrow-down.png" alt="arrow-up">
-			</a>
-		</div>
-	</div>
-	<div id="map" class="map-bg">
-		<div class="overley_map-bg"></div>
-		<div  class="main-arrow">
-			<a href="#main" class="arrow up">
-				<img src="img/arrow-up.png" alt="arrow-up">
-			</a>
-		</div>
-		<div class="map_content">
-			<span>SOCAL MARKETING & ANALYTICS</span>
-			<h2>Take control of your data</h2>
-			<div class="buttons">
-				<button>get started</button>
-				<button>explore features</button>
-			</div>
-		</div>
-	</div>
-	<footer id="footer">
-		<div class="footer">
-			<div class="footer-logo-menu">
-				<div class="logo">
-					<a title="Pricing" href="#"><img src="img/logo.png" alt="logo">
-					</a>
-					<h2 class="logo-footer">misocial</h2>
+			<div class="map_content">
+				<span>SOCAL MARKETING & ANALYTICS</span>
+				<h2>Take control of your data</h2>
+				<div class="buttons">
+					<button>get started</button>
+					<button>explore features</button>
 				</div>
-				<!-- <div class="logo">
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<div class="footer-logo-menu">
+					<div class="logo">
+						<a title="Pricing" href="#"><img src="img/logo.png" alt="logo">
+						</a>
+						<h2 class="logo-footer">misocial</h2>
+					</div>
+					<!-- <div class="logo">
 					<img src="img/logo_footer.png" alt="logo">
 				</div> -->
-				<div class="menu footer_menu">
-					<ul>
-						<li><a href="#" class="menu-link">Home</a></li>
-						<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
-						<li><a href="#" class="menu-link">Features</a></li>
-						<li><a href="#" class="menu-link">Articles</a></li>
-						<li><a href="#" class="menu-link">Pricing</a></li>
-						<li><a href="#" class="get-started-btn menu-link" >Get started</a></li>
-					</ul>
+					<div class="menu footer_menu">
+						<ul>
+							<li><a href="#" class="menu-link">Home</a></li>
+							<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
+							<li><a href="#" class="menu-link">Features</a></li>
+							<li><a href="#" class="menu-link">Articles</a></li>
+							<li><a href="#" class="menu-link">Pricing</a></li>
+							<li><a href="#" class="get-started-btn menu-link">Get started</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fotter_info">
+					<p class="copy">© 2017 Mass Impressions & Tranmautritam. Make the right impression.</p>
+					<div class="social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
 				</div>
 			</div>
-			<div class="fotter_info">
-				<p class="copy">© 2017 Mass Impressions & Tranmautritam. Make the right impression.</p>
-				<div class="social">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-google-plus-g"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-			</div>
-		</div>	
-	</footer>
-</body>
+		</footer>
+	</body>
+
 </html>

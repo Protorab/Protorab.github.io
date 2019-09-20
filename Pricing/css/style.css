@@ -208,7 +208,7 @@ h3 {
 
 .main-text span::after,
 .main-text span::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 1px;
   background-color: #fff;

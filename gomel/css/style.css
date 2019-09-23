@@ -259,10 +259,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  
 
 }
 
@@ -330,9 +327,8 @@ body {
 
 .pbg2-img {
   height: 500px;
-  background: url(../img/pic-2.jpg)center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../img/pic-2.jpg)center no-repeat/cover fixed;
+ 
 }
 
 .white-bg {

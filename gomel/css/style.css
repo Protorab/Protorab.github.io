@@ -34,6 +34,10 @@ h3 {
   font-size: 3rem;
 }
 
+h4 {
+  font-size: 2rem;
+}
+
 a {
   text-decoration: none;
 
@@ -68,7 +72,7 @@ body {
 
 .wrapper {
   margin: 0px auto;
-  min-width: 1920px;
+  /* max-width: 1920px; */
   background-color: #282E34;
   color: #fafafa;
   display: flex;
@@ -243,26 +247,6 @@ body {
   font-stretch: ultra-condensed;
 }
 
-.header-span:after,
-.header-span:before {
-  content: "";
-  width: 20px;
-  height: 1px;
-  background-color: #fafafa;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.parallax {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  
-
-}
-
 .arrow {
   text-transform: uppercase;
   font-weight: 700;
@@ -311,6 +295,7 @@ body {
   background: url(../img/pic-1.jpg)center no-repeat /cover;
   background-attachment: fixed;
   height: 100vh;
+  width: 100%;
 }
 
 .content {
@@ -318,17 +303,44 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 500px;
+  width: 80%;
+  height: 800px;
+}
+.content-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  color: #ECE3DB;
+  height: 600px;
+  width: 100%;
 }
 
+.tab {
+  min-width: 35%;
+}
 
+.tablinks {
+  color: #ECE3DB;
+  display: block;
+  background-color: inherit;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
 
 .pbg2-img {
   height: 500px;
   background: url(../img/pic-2.jpg)center no-repeat/cover fixed;
- 
+  width: 100%;
 }
 
 .white-bg {
@@ -338,13 +350,13 @@ body {
   align-items: center;
   color: #1D242C;
   background-color: #fafafa;
+  width: 100%
 }
 
 .pbg3-img {
   min-height: 500px;
-  background: url(../img/pic-3.jpg)center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../img/pic-3.jpg)center no-repeat/cover fixed;
+  width: 100%;
 }
 
 .pbg3-img+.white-bg {
@@ -352,8 +364,7 @@ body {
 }
 
 .footer-pbg-img {
-  background: url(../img/pic-4.jpg)center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(../img/pic-4.jpg)center no-repeat/cover fixed;
+  width: 100%;
   height: 100vh;
 }

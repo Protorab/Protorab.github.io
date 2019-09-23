@@ -47,35 +47,44 @@
 
       </div>
       <div class="content">
-        <h2>Город Гомель разделен на 4 административных района</h2>
-        <div class="tab">
-          <tablinks>
-            <img src="" alt="">
-            <h3></h3>
-          </tablinks>
-          <tablinks>
-            <img src="" alt="">
-            <h3></h3>
-          </tablinks>
-          <tablinks>
-            <img src="" alt="">
-            <h3></h3>
-          </tablinks>
-          <tablinks>
-            <img src="" alt="">
-            <h3></h3>
-          </tablinks>
+        <h3>Город Гомель разделен на 4 административных района</h3>
+        <div class="content-tabs">
+          <div class="tab">
+            <button class="tablinks" onclick="openCityArea(event, 'Centaral')" id="defaultOpen">
+              <h4>Центральный район</h4>
+            </button>
+            <button class="tablinks" onclick="openCityArea(event, 'Soviet')">
+              <h4>Советский район</h4>
+            </button>
+            <button class="tablinks" onclick="openCityArea(event, 'Railway')">
+              <h4>Железнодорожный район</h4>
+            </button>
+            <button class="tablinks" onclick="openCityArea(event, 'Novobel')">
+              <h4>Новобелицкий район</h4>
+            </button>
+          </div>
+          <div id="Centaral" class="tabcontent">
+            <p>расположен в центральной, восточной и северо-восточной частях Гомеля. Главными улицами
+              являются улица Советская (центральная городская улица), проспект Ленина, улицы Мазурова,
+              Интернациональная.
+            </p>
+          </div>
+          <div id="Soviet" class="tabcontent">
+            <p>- расположен в юго-западной части Гомеля. Основные улицы района —Речицкое шоссе, улица
+              Барыкина и проспект Октября, улица Богдана Хмельницкого. (замените Речицкое шоссе на проспект Речицкий).
+            </p>
+          </div>
+          <div id="Railway" class="tabcontent">
+            <p>- расположен в северо-западной части Гомеля. Основные улицы — проспект Космонавтов,
+              улицы Советская, Крупской, Победы.</p>
+          </div>
+          <div id="Novobel" class="tabcontent">
+            <p>- расположен, в отличие от остальной территории города, на левом берегу реки Сож, в
+              юго-восточной части города. Главная улица района — улица Ильича. В XVIII — середине XIX века представлял
+              собой
+              город Новая Белица, уездный центр Белицкого уезда.</p>
+          </div>
         </div>
-        <p>Центральный район расположен в центральной, восточной и северо-восточной частях Гомеля. Главными улицами
-          являются улица Советская (центральная городская улица), проспект Ленина, улицы Мазурова, Интернациональная.
-          - Советский район расположен в юго-западной части Гомеля. Основные улицы района —Речицкое шоссе, улица
-          Барыкина и проспект Октября, улица Богдана Хмельницкого. (замените Речицкое шоссе на проспект Речицкий).
-          - Железнодорожный район расположен в северо-западной части Гомеля. Основные улицы — проспект Космонавтов,
-          улицы Советская, Крупской, Победы.
-          - Новобелицкий район расположен, в отличие от остальной территории города, на левом берегу реки Сож, в
-          юго-восточной части города. Главная улица района — улица Ильича. В XVIII — середине XIX века представлял собой
-          город Новая Белица, уездный центр Белицкого уезда.
-        </p>
 
       </div>
       <div class="parallax pbg2-img">
@@ -117,9 +126,24 @@
     </div>
 
   </body>
-  <script>
+ <script>
+   function openCityArea(evt, cityName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+       tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(cityName).style.display = "block";
+     evt.currentTarget.className += " active";
+   }
 
-  </script>
+   // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();
+ </script>
 
 
 </html>

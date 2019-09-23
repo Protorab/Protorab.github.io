@@ -12,5 +12,4 @@ $(function () {
     menu.toggleClass('_show');
     logo.toggleClass('color_change ');
   });
-
 });

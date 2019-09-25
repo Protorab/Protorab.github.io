@@ -84,19 +84,27 @@ html {
 	color: #606061;
 }
 
-.about h3:nth-child(1) {
+.about h3:nth-child(1),
+.skills h3:nth-child(1) {
 	color: #3FD6D1;
 	margin-top: 40px;
 }
 
+/* ============================================================================================================= */
 .skills {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.tablincs {
+.tabcontent>div,
+.tabs>input {
+	display: none;
+}
+
+.tabs label {
 	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
@@ -111,15 +119,19 @@ html {
 	background: #3FD6D1;
 }
 
-.tabs>input {
-	display: none;
+.tabs input[type="radio"]:checked+label,
+.tabs label:hover {
+	border: 2px solid #606061;
+	transition: .1s linear;
 }
-.tabcontent>div {
-	display: none;
+
+.tabcontent {
+	height: 200px;
+	;
 }
-#tab_1:checked > #txt_1,
-#tab_2:checked > #txt_2,
-#tab_3:checked > #txt_3 {
+
+.tabs>input:nth-of-type(1):checked~.tabcontent div:nth-of-type(1),
+.tabs>input:nth-of-type(2):checked~.tabcontent div:nth-of-type(2),
+.tabs>input:nth-of-type(3):checked~.tabcontent div:nth-of-type(3) {
 	display: block;
-	border: 1px solid #C0C0C0;
 }

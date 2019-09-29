@@ -306,6 +306,7 @@ body {
   width: 80%;
   height: 800px;
 }
+
 .content-tabs {
   display: flex;
   align-items: center;
@@ -330,11 +331,15 @@ body {
   outline: none;
   text-align: left;
   cursor: pointer;
-  transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -ms-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.tablinks:hover {
+  background-color: rgb(18, 20, 24);
 }
 
 .pbg2-img {

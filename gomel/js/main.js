@@ -2,6 +2,7 @@ function ShowClose(x) {
 
   x.classList.toggle("change");
 }
+// ===================
 $(function () {
   var link = $('.menu-bar');
   var menu = $('.menu');
@@ -13,3 +14,6 @@ $(function () {
     logo.toggleClass('color_change ');
   });
 });
+
+
+// =========================

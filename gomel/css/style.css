@@ -352,19 +352,14 @@ body {
   width: 60%;
 }
 
-.mySlides {
+.slides {
   display: none;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.mySlides img {
+.slides img {
   width: 100%;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -411,10 +406,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .column {
-  width: 180px;
+  width: 170px;
 }
 
 .column img {
@@ -430,11 +426,19 @@ body {
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.discription p {
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: justify;
+
 }
 
 /* ====================================================================== */

@@ -47,7 +47,7 @@
 
       </div>
       <div class="content">
-        <h3>Город Гомель разделен на 4 административных района</h3>
+        <h3>Гомель разделен на 4 административных района</h3>
         <div class="content-tabs">
           <div class="tab">
             <button class="tablinks" onclick="openCityArea(event, 'Centaral')" id="defaultOpen">
@@ -64,23 +64,23 @@
             </button>
           </div>
           <div id="Centaral" class="tabcontent">
-            <div class="mySlides">
+            <div class="slides centaral-slides">
               <div class="numb">1/5</div>
               <img src="img/slideshow/central/img-1.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides centaral-slides">
               <div class="numb">2/5</div>
               <img src="img/slideshow/central/img-2.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides centaral-slides">
               <div class="numb">3/5</div>
               <img src="img/slideshow/central/img-3.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides centaral-slides">
               <div class="numb">4/5</div>
               <img src="img/slideshow/central/img-4.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides centaral-slides">
               <div class="numb">5/5</div>
               <img src="img/slideshow/central/img-5.png" alt="">
             </div>
@@ -90,21 +90,20 @@
 
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="img/slideshow/central/img-1.png" onclick="currentSlide(1)">
+                <img class="demo centaral-demo" src="img/slideshow/central/img-1.png" onclick="currentSlide(1)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img/slideshow/central/img-2.png" onclick="currentSlide(2)">
+                <img class="demo centaral-demo" src="img/slideshow/central/img-2.png" onclick="currentSlide(2)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img/slideshow/central/img-3.png" onclick="currentSlide(3)">
+                <img class="demo centaral-demo" src="img/slideshow/central/img-3.png" onclick="currentSlide(3)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img/slideshow/central/img-4.png" onclick="currentSlide(4)">
+                <img class="demo centaral-demo" src="img/slideshow/central/img-4.png" onclick="currentSlide(4)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img/slideshow/central/img-5.png" onclick="currentSlide(5)">
+                <img class="demo centaral-demo" src="img/slideshow/central/img-5.png" onclick="currentSlide(5)">
               </div>
-
             </div>
             <div class="discription">
               <p>Центральный район - расположен в центральной, восточной и северо-восточной частях Гомеля. Главными
@@ -114,139 +113,145 @@
             </div>
           </div>
           <div id="Soviet" class="tabcontent">
-            <div class="mySlides">
+            <div class="slides soviet-slides">
               <div class="numb">1/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/soviet/img-1.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides soviet-slides">
               <div class="numb">2/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/soviet/img-2.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides soviet-slides">
               <div class="numb">3/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/soviet/img-3.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides soviet-slides">
               <div class="numb">4/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/soviet/img-4.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides soviet-slides">
               <div class="numb">5/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/soviet/img-5.png" alt="">
             </div>
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-            <p>Советский район - расположен в юго-западной части Гомеля. Основные улицы района - Речицкое шоссе, улица
-              Барыкина и проспект Октября, улица Богдана Хмельницкого.(замените Речицкое шоссе на проспект Речицкий).
-            </p>
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="" onclick="currentSlide(1)">
+                <img class="demo soviet-demo " src="img/slideshow/soviet/img-1.png" onclick="currentSlide(1)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_5terre.jpg" onclick="currentSlide(2)">
+                <img class="demo soviet-demo " src="img/slideshow/soviet/img-2.png" onclick="currentSlide(2)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_mountains.jpg" onclick="currentSlide(3)">
+                <img class="demo soviet-demo " src="img/slideshow/soviet/img-3.png" onclick="currentSlide(3)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_lights.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                <img class="demo soviet-demo " src="img/slideshow/soviet/img-4.png" onclick="currentSlide(4)" alt="">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_nature.jpg" onclick="currentSlide(5)">
+                <img class="demo soviet-demo " src="img/slideshow/soviet/img-5.png" onclick="currentSlide(5)">
               </div>
-
+            </div>
+            <div class="discription">
+              <p>Советский район - расположен в юго-западной части Гомеля. Основные улицы района - Речицкое шоссе,
+                улица
+                Барыкина и проспект Октября, улица Богдана Хмельницкого.(замените Речицкое шоссе на проспект
+                Речицкий).
+              </p>
             </div>
           </div>
           <div id="Railway" class="tabcontent">
-            <div class="mySlides">
+            <div class="slides railway-slides">
               <div class="numb">1/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/railway/img-1.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides railway-slides">
               <div class="numb">2/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/railway/img-2.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides railway-slides">
               <div class="numb">3/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/railway/img-3.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides railway-slides">
               <div class="numb">4/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/railway/img-4.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides railway-slides">
               <div class="numb">5/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/railway/img-5.png" alt="">
             </div>
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-            <p>Железнодорожный район - расположен в северо-западной части Гомеля. Основные улицы - проспект Космонавтов,
-              улицы Советская, Крупской, Победы.
-            </p>
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="img_woods.jpg" onclick="currentSlide(1)">
+                <img class="demo railway-demo " src="img/slideshow/railway/img-1.png" onclick="currentSlide(1)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_5terre.jpg" onclick="currentSlide(2)">
+                <img class="demo railway-demo" src="img/slideshow/railway/img-2.png" onclick="currentSlide(2)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_mountains.jpg" onclick="currentSlide(3)">
+                <img class="demo railway-demo " src="img/slideshow/railway/img-3.png" onclick="currentSlide(3)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_lights.jpg" onclick="currentSlide(4)">
+                <img class="demo railway-demo " src="img/slideshow/railway/img-4.png" onclick="currentSlide(4)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_nature.jpg" onclick="currentSlide(5)">
+                <img class="demo railway-demo " src="img/slideshow/railway/img-5.png" onclick="currentSlide(5)">
               </div>
-
+            </div>
+            <div class="discription">
+              <p>Железнодорожный район - расположен в северо-западной части Гомеля. Основные улицы - проспект
+                Космонавтов,
+                улицы Советская, Крупской, Победы.
+              </p>
             </div>
           </div>
           <div id="Novobel" class="tabcontent">
-            <div class="mySlides">
+            <div class="slides novobel-slides">
               <div class="numb">1/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/novobel/img-1.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides novobel-slides">
               <div class="numb">2/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/novobel/img-2.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides novobel-slides">
               <div class="numb">3/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/novobel/img-3.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides novobel-slides">
               <div class="numb">4/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/novobel/img-4.png" alt="">
             </div>
-            <div class="mySlides">
+            <div class="slides novobel-slides">
               <div class="numb">5/5</div>
-              <img src="" alt="">
+              <img src="img/slideshow/novobel/img-5.png" alt="">
             </div>
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-            <p>Новобелицкий район - расположен, в отличие от остальной территории города, на левом берегу реки Сож, в
-              юго-восточной части города. Главная улица района - улица Ильича. В XVIII - середине XIX века представлял
-              собой город Новая Белица, уездный центр Белицкого уезда.
-            </p>
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="img_woods.jpg" onclick="currentSlide(1)">
+                <img class="demo novobel-demo " src="img/slideshow/novobel/img-1.png" onclick="currentSlide(1)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_5terre.jpg" onclick="currentSlide(2)">
+                <img class="demo novobel-demo " src="img/slideshow/novobel/img-2.png" onclick="currentSlide(2)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_mountains.jpg" onclick="currentSlide(3)">
+                <img class="demo novobel-demo " src="img/slideshow/novobel/img-3.png" onclick="currentSlide(3)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_lights.jpg" onclick="currentSlide(4)">
+                <img class="demo novobel-demo " src="img/slideshow/novobel/img-4.png" onclick="currentSlide(4)">
               </div>
               <div class="column">
-                <img class="demo cursor" src="img_nature.jpg" onclick="currentSlide(5)">
+                <img class="demo novobel-demo " src="img/slideshow/novobel/img-5.png" onclick="currentSlide(5)">
               </div>
-
+            </div>
+            <div class="discription">
+              <p>Новобелицкий район - расположен, в отличие от остальной территории города, на левом берегу реки Сож, в
+                юго-восточной части города. Главная улица района - улица Ильича. В XVIII - середине XIX века представлял
+                собой город Новая Белица, уездный центр Белицкого уезда.
+              </p>
             </div>
           </div>
         </div>
@@ -309,7 +314,7 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-    // 
+    // ==========================================================
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -323,22 +328,41 @@
 
     function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
+      var slides = document.getElementsByClassName("slide");
+      var central_slides = document.getElementsByClassName("centaral-slides");
+      var soviet_slides = document.getElementsByClassName("soviet-slides");
+      var railway_slides = document.getElementsByClassName("railway-slides");
+      var novobel_slides = document.getElementsByClassName("novobel-slides");
       var dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {
+      var centarl_dots = document.getElementsByClassName("centaral-demo");
+      var soviet_dots = document.getElementsByClassName("soviet-demo");
+      var railway_dots = document.getElementsByClassName("railway-demo");
+      var novobel_dots = document.getElementsByClassName("novobel-demo");
+
+      if ((n > central_slides.length) || (n > soviet_slides.length) || (n > railway_slides.length) || (n >
+          novobel_slides.length)) {
         slideIndex = 1
       }
       if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = central_slides.length
       }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+      for (i = 0; i < central_slides.length; i++) {
+        central_slides[i].style.display = "none";
+        soviet_slides[i].style.display = "none";
+        railway_slides[i].style.display = "none";
+        novobel_slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      central_slides[slideIndex - 1].style.display = "block";
+      soviet_slides[slideIndex - 1].style.display = "block";
+      railway_slides[slideIndex - 1].style.display = "block";
+      novobel_slides[slideIndex - 1].style.display = "block";
+      centarl_dots[slideIndex - 1].className += " active";
+      soviet_dots[slideIndex - 1].className += " active";
+      railway_dots[slideIndex - 1].className += " active";
+      novobel_dots[slideIndex - 1].className += " active";
     }
   </script>
 

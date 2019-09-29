@@ -62,6 +62,7 @@ html {
 
 .avatar {
 	border-radius: 150px;
+	margin-bottom: 40px;
 }
 
 .about {
@@ -87,7 +88,7 @@ html {
 .about h3:nth-child(1),
 .skills h3:nth-child(1) {
 	color: #3FD6D1;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 /* ============================================================================================================= */

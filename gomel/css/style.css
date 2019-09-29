@@ -11,16 +11,6 @@
   padding: 0;
 }
 
-@media only screen and (max-device-width: 1366px) {
-
-  .parallax,
-  .first-pbg-img,
-  .second-pbg-img,
-  .third-pbg-img {
-    background-attachment: scroll;
-  }
-}
-
 h1 {
   font-size: 5rem;
 
@@ -446,6 +436,10 @@ body {
   height: 500px;
   background: url(../img/pic-2.jpg)center no-repeat/cover fixed;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .white-bg {

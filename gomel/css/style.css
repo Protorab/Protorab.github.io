@@ -452,15 +452,18 @@ body {
   width: 100%
 }
 
-.map-objects path:hover {
-  cursor: pointer;
-  fill: #1D242C;
+.map-objects path {
+  opacity: .5;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
-.map-objects {
-  stroke: #1D242C;
-  fill: #ECE3DB;
-  stroke-width: 15;
+.map-objects path:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* =========================================================================== */

@@ -449,7 +449,26 @@ body {
   align-items: center;
   color: #1D242C;
   background-color: #fafafa;
-  width: 100%
+  width: 100%;
+  height: 100%;
+}
+
+.content-map {
+  flex-direction: row;
+
+
+
+}
+
+.content-map-discription,
+.map {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: #1D242C 1px solid;
+  height: 80%;
 }
 
 .map-objects path {
@@ -462,9 +481,17 @@ body {
   -o-transition: .3s linear;
 }
 
+.map-objects_stroke {
+  stroke: #1D242C;
+  stroke-width: 2px;
+
+  /* stroke="#1D242C";
+  stroke-width="2px"; */
+}
+
 .map-objects path:hover {
   opacity: 1;
-  
+
 }
 
 /* =========================================================================== */

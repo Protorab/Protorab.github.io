@@ -453,6 +453,7 @@ body {
 }
 
 .map-objects path {
+  cursor: pointer;
   opacity: .5;
   transition: .3s linear;
   -webkit-transition: .3s linear;
@@ -463,7 +464,7 @@ body {
 
 .map-objects path:hover {
   opacity: 1;
-  cursor: pointer;
+  
 }
 
 /* =========================================================================== */

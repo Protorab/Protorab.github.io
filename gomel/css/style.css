@@ -78,7 +78,6 @@ body {
   align-items: center;
   width: 80%;
   font-family: 'Lato', sans-serif;
-
 }
 
 .logo {
@@ -100,7 +99,6 @@ body {
 }
 
 .color_change {
-
   color: #fafafa;
   transition: .3s linear;
   -webkit-transition: .3s linear;
@@ -206,7 +204,8 @@ body {
 }
 
 
-.header {
+.header,
+.pbg2-img {
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
@@ -223,18 +222,13 @@ body {
   width: 50%;
   color: #fafaff;
   text-transform: uppercase;
-
-}
-
-.header-content p {
-  font-size: 20px;
 }
 
 .header-content h1 {
-
   font-size: 180px;
   letter-spacing: 50px;
   font-stretch: ultra-condensed;
+  transform: scale(1, 1.35);
 }
 
 .arrow {
@@ -442,6 +436,12 @@ body {
   justify-content: space-around;
 }
 
+.content-title {
+  text-transform: uppercase;
+  font-size: 8rem;
+  text-shadow: #1D242C 5px 5px 10px;
+}
+
 .white-bg {
   display: flex;
   flex-direction: column;
@@ -455,9 +455,6 @@ body {
 
 .content-map {
   flex-direction: row;
-
-
-
 }
 
 .content-map-discription,
@@ -481,12 +478,9 @@ body {
   -o-transition: .3s linear;
 }
 
-.map-objects_stroke {
+path {
   stroke: #1D242C;
   stroke-width: 2px;
-
-  /* stroke="#1D242C";
-  stroke-width="2px"; */
 }
 
 .map-objects path:hover {

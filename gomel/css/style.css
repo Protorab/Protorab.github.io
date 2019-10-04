@@ -472,7 +472,7 @@ body {
   height: 80%;
 }
 
-.content-map-discription>div {
+.map-objects-discription {
   opacity: 0;
 }
 
@@ -510,14 +510,23 @@ body {
 
 .fade_in {
   display: block;
-  animation: fade-in 1s ease-in-out forwards;
-  -webkit-animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in .5s ease-in forwards;
+  -webkit-animation: fade-in .5s ease-in forwards;
 }
 
 .fade_out {
+  animation: fade-out .5s ease-in forwards;
+  -webkit-animation: fade-out .5s ease-in forwards;
+}
 
-  animation: fade-out 1s ease-in-out forwards;
-  -webkit-animation: fade-out 1s ease-in-out forwards;
+.content-map-discription {
+  position: relative;
+}
+
+.map-objects-discription {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 path {
@@ -526,6 +535,11 @@ path {
 }
 
 .map-objects path:hover {
+  opacity: 1;
+}
+
+path.__opacity,
+.content-map>div .__opacity {
   opacity: 1;
 }
 

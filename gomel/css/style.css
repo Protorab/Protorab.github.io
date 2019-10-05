@@ -251,31 +251,6 @@ body {
   -webkit-animation: up-down 1.2s infinite;
 }
 
-@-webkit-keyframes up-down {
-  0% {
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-  }
-
-  50% {
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
-  }
-
-  100% {
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-  }
-}
 
 .pbg1-img {
   position: relative;
@@ -474,28 +449,21 @@ body {
 
 .map-objects-discription {
   opacity: 0;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  transition: .5s ease-in;
+  -webkit-transition: .5s ease-in;
+  -moz-transition: .5s ease-in;
+  -ms-transition: .5s ease-in;
+  -o-transition: .5s ease-in;
 }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
 
 
 .map-objects path {
@@ -509,7 +477,6 @@ body {
 }
 
 .fade_in {
-  display: block;
   animation: fade-in .5s ease-in forwards;
   -webkit-animation: fade-in .5s ease-in forwards;
 }
@@ -523,11 +490,7 @@ body {
   position: relative;
 }
 
-.map-objects-discription {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+.map-objects-discription {}
 
 path {
   stroke: #1D242C;
@@ -539,9 +502,10 @@ path {
 }
 
 path.__opacity,
-.content-map>div .__opacity {
-  opacity: 1;
+.__opacity {
+  opacity: 1 !important;
 }
+
 
 /* =========================================================================== */
 .pbg3-img {

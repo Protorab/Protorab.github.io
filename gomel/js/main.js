@@ -17,103 +17,105 @@ $(function () {
 
 
 // =========================
+
+
+
+
+// =========================
 $(function () {
   $('#path0').hover(function () {
-    $('#map-od0').toggleClass('fade_out');
+    $('#map-od0').removeClass('default-opacity');
     $('#map-od0').toggleClass('fade_in');
     $('#path0').click(function () {
-      $("map-od0").toggleClass('__opacity')
+      $('#map-od0').toggleClass('__opacity ');
     })
-  }, function () {
-    $('#map-od0').removeClass('fade_in');
-    $('#map-od0').addClass('fade_out')
   })
-
   $('#path1').hover(function () {
-    $('#map-od1').removeClass('fade_out');
-    $('#map-od1').addClass('fade_in');
-  }, function () {
-    $('#map-od1').removeClass('fade_in');
-    $('#map-od1').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od1').toggleClass('fade_in');
+    $('#path1').click(function () {
+      $('#map-od1').toggleClass('__opacity ');
+    })
   })
   $('#path2').hover(function () {
-    $('#map-od2').removeClass('fade_out');
-    $('#map-od2').addClass('fade_in');
-  }, function () {
-    $('#map-od2').removeClass('fade_in');
-    $('#map-od2').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od2').toggleClass('fade_in');
+    $('#path2').click(function () {
+      $('#map-od2').toggleClass('__opacity ');
+    })
   })
   $('#path3').hover(function () {
-    $('#map-od3').removeClass('fade_out');
-    $('#map-od3').addClass('fade_in');
-  }, function () {
-    $('#map-od3').removeClass('fade_in');
-    $('#map-od3').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od3').toggleClass('fade_in');
+    $('#path3').click(function () {
+      $('#map-od3').toggleClass('__opacity ');
+    })
   })
   $('#path4').hover(function () {
-    $('#map-od4').removeClass('fade_out');
-    $('#map-od4').addClass('fade_in');
-  }, function () {
-    $('#map-od4').removeClass('fade_in');
-    $('#map-od4').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od4').toggleClass('fade_in');
+    $('#path4').click(function () {
+      $('#map-od4').toggleClass('__opacity ');
+    })
   })
   $('#path5').hover(function () {
-    $('#map-od5').removeClass('fade_out');
-    $('#map-od5').addClass('fade_in');
-  }, function () {
-    $('#map-od5').removeClass('fade_in');
-    $('#map-od5').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od5').toggleClass('fade_in');
+    $('#path5').click(function () {
+      $('#map-od5').toggleClass('__opacity ');
+    })
   })
   $('#path6').hover(function () {
-    $('#map-od6').removeClass('fade_out');
-    $('#map-od6').addClass('fade_in');
-  }, function () {
-    $('#map-od6').removeClass('fade_in');
-    $('#map-od6').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od6').toggleClass('fade_in');
+    $('#path6').click(function () {
+      $('#map-od6').toggleClass('__opacity ');
+    })
   })
   $('#path7').hover(function () {
-    $('#map-od7').removeClass('fade_out');
-    $('#map-od7').addClass('fade_in');
-  }, function () {
-    $('#map-od7').removeClass('fade_in');
-    $('#map-od7').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od7').toggleClass('fade_in');
+    $('#path7').click(function () {
+      $('#map-od7').toggleClass('__opacity ');
+    })
   })
   $('#path8').hover(function () {
-    $('#map-od8').removeClass('fade_out');
-    $('#map-od8').addClass('fade_in');
-  }, function () {
-    $('#map-od8').removeClass('fade_in');
-    $('#map-od8').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od8').toggleClass('fade_in');
+    $('#path8').click(function () {
+      $('#map-od8').toggleClass('__opacity ');
+    })
   })
   $('#path9').hover(function () {
-    $('#map-od9').removeClass('fade_out');
-    $('#map-od9').addClass('fade_in');
-  }, function () {
-    $('#map-od9').removeClass('fade_in');
-    $('#map-od9').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od9').toggleClass('fade_in');
+    $('#path9').click(function () {
+      $('#map-od9').toggleClass('__opacity ');
+    })
   })
   $('#path10').hover(function () {
-    $('#map-od10').removeClass('fade_out');
-    $('#map-od10').addClass('fade_in');
-  }, function () {
-    $('#map-od10').removeClass('fade_in');
-    $('#map-od10').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od10').toggleClass('fade_in');
+    $('#path10').click(function () {
+      $('#map-od10').toggleClass('__opacity ');
+    })
   })
   $('#path11').hover(function () {
-    $('#map-od11').removeClass('fade_out');
-    $('#map-od11').addClass('fade_in');
-  }, function () {
-    $('#map-od11').removeClass('fade_in');
-    $('#map-od11').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od11').toggleClass('fade_in');
+    $('#path11').click(function () {
+      $('#map-od11').toggleClass('__opacity ');
+    })
   })
   $('#path12').hover(function () {
-    $('#map-od12').removeClass('fade_out');
-    $('#map-od12').addClass('fade_in');
-  }, function () {
-    $('#map-od12').removeClass('fade_in');
-    $('#map-od12').addClass('fade_out')
+    // $('#map-od0').removeClass('__opacity');
+    $('#map-od12').toggleClass('fade_in');
+    $('#path12').click(function () {
+      $('#map-od12').toggleClass('__opacity ');
+    })
   })
 });
+// ===================
 $(function () {
   $('path').click(function () {
     $(this).toggleClass('__opacity ');

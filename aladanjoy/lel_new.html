@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оптовые товары</title>
+    <style type="text/css">
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      #container> .table{
+        display: none;
+      }
+      body{
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#spisok > li').click(function () {
+        $('#container > div').hide();
+        var i = $(this).data('id');
+        $('#d' + i).fadeIn();
+      });
+    });
+  </script>
+
+</html>`

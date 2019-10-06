@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <title>Оптовые товары</title>
+        <style type="text/css">
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            #container>div {
+                display: none;
+            }
+
+
+
+            #container {
+
+                margin-left: 60px;
+            }
+
+            #skidki {
+                font-family: Calibri, sans-serif;
+                text-align: center;
+                color: #D1383A;
+                margin-bottom: 0;
+            }
+
+            .glav_table {
+                display: inline-block;
+                margin-left: 60px;
+                margin-bottom: -10px;
+                width: 100%;
+            }
+
+            .spisok-item {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .zaglav_table {
+                display: table-row;
+                width: 100%;
+                background: #b7dee8;
+                color: #403151;
+            }
+
+            .zaglav_table p {
+                display: table-cell;
+                border: 1px solid #3f3151;
+                border-left: 0px solid #3f3151;
+                vertical-align: middle;
+                text-align: center;
+                font-family: Calibri, sans-serif;
+                font-size: 12pt;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .zaglav_table p:nth-child(1) {
+                min-width: 668px;
+                border-left: 1px solid #3f3151;
+            }
+
+            .zaglav_table p:nth-child(2) {
+                min-width: 130px;
+
+            }
+
+            .zaglav_table p:nth-child(3) {
+                min-width: 115px;
+            }
+
+            .zaglav_table p:nth-child(4),
+            .zaglav_table p:nth-child(5),
+            .zaglav_table p:nth-child(6) {
+                min-width: 90px;
+            }
+
+
+
+            /* .zaglav_table p:nth-child(5) {
+                width: 99px;
+            }
+
+            .zaglav_table p:nth-child(6) {
+                width: 100px;
+            } */
+
+            .zaglav_table p:nth-child(7) {
+                min-width: 150px;
+            }
+
+            .zaglav_table p:nth-child(8) {
+                min-width: 60px;
+            }
+
+            .zaglav_table p:nth-child(9) {
+                min-width: 120px;
+            }
+
+            .glav_menu {
+                width: 100vw;
+                background: #9acfe7;
+                color: #2D1933;
+                font-family: Lato, sans-serif;
+                font-size: 10pt;
+                margin-top: -8px;
+                margin-left: -8px;
+            }
+
+            .glav_menu a {
+                display: inline-block;
+                width: 15%;
+                padding: 5px 0px;
+                text-align: center;
+                font-weight: bold;
+                transition: 0.1s ease-in-out;
+                text-decoration: none;
+            }
+
+            .glav_menu a:hover {
+                color: #d22844;
+            }
+
+            #spisok {
+                color: #2D1933;
+                width: 98%;
+                margin-left: -25px;
+                font-family: Lato, sans-serif;
+                font-size: 11pt;
+                text-align: center;
+                margin-top: 2px;
+                padding-top: 10px;
+            }
+
+            #spisok li {
+                display: inline-block;
+                width: 8%;
+                margin: 0px;
+                text-align: center;
+                vertical-align: middle;
+                height: 50px;
+                padding: 3px 0px;
+            }
+
+            #spisok li:nth-child(13) {
+                width: 15%;
+                margin-top: 3px;
+                height: 25px;
+                padding-top: 7px;
+                padding-bottom: 0px;
+            }
+
+            #spisok li:nth-child(14) {
+                width: 15%;
+                height: 25px;
+                margin-top: 3px;
+                padding-top: 7px;
+                padding-bottom: 0px;
+            }
+
+            #spisok li:nth-child(15) {
+                width: 15%;
+                height: 25px;
+                margin-top: 3px;
+                padding-top: 7px;
+                padding-bottom: 0px;
+            }
+
+            #spisok li:hover {
+                color: #d22844;
+                background: #dfeaee;
+            }
+
+            .download a {
+                background: #e04e66;
+                color: white;
+                display: inline-block;
+                padding: 5px 5px;
+                margin-bottom: 3px;
+                margin-top: -15px;
+                text-decoration: none;
+                font-family: Lato, sans-serif;
+                font-size: 10pt;
+                margin-left: 60px;
+            }
+
+            .download a:hover {
+                background: #d22844;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#spisok > li').click(function () {
+                    $('#container > div').hide();
+                    var i = $(this).data('id');
+                    $('#d' + i).fadeIn();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="glav_menu">
+            <a href="https://алданджой.бел/ostatki/uslovija-raboty.html">Условия работы</a>
+            <a href="https://алданджой.бел/ostatki/cam.html">Остатки Cam</a>
+            <!--  <a href="https://алданджой.бел/ostatki/comfortbaby.html">Остатки ComfortBaby</a>
+        <a href="https://алданджой.бел/ostatki/bytwinz.html">Остатки ByTwinz</a>
+        -->
+            <a href="https://алданджой.бел/ostatki/Papaloni.html">Остатки Papaloni</a>
+            <a href="https://алданджой.бел/ostatki/lel.html">Остатки Лель</a>
+
+            <a href="https://алданджой.бел/ostatki/zd-m.html">Остатки Manuni</a>
+            <a href="https://алданджой.бел/ostatki/handyPotty.html">Остатки handy Potty</a>
+        </div>
+
+
+        <div class="download">
+            <a
+                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pub?output=xlsx">Скачать
+                прайс</a>
+        </div>
+        <ul id='spisok'>
+            <li data-id='1'>
+                <div id='title_komplekt_1' class='spisok-item'>все товары</div>
+            </li>
+            <li data-id='2'>
+                <div id='title_komplekt_2' class='spisok-item'>кроватки</div>
+            </li>
+            <li data-id='3'>
+                <div id='title_komplekt_3' class='spisok-item'>комоды</div>
+            </li>
+            <li data-id='4'>
+                <div id='title_komplekt_4' class='spisok-item'>ящики для игрушек</div>
+            </li>
+            <li data-id='5'>
+                <div id='title_komplekt_5' class='spisok-item'>тумбы для игрушек</div>
+            </li>
+            <li data-id='6'>
+                <div id='title_komplekt_6' class='spisok-item'>шкафы</div>
+            </li>
+        </ul>
+        <div class="glav_table">
+            <div class="zaglav_table">
+                <p>Название</p>
+                <p>Ссылка на сайт</p>
+                <p>Цена ОПТ<br>бел.руб</p>
+                <p>Цена <br>ОПТ акция</p>
+                <p>Цена МРЦ<br>бел.руб</p>
+                <p>Цена <br>МРЦ акция</p>
+                <p>Склад 1 (Минск)<br></p>
+                <p>Вес</p>
+                <p>Объем</p>
+            </div>
+        </div>
+        </div>
+        <div id='container'>
+            <div id='d1' class="gal1" style="display:block; height: 100vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=A2:I179"></iframe>
+            </div>
+            <div id='d2' class="gal1" style="  height: 80vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=A2:I149">
+                </iframe>
+            </div>
+            <div id='d3' class="gal1" style="  height: 80vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A150:I165">
+                </iframe>
+            </div>
+            <div id='d4' class="gal1" style="  height: 80vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A166:I170">
+                </iframe>
+            </div>
+            <div id='d5' class="gal1" style="  height: 80vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A171:I175">
+                </iframe>
+            </div>
+            <div id='d6' class="gal1" style="  height: 80vh;">
+                <iframe style="width: 100%; height: 100%;"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pubhtml?gid=1218102352&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A176:I179">
+                </iframe>
+            </div>
+        </div>
+    </body>
+
+</html>

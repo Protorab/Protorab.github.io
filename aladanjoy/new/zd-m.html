@@ -1,256 +1,103 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-        <meta charset="UTF-8">
-        <title>Оптовые товары</title>
-        <style type="text/css">
-            #container>div {
-                display: none;
-            }
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Оптовые товары</title>
+	</head>
 
-            #spisok>li {
-                cursor: pointer;
-            }
+	<body>
+		<div class="main-menu ">
+			<div class="main-menu-container">
+				<a href="https://алданджой.бел/ostatki/uslovija-raboty.html">
+					Условия работы
+				</a>
+				<a href="https://алданджой.бел/ostatki/cam.html">
+					Остатки Cam
+				</a>
+				<a href="https://алданджой.бел/ostatki/Papaloni.html">
+					Остатки Papaloni
+				</a>
+				<a href="https://алданджой.бел/ostatki/lel.html">
+					Остатки Лель
+				</a>
 
-            #container {
-                margin-left: 60px;
-            }
+				<a href="https://алданджой.бел/ostatki/zd-m.html">
+					Остатки Manuni
+				</a>
+				<a href="https://алданджой.бел/ostatki/handyPotty.html">
+					Остатки handy Potty
+				</a>
+			</div>
+		</div>
+		<div class="wrapper">
 
-            #skidki {
-                font-family: Calibri, sans-serif;
-                text-align: center;
-                color: #D1383A;
-                margin-bottom: 0;
-            }
-
-            .glav_table {
-                display: inline-block;
-                margin-left: 60px;
-                margin-bottom: -3px;
-            }
-
-            .zaglav_table {
-                display: table-row;
-                width: 100%;
-                background: #b7dee8;
-                color: #403151;
-            }
-
-            .zaglav_table p {
-                display: table-cell;
-                border: 1px solid black;
-                border-left: 0px solid #3f3151;
-                vertical-align: middle;
-                text-align: center;
-                font-family: Calibri, sans-serif;
-                font-size: 12pt;
-                font-weight: bold;
-                padding-top: 5px;
-                padding-bottom: 5px;
-            }
-
-            .zaglav_table p:nth-child(2) {
-                width: 595px;
-                border-left: 1px solid #3f3151;
-            }
-
-            .zaglav_table p:nth-child(1) {
-                width: 145px;
-
-            }
-
-            .zaglav_table p:nth-child(3) {
-                width: 155px;
-            }
-
-            .zaglav_table p:nth-child(4) {
-                width: 99px;
-            }
-
-            .zaglav_table p:nth-child(5) {
-                width: 99px;
-            }
-
-            .zaglav_table p:nth-child(6) {
-                width: 100px;
-            }
-
-            .zaglav_table p:nth-child(7) {
-                width: 100px;
-            }
-
-            .glav_menu {
-                width: 100vw;
-                background: #9acfe7;
-                color: #2D1933;
-                font-family: Lato, sans-serif;
-                font-size: 10pt;
-                margin-top: -8px;
-                margin-left: -8px;
-            }
-
-            .glav_menu a {
-                display: inline-block;
-                width: 15%;
-                padding: 5px 0px;
-                text-align: center;
-                font-weight: bold;
-                transition: 0.1s ease-in-out;
-                text-decoration: none;
-            }
-
-            .glav_menu a:hover {
-                color: #d22844;
-            }
-
-            #spisok {
-                color: #2D1933;
-                width: 98%;
-                margin-left: -25px;
-                font-family: Lato, sans-serif;
-                font-size: 11pt;
-                text-align: center;
-                margin-top: 2px;
-                padding-top: 10px;
-            }
-
-            #spisok li {
-                display: inline-block;
-                width: 8%;
-                margin: 0px;
-                text-align: center;
-                vertical-align: middle;
-                height: 50px;
-                padding: 3px 20px;
-            }
-
-            #spisok li:nth-child(13) {
-                width: 15%;
-                margin-top: 3px;
-                height: 25px;
-                padding-top: 7px;
-                padding-bottom: 0px;
-            }
-
-            #spisok li:nth-child(14) {
-                width: 15%;
-                height: 25px;
-                margin-top: 3px;
-                padding-top: 7px;
-                padding-bottom: 0px;
-            }
-
-            #spisok li:nth-child(15) {
-                width: 15%;
-                height: 25px;
-                margin-top: 3px;
-                padding-top: 7px;
-                padding-bottom: 0px;
-            }
-
-            #spisok li:hover {
-                color: #d22844;
-                background: #dfeaee;
-            }
-
-            .download a {
-                background: #e04e66;
-                color: white;
-                display: inline-block;
-                padding: 5px 5px;
-                margin-bottom: 3px;
-                margin-top: -15px;
-                text-decoration: none;
-                font-family: Lato, sans-serif;
-                font-size: 10pt;
-                margin-left: 60px;
-            }
-
-            .download a:hover {
-                background: #d22844;
-            }
-        </style>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#spisok > li').click(function () {
-                    $('#container > div').hide();
-                    var i = $(this).data('id');
-                    $('#d' + i).fadeIn();
-                });
-            });
-        </script>
-    </head>
-
-    <body>
-
-
-
-        <div class="glav_menu">
-            <a href="https://алданджой.бел/ostatki/uslovija-raboty.html">Условия работы</a>
-            <a href="https://алданджой.бел/ostatki/cam.html">Остатки Cam</a>
-            <a href="https://алданджой.бел/ostatki/Papaloni.html">Остатки Papaloni</a>
-            <a href="https://алданджой.бел/ostatki/lel_old_06.10.19.html">Остатки Лель</a>
-
-
-
-            <a href="https://алданджой.бел/ostatki/zd-m.html">Остатки Manuni</a>
-            <a href="https://алданджой.бел/ostatki/handyPotty.html">Остатки handy Potty</a>
-        </div>
-
-
-
-        <ul id='spisok'>
-            <li data-id='1'>
-                <div class='title_komplekt_1'>ЖД манежи от 0+ лет</div>
-            </li>
-            <li data-id='2'>
-                <div class='title_komplekt_2'>ЖД манежи от 3+ лет</div>
-            </li>
-            <li data-id='15'>
-                <div class='title_komplekt_15'>Все товары</div>
-            </li>
-        </ul>
-
-        <div class="download">
-            <a
-                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pub?output=xlsx">Скачать
-                прайс</a>
-        </div>
-
-        <div class="glav_table">
-            <div class="zaglav_table">
-                <p>Артикул</p>
-                <p>Название</p>
-                <p>Ссылка на сайт</p>
-                <p>Цена ОПТ<br>бел.руб</p>
-                <p>Цена МРЦ<br>бел.руб</p>
-                <p>Склад 1<br>(Минск)</p>
-                <!--  <p>Вес</p>
-<p>Объем</p>-->
-
-
-
-            </div>
-        </div>
-        <div id='container'>
-            <div id='d1' class="gal1"><iframe id="myframe" height="405" width="100%" align="middle" allowtransparency
-                    frameborder="0" seamless
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A2:G5&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"></iframe>
-            </div>
-            <div id='d2' class="gal1"><iframe id="myframe" height="405" width="100%" align="middle" allowtransparency
-                    frameborder="0" seamless
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A6:G11&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"></iframe>
-            </div>
-            <div id='d15' class="gal1" style="display:block;"><iframe id="myframe" height="405" width="100%"
-                    align="middle" allowtransparency frameborder="0" seamless
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A2:G11&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"></iframe>
-            </div>
-
-
-        </div>
-    </body>
+			<a class="download"
+				href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pub?output=xlsx">
+				Скачать прайс
+			</a>
+			<ul id='item' class="item-list">
+				<li data-id='1'>Все товары </li>
+				<li data-id='2'>ЖД манежи от 0+ лет</li>
+				<li data-id='3'>ЖД манежи от 3+ лет</li>
+				<!-- <li data-id='4'>Стульчики для кормления </li>
+					<li data-id='5'>Манежи </li>
+					<li data-id='6'>Электронные качели, шезлонги</li>
+					<li data-id='7'>Игровые коврики, Ходунки</li>
+					<li data-id='8'>Ванночки, Пеленальные столы</li>
+					<li data-id='9'>Горшки </li>
+					<li data-id='13'>Гигиена </li>
+					<li data-id='14'>Аксессуары </li>
+					<li data-id='15'>Все товары </li>
+					<li data-id='10'>Коллекция Orso </li>
+					<li data-id='11'>Коллекция Casetta </li>
+					<li data-id='12'>Коллекция Cullami </li> -->
+			</ul>
+			<div class='table-container '>
+				<div class="title-gtable title-gtable_zhd">
+					<!-- <div class="zatitle-gtable"> -->
+					<p>Артикул</p>
+					<p>Название</p>
+					<p>Ссылка на сайт</p>
+					<p>Цена ОПТ<br>бел.руб</p>
+					<!-- <p>Цена ОПТ<br>с 22.03.по 31.07.</p> -->
+					<p>Цена МРЦ<br>бел.руб</p>
+					<!-- <p>Цена МРЦ<br>с 22.03.по 31.07.</p> -->
+					<p>Склад 1<br>(Минск)</p>
+					<!--  <p>Вес</p><p>Объем</p>-->
+					<!-- </div> -->
+				</div>
+				<div id="container">
+					<div id='d2' class="gtable ">
+						<iframe id="myframe" allowtransparency frameborder="0" seamless
+							src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A2:G5&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false">
+						</iframe>
+					</div>
+					<div id='d3' class="gtable ">
+						<iframe id="myframe" allowtransparency frameborder="0" seamless
+							src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A6:G11&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false">
+						</iframe>
+					</div>
+					<div id='d1' class="gtable gtable_blobck">
+						<iframe id="myframe" allowtransparency frameborder="0" seamless
+							src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHqZJX-EiMV3hcYdLHSrA8FfKB5oCdyYOn1EpFw17tJnetMWkDPPwXw_AqcHsa3D1evsCLOO-AWVM0/pubhtml?gid=1218102352&amp;range=A2:G11&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#item > li').click(function () {
+					$('#container > div').hide();
+					var i = $(this).data('id');
+					$('#d' + i).fadeIn();
+				});
+			});
+		</script>
+	</body>
 
 </html>

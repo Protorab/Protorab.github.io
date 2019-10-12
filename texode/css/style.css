@@ -227,9 +227,6 @@ header .wrap {
   position: absolute;
   left: 100px;
   top: 10px;
-}
-
-.journals-img {
   box-shadow: 2px 5px 3px rgba(0, 0, 0, .1);
   cursor: pointer;
   transition: linear .2s;
@@ -322,11 +319,29 @@ header .wrap {
 
 @media(max-width: 500px) {
 
+  .wrap {
+    padding: 0 10px;
+  }
+
+  .content-img {
+    margin-bottom: 50px;
+    ;
+  }
+
   .conteiner-content,
   #c3>.conteiner-content,
   .content-wrap {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  #c3 .content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #c4 {
+    height: 500px;
   }
 }

@@ -344,9 +344,20 @@ header .wrap {
     margin-bottom: 0px;
   }
 
-  #c3 .content {
+  .content,
+  #c3>.conteiner-content,
+  #c4 .content,
+  .journals {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .fake-footer .content {
+    margin-bottom: 0px;
+  }
+
+  #c3 .content {
+    width: 100%;
   }
 
   #c4 {
@@ -354,10 +365,4 @@ header .wrap {
     margin-bottom: 270px;
   }
 
-  #c4 .content,
-  #c2 .content {
-    width: 100%;
-    padding-top: 0;
-    margin-bottom: 50px;
-  }
 }

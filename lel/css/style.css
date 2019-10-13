@@ -199,6 +199,14 @@ header {
   background-color: tomato;
 }
 
+.download {
+  color: #fafafa
+}
+
+.download:hover {
+  color: black;
+}
+
 .table-container {
   /* border: 1px solid red; */
   width: 1066px;

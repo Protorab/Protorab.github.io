@@ -1,0 +1,27 @@
+
+This is the second, improved version of the OCS Fonts.
+In this version the form of the several Cyrillic characters
+is corrected, izhica is added to the Glagolitic font, and 
+finally, the dot and tilde added to the both fonts
+
+The True Type Fonts for Old Church Slavic Cyrillic and
+Glagolitic fonts use exactly the same keyboard mapping
+This means that you can write a text in Old Church Slavic
+Cyrillic script, and simply mark that text and choose
+Glagolitic font to get the transcription. This operation can
+be done in the opposite direction Glagolitic -> Cyrillic.
+
+The fonts use Russian keyboard mapping. The principle is that
+the letters which exist in Russian are at the same places as
+in Russian, and those which are not have been assigned to the
+numbers (1-0).
+
+The fonts are intended primarily for the Windows, and can be
+used in teaching glagolitic scripture. The Croatian version
+of the Glagolitic script will be released soon. 
+
+The fonts are product of Translation Experts Ltd. See
+readme.txt for the information about other products of
+this company, including a free Old Church Slavic
+English dictionary.
+

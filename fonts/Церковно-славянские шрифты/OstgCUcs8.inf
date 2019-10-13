@@ -1,0 +1,23 @@
+FontName (Ostrog-Caps-Ucs)
+FullName (Ostrog Caps Ucs)
+FamilyName (Ostrog Caps Ucs)
+Version (2008.001)
+isFixedPitch false
+CharacterSet (cyrillicreg.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle 0
+CapHeight 975
+UnderlinePosition -45
+UnderlineThickness 7
+StemWidth 76
+Serif false
+AppleName (Ostrog Caps Ucs)
+MSMenuName (Ostrog Caps Ucs)
+VPMenuName (Ostrog Caps Ucs)
+WORDMenuName (Ostrog Caps Ucs)
+AppleFONDID 128
+VPStyle (N)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

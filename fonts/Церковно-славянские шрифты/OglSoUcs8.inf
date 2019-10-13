@@ -1,0 +1,23 @@
+FontName (Oglavie-Ucs-SpacedOut)
+FullName (Oglavie Ucs SpacedOut)
+FamilyName (Oglavie Ucs)
+Version (2008.001)
+isFixedPitch false
+CharacterSet (cyrillicit.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle -12
+CapHeight 800
+UnderlinePosition -60
+UnderlineThickness 10
+StemWidth 76
+Serif false
+AppleName (Oglavie-Ucs-SpacedOut)
+MSMenuName (Oglavie Ucs)
+VPMenuName (Oglavie Ucs)
+WORDMenuName (Oglavie Ucs)
+AppleFONDID 128
+VPStyle (I)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

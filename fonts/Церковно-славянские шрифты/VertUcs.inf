@@ -1,0 +1,22 @@
+FontName (VertogradUcs)
+FullName (Vertograd Ucs)
+AppleName (VertogradUcs)
+FamilyName (Vertograd Ucs)
+Version (001.001)
+isFixedPitch false
+CharacterSet (cyrillicreg.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle 0
+CapHeight 987
+UnderlinePosition -70
+UnderlineThickness 16
+StemWidth 35
+Serif false
+MSMenuName (Vertograd Ucs)
+VPMenuName (Vertograd Ucs)
+WORDMenuName (Vertograd Ucs)
+VPStyle (N)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

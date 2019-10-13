@@ -1,0 +1,22 @@
+FontName (StaroUspenskaya-Ucs)
+FullName (StaroUspenskaya Ucs)
+AppleName (StaroUspenskaya-Ucs)
+FamilyName (StaroUspenskaya Ucs)
+Version (2003.001)
+isFixedPitch false
+CharacterSet (cyrillicreg.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle 0
+CapHeight 780
+UnderlinePosition -45
+UnderlineThickness 7
+StemWidth 76
+Serif false
+MSMenuName (StaroUspenskaya Ucs)
+VPMenuName (StaroUspenskaya Ucs)
+WORDMenuName (StaroUspenskaya Ucs)
+VPStyle (N)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

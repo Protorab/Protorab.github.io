@@ -1,0 +1,23 @@
+FontName (Akathistos-Ucs-Regular)
+FullName (Akathistos Ucs Regular)
+FamilyName (Akathistos Ucs)
+Version (2008.001)
+isFixedPitch false
+CharacterSet (cyrillicreg.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle 0
+CapHeight 663
+UnderlinePosition -45
+UnderlineThickness 7
+StemWidth 76
+Serif false
+AppleName (Akathistos Ucs Regular)
+MSMenuName (Akathistos Ucs)
+VPMenuName (Akathistos Ucs)
+WORDMenuName (Akathistos Ucs)
+AppleFONDID 128
+VPStyle (N)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

@@ -1,0 +1,23 @@
+FontName (Ostrog-Ucs-SpacedOut)
+FullName (Ostrog Ucs SpacedOut)
+FamilyName (Ostrog Ucs)
+Version (2008.001)
+isFixedPitch false
+CharacterSet (cyrillicit.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle -12
+CapHeight 975
+UnderlinePosition -45
+UnderlineThickness 7
+StemWidth 76
+Serif false
+AppleName (Ostrog Ucs SpacedOut)
+MSMenuName (Ostrog Ucs)
+VPMenuName (Ostrog Ucs)
+WORDMenuName (Ostrog Ucs)
+AppleFONDID 128
+VPStyle (I)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255

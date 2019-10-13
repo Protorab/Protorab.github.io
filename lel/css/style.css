@@ -35,7 +35,6 @@ header {
   max-width: 1066px;
   position: relative;
   min-height: 100%;
-  margin-bottom: 50px;
 }
 
 
@@ -278,7 +277,8 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: rgba(93, 93, 212, 0.63);
+  background: #9898E4;
+  color: #f0f0f0;
 }
 
 footer .wrapper {

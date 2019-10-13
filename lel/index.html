@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
-		<title>Оптовые товары</title>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Оптовые товары Лель</title>
 	</head>
-	<body>
-		<div class="main-menu ">
-			<div class="main-menu-container">
-				<a href="https://алданджой.бел/ostatki/uslovija-raboty.html">
-					Условия работы
-				</a>
-				<a href="https://алданджой.бел/ostatki/cam.html">
-					Остатки Cam
-				</a>
-				<a href="https://алданджой.бел/ostatki/Papaloni.html">
-					Остатки Papaloni
-				</a>
-				<a href="https://алданджой.бел/ostatki/lel.html">
-					Остатки Лель
-				</a>
 
-				<a href="https://алданджой.бел/ostatki/zd-m.html">
-					Остатки Manuni
-				</a>
-				<a href="https://алданджой.бел/ostatki/handyPotty.html">
-					Остатки handy Potty
-				</a>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul>
+					<li><a class="menu-link" href="#">инфо1</a></li>
+					<li><a class="menu-link" href="#">инфо2</a></li>
+					<li><a class="menu-link" href="#">инфо3</a></li>
+					<li><a class="menu-link" href="#">инфо3</a></li>
+				</ul>
+			</nav>
+			<div class="wrapper">
+				<div class="header-wrap">
+					<a href="#"><img src="img/logo2.png" alt="logo" class="logo"></a>
+					<div class="menu-bar" onclick="ShowClose(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
+
 			</div>
-		</div>
-		<div class="wrapper">
-			<a class="download"
-				href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pub?output=xlsx">
-				Скачать прайс
-			</a>
+
+		</header>
+		<div class="wrapper wrapper-list">
 			<ul id='item' class="item-list">
 				<li data-id='1'>все товары </li>
 				<li data-id='2'>кроватки</li>
 				<li data-id='3'>комоды </li>
-				<li data-id='4'>ящики для игрушек</li>
-				<li data-id='5'>тумбы для игрушек </li>
+				<li data-id='4'>ящики <br>для игрушек</li>
+				<li data-id='5'>тумбы<br> для игрушек </li>
 				<li data-id='6'>шкафы</li>
+				<li>
+					<a class="download"
+						href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnihLE6DI2Pv8BPgP2uDXdVrMr5KSvpxj4APf3ZEPS5HeZEcOdMutg2mQ9a3BfAuTpaS7-57enXRzF/pub?output=xlsx">
+						Скачать прайс
+					</a>
+				</li>
 				<!-- <li data-id='7'>Игровые коврики, Ходунки</li>
 				<li data-id='8'>Ванночки, Пеленальные столы</li>
 				<li data-id='9'>Горшки </li>
@@ -53,6 +57,11 @@
 				<li data-id='11'>Коллекция Casetta </li>
 				<li data-id='12'>Коллекция Cullami </li> -->
 			</ul>
+		</div>
+
+		<div class="wrapper">
+
+
 
 			<div class='table-container table-container_lel'>
 				<div class="title-gtable title-gtable_lel">
@@ -100,13 +109,53 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
+		<footer>
+			<div class="wrapper">
+				<div class="footer-wrap">
+					<a href="#"><img src="img/logo2.png" alt="logo" class="logo"></a>
+					<div class="content">
+						<p>Владелец интернет-магазина: Общество с ограниченной ответственностью «АлДанДжой»</p>
+						<p>Свидетельство о регистрации: № 192003555, выдано 17 апреля 2013г. Минским горисполкомом</p>
+						<p>
+							Юридический адрес:
+						</p>
+						<p>220140, г. Минск, ул. Лещинского 14а, пав. 346, ком. 1.</p>
+						<p>
+							Почтовый адрес:
+						</p>
+						<p> 220141, г. Минск, ул. Руссиянова 9, а/я 6.</p>
+						<p>Адрес выставочного помещения (шоу-рум):</p>
+						<p>г. Минск (Копище), Лопатина,15 (Уручье). Перед поездкой, пожалуйста, свяжитесь по контактным номерам
+							магазина. </p>
+
+					</div>
+				</div>
+
+			</div>
+
+		</footer>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$('#item > li').click(function () {
 					$('#container > div').hide();
 					var i = $(this).data('id');
 					$('#d' + i).fadeIn();
+				});
+			});
+			// =====================
+			function ShowClose(x) {
+
+				x.classList.toggle("change");
+			}
+			$(function () {
+				var link = $('.menu-bar');
+				var menu = $('.menu');
+				link.on('click', function (event) {
+					event.preventDefault();
+					menu.toggleClass('_show');
+					logo.toggleClass('color_change ');
 				});
 			});
 		</script>

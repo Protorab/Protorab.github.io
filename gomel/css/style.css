@@ -11,6 +11,15 @@
   padding: 0;
 }
 
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
 h1 {
   font-size: 5rem;
 
@@ -99,7 +108,7 @@ body {
 }
 
 .color_change {
-  color: #fafafa; 
+  color: #fafafa;
   transition: .3s linear;
   -webkit-transition: .3s linear;
   -moz-transition: .3s linear;

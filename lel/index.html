@@ -5,24 +5,27 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="https://kit.fontawesome.com/e272fd0660.js" crossorigin="anonymous"></script>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animation.css">
 		<title>Лель</title>
 	</head>
 
 	<body>
 		<div class="menu ">
 			<ul>
-				<li><a class="menu-link" href="#">Каталог</a></li>
+				<li><a class="menu-link" href="#main">галвная</a></li>
+				<li><a class="menu-link" href="#katalog">Каталог</a></li>
 				<li><a class="menu-link" href="#">о продукции</a></li>
-				<li><a class="menu-link" href="#">Lorem.</a></li>
+
 				<li><a class="menu-link" href="#">Lorem.</a></li>
 				<li><a class="menu-link" href="#">о нас</a></li>
 			</ul>
 		</div>
-		<div class="header wrap">
-			<div class="top-content">
+		<div id="main" class="header wrap">
+			<div class="top-content wrap">
 				<a href="#" class="logo">
 					<img src="img/logo2.png" alt="Лель">
 				</a>
@@ -32,11 +35,507 @@
 					<div class="bar3"></div>
 				</div>
 			</div>
+			<div class="some"></div>
 			<div class="header-title">
 				<h1>лель</h1>
 			</div>
-			<div class="go-go"></div>
+
+			<a class="go-go" href="#katalog">
+				смотреть
+				<i class="fas fa-arrow-down _move"></i>
+			</a>
 		</div>
+		<div id="katalog" class="content ">
+			<div class="aside ">
+				<div class="tabs">
+					<button type="button" class="tablink" onclick="openType(event, 'bed')" id="defoult">КРОВАТКИ</button>
+					<button type="button" class="tablink" onclick="openType(event, 'kom')">комоды</button>
+					<button type="button" class="tablink" onclick="openType(event, 'tumb')">тумбы</button>
+					<button type="button" class="tablink" onclick="openType(event, 'skaf')">шкафы </button>
+				</div>
+			</div>
+			<div class="main-content ">
+				<h2>Каталог мебели</h2>
+				<div class="tabcontent" id='bed'>
+					<h3>КРОВАТКИ</h3>
+					<span class="span-under"></span>
+					<div class="goods">
+						<div class="product">
+							<h4>Детская кроватка ЛЕЛЬ Маргаритка БИ 08.4 (универсальный маятник)</h4>
+							<div class="product-img">
+								<img src="img/product/1.jpg" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price">32 972.19</h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="img/product/2.jpg" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="img/product/3.jpg" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="img/product/4.jpg" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+					</div>
+				</div>
+				<div class="tabcontent" id='kom'>
+					<h3>комоды</h3>
+					<span class="span-under"></span>
+					<div class="goods">
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+					</div>
+				</div>
+				<div class="tabcontent" id='tumb'>
+					<h3>тумбы</h3>
+					<span class="span-under"></span>
+					<div class="goods">
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+					</div>
+				</div>
+				<div class="tabcontent" id='skaf'>
+					<h3>шкафы</h3>
+					<span class="span-under"></span>
+					<div class="goods">
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+						<div class="product">
+							<h4></h4>
+							<div class="product-img">
+								<img src="" alt="">
+								<span class="product-img-watermark"></span>
+							</div>
+							<h4 class="price"></h4>
+							<a href="" class="buy">купить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="wrapper">
+
+		</div>
+		<script>
+			function openType(event, TypeName) {
+				var i, tabcontent, tablinks, span;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(TypeName).style.display = "flex";
+				evt.currentTarget.className += " active";
+				// span = document.getElementsByName("span");
+				// span.togleClass("")
+			} // Get theelement with id = "defaultOpen"	and click on it 
+			document.getElementById("defoult").click();
+		</script>
 	</body>
 
 </html>

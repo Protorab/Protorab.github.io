@@ -16,10 +16,3 @@ $(function () {
 });
 // ==============
 // open modal
-$(document).ready(function () {
-  $('.subtablink').click(function () {
-    $('#tovari-bed> div').hide();
-    var i = $(this).data('id');
-    $('.b' + i).fadeIn();
-  });
-});

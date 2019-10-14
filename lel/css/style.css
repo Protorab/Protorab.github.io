@@ -278,7 +278,7 @@ h1 {
 .tabs {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   /*width: 80%;
   */
@@ -294,10 +294,11 @@ h1 {
 }
 
 .tablink {
-  padding-left: 50px;
+  padding: 0 50px;
   text-align: left;
   color: #f0f0f0;
   text-transform: uppercase;
+  font-weight: bold;
   border: none;
   background-color: rgb(42, 60, 80);
   width: 100%;
@@ -395,10 +396,15 @@ h1 {
 }
 
 .product-img img {
-  width: 100%;
-  object-fit: cover;
-  object-position: 0 0;
+  min-width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   height: 100%;
+  /* width: auto; */
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border: 2px solid #F8F6E7;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -420,7 +426,8 @@ h1 {
   content: " RUB";
 }
 
-.buy {
+.order {
+  text-transform: uppercase;
   align-self: flex-end;
   border-radius: 5px;
   display: flex;
@@ -436,8 +443,11 @@ h1 {
   -o-border-radius: 5px;
 }
 
+/* ======================== */
+/* ========================== */
+
 /* ===================== */
-.wrapper {
+.info-wrapper {
   background: url("..//img/fon2.jpg")no-repeat center/cover fixed;
   width: 100%;
   height: 50%;

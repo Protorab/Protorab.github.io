@@ -241,8 +241,8 @@ body {
   font-family: "Akath";
   color: #fafafa;
   text-shadow: 2px 2px 10px #90A1B3;
-  animation: size-plus linear 1s forwards;
-  -webkit-animation: size-plus linear 1s forwards;
+  /* animation: size-plus linear 1s forwards;
+  -webkit-animation: size-plus linear 1s forwards; */
 }
 
 .go-go {

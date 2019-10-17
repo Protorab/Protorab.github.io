@@ -1,0 +1,26 @@
+@media (max-width: 1099px) {
+  .menu ul {
+    width: 80%;
+  }
+
+  #main .wrap {
+    width: 90%;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .tabs {
+    flex-direction: row;
+    height: 200px;
+  }
+
+  .aside {
+    flex-basis: 5%;
+  }
+}

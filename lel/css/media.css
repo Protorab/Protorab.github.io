@@ -24,3 +24,33 @@
     flex-basis: 5%;
   }
 }
+
+@media (max-width:799px) {
+  .header-title h1 {
+    font-size: 20rem;
+  }
+
+  .menu {
+    height: 200px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width:699px) {
+  .logo img {
+    width: 100px;
+  }
+
+
+  #map {
+    height: 20vh;
+  }
+
+  .icons {
+    width: 100%;
+  }
+}

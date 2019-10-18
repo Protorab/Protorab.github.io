@@ -23,6 +23,9 @@
   .aside {
     flex-basis: 5%;
   }
+  .goods {
+    grid-template-columns: repeat(3, minmax(min-content, 300px));
+  }
 }
 
 @media (max-width:799px) {
@@ -33,10 +36,22 @@
   .menu {
     height: 200px;
   }
-
+ .tabs {
+   /* flex-direction: column; */
+   height: 200px;
+ }
+ .tablink{
+   height: 50px;
+   min-width:170px;
+   font-size:2rem;
+ }
   .menu ul {
     flex-direction: column;
   }
+.info-content{height: 80%;}
+ .goods {
+   grid-template-columns: repeat(1, minmax(min-content, 300px));
+ }
 
 }
 
@@ -47,7 +62,7 @@
 
 
   #map {
-    height: 20vh;
+    height: 40vh;
   }
 
   .icons {

@@ -301,6 +301,8 @@ body {
 /* ===================================== */
 .tabs {
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -403,7 +405,8 @@ body {
   width: 100%;
   height: 100%;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 300px));
+  /* grid-template-columns: repeat(4, minmax(min-content, 300px)); */
+  grid-template-columns: repeat(4, minmax(min-content, 300px));
   justify-content: center;
   grid-auto-rows: 400px;
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 800px));
@@ -431,7 +434,7 @@ body {
 }
 
 .product h4:nth-child(1) {
-  flex-basis: 30%;
+  flex-basis: 35%;
 }
 
 .product-img {
@@ -448,14 +451,14 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 200px;
-  height: 180px;
+  width: 170px;
+  height: 150px;
   background: url("..//img/product/defoult.png") no-repeat center/cover;
 }
 
 .product-img img {
   flex-basis: 30%;
-  min-width: 200px;
+  min-width: 100px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -481,6 +484,59 @@ body {
   bottom: 10px;
 }
 
+.product-img-watermark-color-conteiner {
+  position: absolute;
+  width: 25px;
+  height: 100px;
+  right: 0;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 50%; */
+  /* border: 1px solid #000; */
+
+}
+
+.product-img-watermark-color {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: .2s linear;
+  opacity: 0.5;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+#c1 {
+  /* right: 0;
+  top: 10px; */
+  background: url("..//img/product/color/Buk-naturalnyj-1.jpg")no-repeat center/cover;
+}
+
+#c2 {
+  /* right: 0;
+  top: 10px; */
+  background: url("..//img/product/color/slonovaya-kost.jpg")no-repeat center/cover;
+}
+
+#c3 {
+  /* right: 0;
+  top: 10px; */
+  background: url("..//img/product/color/svetlii_orech.jpg")no-repeat center/cover;
+}
+
+#c4 {
+  /* right: 0;
+  top: 10px; */
+  background: url("..//img/product/color/temnii_orech.jpg")no-repeat center/cover;
+}
+
+.product-img-watermark-color:hover {
+  opacity: 1;
+}
+
 .price:after {
   /* content: " RUB ; */
   content: " ₽";
@@ -500,8 +556,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 30px;
+  padding: 5px;
+  /* width: 100px;
+  height: 30px; */
   color: #F8F6E7;
   background-color: rgb(42, 60, 80);
   -webkit-border-radius: 5px;

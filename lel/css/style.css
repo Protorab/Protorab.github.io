@@ -309,7 +309,7 @@ body {
   justify-content: space-between;
   /*width: 80%;
   */
-  height: 550px;
+  height: 200px;
   transition: .2s linear;
   -webkit-transition: .2s linear;
   -moz-transition: .2s linear;
@@ -330,11 +330,12 @@ body {
   border: 2px solid rgb(42, 60, 80);
   border-radius: 10px;
   background-color: #E0E0DE;
-  max-width: 320px;
-  min-width: 190px;
-  height: 70px;
+  /* max-width: 320px;*/
+  min-width: 150px;
+  max-height: 50px;
+  padding: 10px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   outline: none;
   -webkit-border-radius: ;
   -moz-border-radius: ;
@@ -366,7 +367,7 @@ body {
 .subtabs .tablink {
   font-size: 1.2rem;
   font-weight: 700;
-  max-width: 120px;
+  max-width: 140px;
   min-width: 120px;
   height: 35px;
 }

@@ -28,3 +28,17 @@ var show = function (state) {
   document.getElementById('modalform').style.display = state;
   document.getElementById('filter').style.display = state;
 }
+// ====================================
+$(document).ready(function () {
+  $('.more-but').click(function () {
+    // $('.info-form').hide();
+    var i = $(this).data('id');
+    $('#p' + i).show();
+    // $('#p' + i).toggleClass('.info-form-grid_add');
+  });
+  $('.info-form .but-cancel').click(function () {
+      $('.info-form').hide();
+    }
+
+  )
+});

@@ -17,6 +17,12 @@
     /* justify-content: center; */
   }
 
+  .to-top i {
+    left: 10px;
+    right: auto;
+    bottom: 50px;
+  }
+
   .tabs {
     flex-direction: row;
     height: 150px;
@@ -34,6 +40,12 @@
 @media (max-width:799px) {
   .header-title h1 {
     font-size: 20rem;
+  }
+
+  .to-top i {
+    left: auto;
+    right: 10px;
+    bottom: 50px;
   }
 
   .menu {
@@ -63,6 +75,14 @@
     grid-template-columns: repeat(1, minmax(min-content, 300px));
   }
 
+  .info-form {
+    max-height: 700px;
+    grid-template-columns: 1fr;
+  }
+
+  .info-form-content {
+    grid-column: 1/2;
+  }
 }
 
 @media (max-width:699px) {

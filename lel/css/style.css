@@ -121,7 +121,7 @@ body {
 
 /* меню ====================== */
 .menu {
-  z-index: 1;
+  z-index: 4;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -186,7 +186,7 @@ body {
   margin: 6px 0;
   cursor: pointer;
   transition: 0.3s linear;
-  z-index: 2;
+  z-index: 6;
   position: relative;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;
@@ -234,19 +234,25 @@ body {
   height: 100vh;
   background: url('../img/main_bg.jpg') no-repeat center/cover fixed;
   justify-content: space-between;
+  z-index: 3;
+  position: relative;
 }
 
 .top-content {
+  z-index: 5;
   position: absolute;
   flex-direction: row;
   justify-content: space-between;
   height: 100px;
+  width: 100%;
+  padding:0 10%;
 }
+
 
 .logo img {
   position: relative;
   width: 200px;
-  z-index: 3;
+  z-index: 6;
 }
 
 .header-title h1 {
@@ -290,6 +296,22 @@ body {
   align-items: center;
   justify-content: flex-start;
   color: rgb(42, 60, 80);
+}
+
+.to-top {
+  z-index: 0;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: rgb(42, 60, 80);
+  background-color: #f0f0f0;
+  border: 1px solid rgb(42, 60, 80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside {

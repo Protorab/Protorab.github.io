@@ -121,7 +121,7 @@ body {
 
 /* меню ====================== */
 .menu {
-  z-index: 4;
+  z-index: 5  ;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -157,7 +157,8 @@ body {
 .menu ul {
   list-style: none;
   display: flex;
-
+  position: relative;
+  z-index: 12;
   justify-content: space-between;
   align-items: center;
   width: 50%;
@@ -167,6 +168,7 @@ body {
 }
 
 .menu a {
+
   font-family: Helvetica;
   color: #fafafa;
   /* text-shadow: 1px 1px 10px rgb(0, 0, 100); */
@@ -175,6 +177,10 @@ body {
 }
 
 /* ============================== */
+.menu-bar {
+  position: relative;
+  z-index: 12;
+}
 
 /* меню бургер */
 .bar1,
@@ -245,14 +251,14 @@ body {
   justify-content: space-between;
   height: 100px;
   width: 100%;
-  padding:0 10%;
+  padding: 0 10%;
 }
 
 
 .logo img {
   position: relative;
   width: 200px;
-  z-index: 6;
+  z-index: 10;
 }
 
 .header-title h1 {
@@ -298,20 +304,26 @@ body {
   color: rgb(42, 60, 80);
 }
 
-.to-top {
+.to-top i {
   z-index: 0;
   position: fixed;
   left: 50px;
   bottom: 50px;
+  font-size: 60px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   color: rgb(42, 60, 80);
-  background-color: #f0f0f0;
-  border: 1px solid rgb(42, 60, 80);
+  /* border: 1px solid rgb(42, 60, 80); */
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .2s linear all;
+}
+
+.to-top :hover {
+  background-color: rgb(42, 60, 80);
+  color: #f0f0f0;
 }
 
 .aside {
@@ -341,8 +353,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /*width: 80%;
-  */
+  background: #f0f0f0;
+  position: relative;
+  z-index: 1;
   height: 200px;
   transition: .2s linear;
   -webkit-transition: .2s linear;
@@ -384,9 +397,14 @@ body {
 
 /* +======================================== */
 #katalog h2 {
+  z-index: 1;
+  position: relative;
+  background: #f0f0f0;
+  text-align: center;
+  width: 100%;
   padding-top: 50px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .subtabs {
@@ -625,6 +643,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .info-content-wrapper {
@@ -642,6 +662,9 @@ body {
 }
 
 #about-us {
+  position: relative;
+  z-index: 1;
+  background-color: #f0f0f0;
   width: 100%;
   padding: 40px 0;
 }
@@ -719,6 +742,8 @@ body {
 
 /* =================== */
 #map {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 50vh;
 }
@@ -730,6 +755,8 @@ body {
 
 /* ==================== */
 #footer {
+  position: relative;
+  z-index: 1;
   min-height: 45vh;
 }
 
@@ -822,6 +849,14 @@ body {
   width: 100%;
 }
 
+.form-but-group {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-but {
+  min-width: 100px;
+}
 
 
 #filter {

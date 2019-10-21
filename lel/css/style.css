@@ -59,9 +59,21 @@ a {
 p,
 a,
 li,
-span {
+span,
+label,
+input {
   font-size: 1.4rem;
   /* letter-spacing: 2px; */
+}
+
+button:active,
+button:hover,
+button:focus,
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 a:focus,
@@ -367,7 +379,7 @@ body {
 .subtabs .tablink {
   font-size: 1.2rem;
   font-weight: 700;
-  max-width: 140px;
+  /* max-width: 140px; */
   min-width: 120px;
   height: 35px;
 }
@@ -549,7 +561,7 @@ body {
 }
 
 .but {
-  font-size: 700;
+  font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
   border: 2px solid rgb(42, 60, 80);
@@ -571,6 +583,7 @@ body {
   -moz-transition: .2s linear;
   -ms-transition: .2s linear;
   -o-transition: .2s linear;
+
 }
 
 .but:hover {
@@ -761,4 +774,103 @@ body {
 .suptitle sup {
   font-size: 1.1rem;
   color: red;
+}
+
+/* ===================== */
+
+.form-conteiner {
+  text-transform: uppercase;
+  color: rgb(42, 60, 80);
+  font-weight: 700;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  height: 100%;
+  /* margin: 40px; */
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+#filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+}
+
+#modalform {
+  flex-direction: column;
+  margin: auto auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  height: 350px;
+  z-index: 101;
+  display: none;
+}
+
+.form-input {
+  transition: .1s linear;
+  /* padding-bottom: 10px; */
+  padding-top: 5px;
+  margin-top: 5px;
+  height: 30px;
+}
+
+.form-input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+
+.form-input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
 }

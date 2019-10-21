@@ -23,3 +23,8 @@ $(document).ready(function () {
     $('.b' + i).fadeIn();
   });
 });
+// ==================
+var show = function (state) {
+  document.getElementById('modalform').style.display = state;
+  document.getElementById('filter').style.display = state;
+}

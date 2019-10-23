@@ -897,10 +897,17 @@ body {
 
 .form-input {
   transition: .1s linear;
-  /* padding-bottom: 10px; */
-  padding-top: 5px;
+  /*padding-bottom: 10px;
+  */
+  padding: 5px;
   margin-top: 5px;
   height: 30px;
+  border: 1px solid rgb(42, 60, 80);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -978,7 +985,7 @@ body {
 
 .info-form h4 {
   grid-column: 1/-1;
-
+  margin-bottom: 10px;
 }
 
 .info-form h5 {

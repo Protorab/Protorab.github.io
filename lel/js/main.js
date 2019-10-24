@@ -37,8 +37,30 @@ $(document).ready(function () {
     // $('#p' + i).toggleClass('.info-form-grid_add');
   });
   $('.info-form .but-cancel').click(function () {
-      $('.info-form').hide();
-    }
-
-  )
+    $('.info-form').hide();
+  })
+});
+// ===================================
+$(document).ready(function () {
+  $('.more-but').click(function () {
+    // $('.info-form').hide();
+    var i = $(this).data('id');
+    $('#p' + i).show();
+    // $('#p' + i).toggleClass('.info-form-grid_add');
+  });
+  $('.info-form .but-cancel').click(function () {
+    $('.info-form').hide();
+  })
+});
+// ================================================
+$(document).ready(function () {
+  $('.small-img').click(function () {
+    $('.product-img-container>.product-img').hide();
+    var i = $(this).data('id');
+    $('#b_img' + i).show();
+    // $('#p' + i).toggleClass('.info-form-grid_add');
+  });
+  // $('.info-form .but-cancel').click(function () {
+  // $('.info-form .product-img').hide();
+  // })
 });

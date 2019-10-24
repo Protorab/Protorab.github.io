@@ -1008,6 +1008,14 @@ sup {
 
 }
 
+.product-img-container>.product-img {
+  display: none;
+}
+
+.product-img-container>.product-img__default {
+  display: flex;
+}
+
 #thanks-form {
   position: fixed;
   right: 0;

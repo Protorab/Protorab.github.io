@@ -573,7 +573,7 @@ body {
 #c2 {
   /* right: 0;
   top: 10px; */
-  background: url("..//img/product/color/slonovaya-kost.jpg")no-repeat center/cover;
+  background: #C8C4BB;
 }
 
 #c3 {
@@ -586,6 +586,10 @@ body {
   /* right: 0;
   top: 10px; */
   background: url("..//img/product/color/temnii_orech.jpg")no-repeat center/cover;
+}
+
+#c5 {
+  background: #fff;
 }
 
 .product-img-watermark-color:hover {
@@ -954,6 +958,8 @@ b {
   display: grid;
   display: none;
   max-width: 650px;
+
+  min-height: 500px;
   max-height: 650px;
   border-radius: 20px;
   padding: 20px;
@@ -966,7 +972,7 @@ b {
   z-index: 99;
   /*grid-template-rows: 30px 100px 40px;
   */
-  grid-template-columns: repeat(2, 1fr);
+
   border: 1px solid rgb(42, 60, 80);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -984,7 +990,7 @@ b {
 }
 
 .info-form h4 {
-  grid-column: 1/-1;
+
   margin-bottom: 10px;
 }
 
@@ -997,16 +1003,36 @@ b {
 .info-form .product-img {
   width: 250px;
   height: 220px;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 
-.info-form-content {
-  grid-column: 2/2;
+.product-img-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+.small-img-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  width: 55%;
+  /* border: red 1px solid; */
+}
+
+.info-form .small-img {
+  width: 90px;
+  height: 80px;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+
+.info-form-content {}
 
 .info-form .form-but-group {
   margin: 30px 0;
-  grid-column: 1/-1;
+
 }
 
 #thanks-form {

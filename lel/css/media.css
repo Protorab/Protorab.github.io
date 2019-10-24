@@ -76,12 +76,26 @@
   }
 
   .info-form {
-    max-height: 700px;
-    grid-template-columns: 1fr;
+    max-height: 800px;
   }
 
-  .info-form-content {
-    grid-column: 1/2;
+  .product-img-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-form .small-img {
+    width: 90px;
+    height: 60px;
+    margin: 5px 10px;
+  }
+
+  .small-img-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    width: 100%;
+    /* border: red 1px solid; */
   }
 }
 

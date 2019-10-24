@@ -6161,57 +6161,30 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- modal_window========================== -->
-		<!-- mail form var 1 -->
-		<!-- <form id="modalform" action="https://formspree.io/mzbpbrgy" method="POST">
-			<div class="form-conteiner wrap">
-				<h4>Форма заказа</h4>
-				<div class="form-group">
-					<label for="ExampleInputOrder">Название товара</label>
-					<input type="text" class="form-input" id="ExampleInputOrder" name="user_order" required
-						placeholder="Название товара">
-				</div>
-				<div class="form-group">
-					<label for="ExampleInputName">Ваше имя</label>
-					<input type="text" class="form-input" id="ExampleInputName" name="user_name" required
-						placeholder="Введите ваше имя">
-				</div>
-				<div class="form-group">
-					<label for="ExampleInputEmail">Ваш Email</label>
-					<input type="text" class="form-input" id="ExampleInputEmail" name="user_email" required
-						placeholder="Введите ваше email">
-				</div>
-				<div class="form-group form-but-group">
-					<button type="submit" class="form-but but">Отправить</button>
-					<button type="reset" class="form-but but but-cancel" onclick="show('none')">Закрыть</button>
-				</div>
-			</div>
-		</form> -->
 		<!-- =========var2========== -->
 		<form id="modalform" action="https://formspree.io/mzbpbrgy" method="POST">
 			<div class="form-conteiner wrap">
 				<h4>Форма заказа</h4>
 				<div class="form-group">
-					<label for="ExampleInputOrder">Название товара</label>
+					<label for="ExampleInputOrder">Название товара <sup>*</sup></label>
 					<input type="text" class="form-input" id="ExampleInputOrder" name="user_order" required
 						placeholder="Название товара">
 					<input type="hidden" name="_subject" value="заказ с сайта">
 				</div>
 				<div class="form-group">
-					<label for="ExampleInputName">Ваше имя</label>
+					<label for="ExampleInputName">Ваше имя<sup>*</sup></label>
 					<input type="text" class="form-input" id="ExampleInputName" name="user_name" required
 						placeholder="Введите ваше имя">
 					<input id="gotcha" type="text" name="_gotcha" style="display:none">
 				</div>
 				<div class="form-group">
-					<label for="ExampleInputPhone">Ваш Телефон</label>
+					<label for="ExampleInputPhone">Ваш Телефон<sup>*</sup></label>
 					<input type="text" class="form-input" id="ExampleInputPhone" name="user_phone" required
 						placeholder="Введите ваш телефон">
 
 				</div>
 				<div class="form-group">
-					<label for="ExampleInputEmail">Ваш Email</label>
+					<label for="ExampleInputEmail">Ваш Email<sup title="обязательное поле">*</sup></label>
 					<input type="text" class="form-input" id="ExampleInputEmail" name="user_email" required
 						placeholder="Введите ваше email">
 					<input type="hidden" name="_next" value="protorab.github.io/lel/thank_you.html">

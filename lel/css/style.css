@@ -856,7 +856,7 @@ sup {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 98;
   display: none;
 }
 
@@ -938,7 +938,7 @@ sup {
   display: none;
   max-width: 650px;
   min-height: 500px;
-  max-height: 650px;
+  max-height: 700px;
   border-radius: 20px;
   padding: 20px;
   position: fixed;

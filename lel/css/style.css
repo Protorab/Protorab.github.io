@@ -237,6 +237,7 @@ body {
 }
 
 .top-content {
+  top: 0;
   position: absolute;
   flex-direction: row;
   justify-content: space-between;
@@ -958,9 +959,9 @@ sup {
 .info-form {
   display: grid;
   display: none;
-  max-width: 650px;
+  max-width: 900px;
   min-height: 500px;
-  max-height: 700px;
+  max-height: 650px;
   border-radius: 20px;
   padding: 20px;
   position: fixed;
@@ -1012,8 +1013,8 @@ sup {
 .small-img-box {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 50%;
-  width: 55%;
+  flex-basis: 65%;
+  width: 65%;
 }
 
 .info-form .small-img {

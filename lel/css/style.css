@@ -499,7 +499,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 170px;
+  width: 150px;
   height: 150px;
   background: url("..//img/product/defoult.png") no-repeat center/cover;
 }
@@ -614,6 +614,11 @@ body {
 #c12 {
   background: url("..//img/product/color/venge.jpg")no-repeat center/cover;
   /* венге */
+}
+
+#c13 {
+  background: url("..//img/product/color/musson.jpg")no-repeat center/cover;
+  /* муссон */
 }
 
 .product-img-watermark-color:hover {

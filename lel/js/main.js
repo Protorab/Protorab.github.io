@@ -68,8 +68,24 @@ $(document).ready(function () {
     var i = $(this).data('id');
     $('#b_img' + i).show();
   });
-
-
-
-
 });
+// ===================================================
+$(document).ready(function () {
+
+  $('.order-but').click(function () {
+    var i = $(this).data('id');
+    console.log($('#p' + i + '>.product-tittle').text());
+    var name = $('#p' + i + '>.product-tittle').text();
+    $('#ExampleInputOrder').val(name);
+  })
+})
+$(document).ready(function () {
+  $('.form-but-group.order-but').click(function () {
+    var i = $(this).data('id');
+    console.log('loh')
+    console.log($('#p' + i + '>.product-tittle').text());
+    var name = $('#p' + i + '>.product-tittle').text();
+    $('#ExampleInputOrder').val(name);
+  })
+
+})

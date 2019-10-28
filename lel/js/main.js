@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#p' + i).show();
     // $('#p' + i).toggleClass('.info-form-grid_add');
   });
-  $('.info-form .but-cancel').click(function () {
+  $('.but-cancel').click(function () {
     $('.product-img-container>.product-img ').hide();
     $('.product-img-container>.product-img__default').show();
     $('#filter').hide();

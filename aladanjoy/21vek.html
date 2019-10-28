@@ -20,10 +20,11 @@
 
         body {
           color: #2D1933;
-          margin: 0px;
+          margin: 0 auto;
           padding: 0px;
           font-family: Lato, sans-serif;
           background: #EDE8FF;
+          max-width: 1200px;
         }
 
         img {
@@ -32,12 +33,17 @@
         }
 
         .all-inOne {
+          /* width: 50%; */
+          margin: 0 auto;
           width: 100%;
           padding: 20px;
           display: grid;
-          /* grid-template-columns: repeat(auto-fill, minmax(200px, 600px)); */
-          grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+          /* grid-template-columns: repeat(auto-fill, minmax(100px, 25%)); */
+          grid-template-columns: repeat(2, 400px);
           grid-gap: 10px;
+          justify-content: center;
+          justify-items: stretch;
+          align-items: stretch;
           /* grid-template-rows: repeat(auto-fill, minmax(50vh, 1fr)) */
         }
 
@@ -113,6 +119,12 @@
           background: #8A71F0;
           color: #fafafa;
         }
+
+        @media (max-width: 599px) {
+          .all-inOne {
+            grid-template-columns: repeat(1, 400px);
+          }
+        }
       </style>
     </head>
 
@@ -156,10 +168,9 @@
         </a>
 
       </div>
-      <div class="block">
+      <!-- <div class="block">
         <p class="block-name">Остатки Comfortbaby</p>
         <p class="logo"><img src="https://xn--80aalbksjsl.xn--90ais/comfortbaby23.png" /></p>
-        <!--<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSGOqJ6WWsuqsEjTA7t9IdaBWli0AYhNxvppz3HpYLp2YNEh4dSqdNpoHv_9IiETw/pub?output=xlsx">Скачать</a>-->
         <a class="but"
           href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSGOqJ6WWsuqsEjTA7t9IdaBWli0AYhNxvppz3HpYLp2YNEh4dSqdNpoHv_9IiETw/pub?output=xlsx">
           Скачать
@@ -173,9 +184,7 @@
           href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSGMDwJzwQGTovIJBvVkknXt6Od9lRWYuFAiCcc9E8bo58jPWmfyc-g3rUOiFxSAA/pub?output=xlsx">
           Скачать
         </a>
-
-
-      </div>
+      </div> -->
 
     </div>
 

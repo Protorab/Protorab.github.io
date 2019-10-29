@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#p' + i).show();
     // $('#p' + i).toggleClass('.info-form-grid_add');
   });
-  $('.info-form .but-cancel').click(function () {
+  $('.but-cancel').click(function () {
     $('.product-img-container>.product-img ').hide();
     $('.product-img-container>.product-img__default').show();
     $('#filter').hide();
@@ -68,8 +68,24 @@ $(document).ready(function () {
     var i = $(this).data('id');
     $('#b_img' + i).show();
   });
-
-
-
-
 });
+// ===================================================
+$(document).ready(function () {
+
+  $('.order-but').click(function () {
+    var i = $(this).data('id');
+    console.log($('#p' + i + '>.product-tittle').text());
+    var name = $('#p' + i + '>.product-tittle').text();
+    $('#ExampleInputOrder').val(name);
+  })
+})
+$(document).ready(function () {
+  $('.form-but-group.order-but').click(function () {
+    var i = $(this).data('id');
+    console.log('loh')
+    console.log($('#p' + i + '>.product-tittle').text());
+    var name = $('#p' + i + '>.product-tittle').text();
+    $('#ExampleInputOrder').val(name);
+  })
+
+})

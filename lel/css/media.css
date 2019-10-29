@@ -1,4 +1,4 @@
-@media (max-width: 1099px) {
+@media (max-width: 1299px) {
   .menu ul {
     width: 80%;
   }
@@ -34,6 +34,12 @@
 
   .goods {
     grid-template-columns: repeat(3, minmax(min-content, 300px));
+  }
+}
+
+@media (max-width:899px) {
+  .goods {
+    grid-template-columns: repeat(2, minmax(min-content, 300px));
   }
 }
 

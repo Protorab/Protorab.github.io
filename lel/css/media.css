@@ -7,10 +7,6 @@
     width: 90%;
   }
 
-  .logo img {
-    width: 150px;
-  }
-
   .content {
     flex-direction: column;
     /* align-items: center; */
@@ -102,10 +98,6 @@
 }
 
 @media (max-width:699px) {
-  .logo img {
-    width: 100px;
-  }
-
   #map {
     height: 40vh;
   }

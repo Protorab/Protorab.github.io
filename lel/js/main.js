@@ -89,3 +89,7 @@ $(document).ready(function () {
   })
 
 })
+// ==========
+$(document).scroll(function (e) {
+  $(window).scrollTop() > 100 ? $('.menu ').addClass('_show') : $('.menu ').removeClass('_show');
+});

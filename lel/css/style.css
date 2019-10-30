@@ -462,9 +462,9 @@ body {
   width: 100%;
   height: 100%;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, minmax(min-content, 300px));
+  grid-template-columns: repeat(3, minmax(min-content, 400px));
   justify-content: center;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 550px;
 }
 
 .product {
@@ -504,13 +504,15 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: url("..//img/product/defoult.png") no-repeat center/cover;
+  flex-basis: auto;
+  margin-bottom: 50px;
 }
 
-.product-img img {
-  flex-basis: 30%;
+.product-img>img {
+
   min-width: 100px;
   position: absolute;
   left: 50%;
@@ -535,28 +537,35 @@ body {
   right: 10px;
   background: url("..//img/logo1.png")no-repeat center/cover;
   bottom: 10px;
+  display: none;
+}
+
+.product-img-watermark__block {
+  display: block;
 }
 
 .product-img-watermark-color-conteiner {
   position: absolute;
-  width: 25px;
-  height: 100px;
+  width: 100%;
+  height: 25px;
   right: 0;
-  top: 5px;
+  left: 0;
+  /* border: 1px solid blue; */
+  bottom: -30px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-.product-img-watermark-color {
-  width: 20px;
-  height: 20px;
+.product-img .product-img-watermark-color {
+  width: auto;
+  height: 50px;
   cursor: pointer;
   transition: .2s linear;
   opacity: 0.5;
-  border-radius: 50%;
+  border-radius: 10px;
   border: 1px solid #000;
   margin: 0 0 5px 0;
 }
@@ -592,7 +601,7 @@ body {
 }
 
 #c7 {
-  background: #CDC7BA;
+  /* background: #CDC7BA; */
   /* ваниль */
 }
 
@@ -1020,6 +1029,7 @@ sup {
   width: 200px;
   height: 200px;
   margin: 0 40px;
+  flex-basis: auto;
 }
 
 .product-img-container {
@@ -1043,7 +1053,7 @@ sup {
   cursor: pointer;
 }
 
-.info-form-content {}
+
 
 .info-form .form-but-group {
   margin: 30px 0;

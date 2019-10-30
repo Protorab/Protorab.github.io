@@ -381,7 +381,7 @@ body {
   font-weight: 700;
   border: 2px solid rgb(70, 55, 60);
   border-radius: 10px;
-  background-color: #ECE6E8;
+  background-color: #fff;
   /* max-width: 320px;*/
   min-width: 150px;
   max-height: 50px;
@@ -397,7 +397,7 @@ body {
 
 .tablink:hover {
   background-color: rgb(70, 55, 60);
-  color: #E0E0DE;
+  color: #fff;
 }
 
 /* +======================================== */
@@ -652,7 +652,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  color: #F8F6E7;
+  color: #FFf;
   background-color: rgb(70, 55, 60);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -668,7 +668,7 @@ body {
 
 .but:hover {
   color: rgb(70, 55, 60);
-  background-color: #E0E0DE;
+  background-color: #fff;
 }
 
 /* ======================== */
@@ -870,7 +870,7 @@ sup {
   overflow-x: hidden;
   overflow-y: scroll;
   overflow: -moz-scrollbars-none;
-  background-color: #f0f0f0;
+  background-color: #fff;
   border-radius: 7px;
   padding: 20px;
 }

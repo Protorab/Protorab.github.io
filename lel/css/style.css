@@ -506,13 +506,12 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background: url("..//img/product/defoult.png") no-repeat center/cover;
+  /* background: url("..//img/product/defoult.png") no-repeat center/cover; */
   flex-basis: auto;
   margin-bottom: 50px;
 }
 
 .product-img>img {
-
   min-width: 100px;
   position: absolute;
   left: 50%;
@@ -528,6 +527,27 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.main-preview-img-wrap>img {
+  animation: fade-out .4s forwards;  
+}
+
+.main-preview-img-wrap>.__block {
+ animation: fade-in .4s forwards;
+}
+.main-preview-img-wrap>.__block__active {
+  animation: fade-in .4s forwards;
+}
+.main-preview-img-wrap>.__block__active_ultra {
+  animation: fade-in .4s forwards;
+}
+.__fade-in {
+  animation: fade-in .4s forwards;
+}
+
+.__fade-out {
+  animation: fade-out .4s forwards;
 }
 
 .product-img-watermark {

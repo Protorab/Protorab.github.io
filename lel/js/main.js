@@ -51,7 +51,7 @@ $(document).ready(function () {
 });
 // ===================================
 $(document).ready(function () {
-  $('.more-but').click(function () {
+  $('.more-but').click(function ShowMore() {
     // $('.info-form').hide();
     var i = $(this).data('id');
     $('#p' + i).show();
@@ -61,6 +61,8 @@ $(document).ready(function () {
     $('.info-form').hide();
   })
 });
+
+
 // ================================================
 $(document).ready(function () {
   $('.small-img').click(function () {

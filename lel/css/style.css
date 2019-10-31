@@ -530,24 +530,37 @@ body {
 }
 
 .main-preview-img-wrap>img {
-  animation: fade-out .4s forwards;  
+  cursor: pointer;
+  animation: fade-out .4s forwards;
+  -webkit-animation: fade-out .4s forwards;
+  /* display: none; */
 }
 
 .main-preview-img-wrap>.__block {
- animation: fade-in .4s forwards;
+  animation: fade-in .4s forwards;
+  -webkit-animation: fade-in .4s forwards;
+  /* display: block; */
 }
+
 .main-preview-img-wrap>.__block__active {
   animation: fade-in .4s forwards;
+  -webkit-animation: fade-in .4s forwards;
+  /* display: block; */
 }
+
 .main-preview-img-wrap>.__block__active_ultra {
   animation: fade-in .4s forwards;
+  -webkit-animation: fade-in .4s forwards;
 }
+
 .__fade-in {
   animation: fade-in .4s forwards;
+  -webkit-animation: fade-in .4s forwards;
 }
 
 .__fade-out {
   animation: fade-out .4s forwards;
+  -webkit-animation: fade-out .4s forwards;
 }
 
 .product-img-watermark {
@@ -599,9 +612,13 @@ body {
   cursor: pointer;
   transition: .2s linear;
   opacity: 0.5;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #000;
   margin: 0 0 5px 0;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 #c1 {

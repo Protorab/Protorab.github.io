@@ -6817,9 +6817,6 @@
 				</div>
 				<div class="wrapper-content-column">
 					<h3>Адреса</h3>
-					<!-- <p><b>Ю</b>ридический адрес:</p>
-					<p>220140, г.Минск, ул.Лещинского 14а, пав.346, ком.1.
-					</p> -->
 					<p><b>П</b>ункт самовывоза </p>
 					<p>г. Москва, ул. Южнопортовая, 38/1 (м. Печатники) <br><sup>*</sup><strong>(ТОЛЬКО ПО ПРЕДВАРИТЕЛЬНОМУ
 							СОГЛАСОВАНИЮ ЗАКАЗА С МЕНЕДЖЕРОМ)</strong></p>
@@ -6829,32 +6826,36 @@
 			</div>
 		</div>
 		<!-- =========var2========== -->
-		<form id="modalform" action="https://formspree.io/mzbpbrgy" method="POST">
+		<!-- <form id="modalform" action="https://formspree.io/mzbpbrgy" method="POST"> -->
+		<form id="modalform">
 			<div class="form-conteiner wrap">
 				<h4>Форма заказа</h4>
 				<div class="form-group">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Закза с сайта">
+					<input type="hidden" name="admin_email" value="zakaz.korzyna@gmail.com">
+					<input type="hidden" name="form_subject" value="Закза с сайта dodo-kids.ru">
+					<!-- <input type="hidden" name="_subject" value="заказ с сайта"> -->
+					<!-- END Hidden Required Fields -->
 					<label for="ExampleInputOrder">Название товара <sup>*</sup></label>
-					<input type="text" class="form-input" id="ExampleInputOrder" name="Наименование заказа" required
+					<input type="text" class="form-input" id="ExampleInputOrder" name="Заказ" required
 						placeholder="Название товара">
-					<input type="hidden" name="_subject" value="заказ с сайта">
 				</div>
 				<div class="form-group">
 					<label for="ExampleInputName">Ваше имя<sup>*</sup></label>
-					<input type="text" class="form-input" id="ExampleInputName" name="Имя заказчика" required
+					<input type="text" class="form-input" id="ExampleInputName" name="Имя" required
 						placeholder="Введите ваше имя">
 					<input id="gotcha" type="text" name="_gotcha" style="display:none">
 				</div>
 				<div class="form-group">
 					<label for="ExampleInputPhone">Ваш Телефон<sup>*</sup></label>
-					<input type="text" class="form-input" id="ExampleInputPhone" name="Телефон заказчика" required
+					<input type="text" class="form-input" id="ExampleInputPhone" name="Телефон" required
 						placeholder="Введите ваш телефон">
-
 				</div>
 				<div class="form-group">
 					<label for="ExampleInputEmail">Ваш Email<sup title="обязательное поле">*</sup></label>
-					<input type="text" class="form-input" id="ExampleInputEmail" name="email заказчика" required
-						placeholder="Введите ваше email">
-					<input type="hidden" name="_next" value="protorab.github.io/lel/thank_you.html">
+					<input type="text" class="form-input" id="ExampleInputEmail" name="e-mail заказчика" required
+						placeholder="Введите ваше e-mail">
 				</div>
 				<div class="form-group form-but-group">
 					<button type="submit" class="form-but but">Отправить</button>
@@ -6862,7 +6863,22 @@
 				</div>
 			</div>
 		</form>
-		<!-- ==========formaction="http://stackoverflow.com"=================== -->
+
+		<!-- =========================== thanks form =============== -->
+		<div id=thanks-form onclick="show('none')">
+			<div class="wrap-form">
+				<h2>Спасибо за ваш заказ</h2>
+				<span class="span-under"></span>
+				<p>
+					<b>М</b>ы постараемся как можно быстрее его обработать и связаться с Вами
+				</p>
+				<div class="sign">
+					<h5> С уважением, Ваша команда :)</h5>
+				</div>
+				<button id="back" class="form-but but " onclick="show('none')">назад</button>
+			</div>
+		</div>
+		<!-- =========================== /thanks form =============== -->
 		<script>
 			// ===================
 			// ===================

@@ -109,9 +109,7 @@ html {
   overflow: hidden;
   font-size: 10px;
   -ms-overflow-style: none;
-  /* IE 10+ */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 body {
@@ -153,10 +151,10 @@ body {
 ._show {
   transition: .3s linear;
   transform: translateY(0%);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
   -webkit-transition: .3s linear;
   -moz-transition: .3s linear;
   -ms-transition: .3s linear;
@@ -367,8 +365,6 @@ body {
   -moz-transition: .2s linear;
   -ms-transition: .2s linear;
   -o-transition: .2s linear;
-  /*padding-left: 50px;
-  */
 }
 
 .tablink {
@@ -382,7 +378,6 @@ body {
   border: 2px solid rgb(70, 55, 60);
   border-radius: 10px;
   background-color: #fff;
-  /* max-width: 320px;*/
   min-width: 150px;
   max-height: 50px;
   padding: 10px;
@@ -492,7 +487,6 @@ body {
 }
 
 .product-img {
-  /* border: 1px solid rgb(135, 100, 105); */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -506,7 +500,6 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  /* background: url("..//img/product/defoult.png") no-repeat center/cover; */
   flex-basis: auto;
   margin-bottom: 50px;
 }
@@ -533,34 +526,16 @@ body {
   cursor: pointer;
   animation: fade-out .4s forwards;
   -webkit-animation: fade-out .4s forwards;
-  /* display: none; */
 }
 
 .main-preview-img-wrap>.__block {
   animation: fade-in .4s forwards;
   -webkit-animation: fade-in .4s forwards;
-  /* display: block; */
 }
 
 .main-preview-img-wrap>.__block__active {
   animation: fade-in .4s forwards;
   -webkit-animation: fade-in .4s forwards;
-  /* display: block; */
-}
-
-.main-preview-img-wrap>.__block__active_ultra {
-  animation: fade-in .4s forwards;
-  -webkit-animation: fade-in .4s forwards;
-}
-
-.__fade-in {
-  animation: fade-in .4s forwards;
-  -webkit-animation: fade-in .4s forwards;
-}
-
-.__fade-out {
-  animation: fade-out .4s forwards;
-  -webkit-animation: fade-out .4s forwards;
 }
 
 .product-img-watermark {
@@ -572,8 +547,6 @@ body {
   bottom: 10px;
   display: none;
 }
-
-
 
 .product-img-watermark-not-in-stock {
   position: absolute;
@@ -613,77 +586,12 @@ body {
   transition: .2s linear;
   opacity: 0.5;
   border-radius: 5px;
-  border: 1px solid #000;
+  border: 2px solid #C0AFB5;
   margin: 0 0 5px 0;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
-}
-
-#c1 {
-  background: url("..//img/product/color/Buk-naturalnyj-1.jpg")no-repeat center/cover;
-  /* натуральный бук */
-}
-
-#c2 {
-  background: #C8C4BB;
-  /* слоновая кость */
-}
-
-#c3 {
-  background: url("..//img/product/color/svetlii_orech.jpg")no-repeat center/cover;
-  /* светлый орех */
-}
-
-#c4 {
-  background: url("..//img/product/color/temnii_orech.jpg")no-repeat center/cover;
-  /* тёмный орех */
-}
-
-#c5 {
-  background: #fff;
-  /* белый */
-}
-
-#c6 {
-  background: #A1BDD5;
-  /* голубой */
-}
-
-#c7 {
-  /* background: #CDC7BA; */
-  /* ваниль */
-}
-
-#c8 {
-  background: #A3CDDA;
-  /* тиффани */
-}
-
-#c9 {
-  background: url("..//img/product/color/oreh.jpg")no-repeat center/cover;
-  /* орех */
-}
-
-#c10 {
-  background: url("..//img/product/color/machagon.jpg")no-repeat center/cover;
-  /* махагон */
-}
-
-#c11 {
-  background: url("..//img/product/color/otbelennyj.jpg")no-repeat center/cover;
-  /* отбелённый */
-}
-
-#c12 {
-  background: url("..//img/product/color/venge.jpg")no-repeat center/cover;
-  /* венге */
-}
-
-#c13 {
-  background: url("..//img/product/color/musson.jpg")no-repeat center/cover;
-  /* муссон */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .product-img-watermark-color:hover {
@@ -1125,11 +1033,6 @@ sup {
   left: 0;
   top: 0;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
   width: 300px;
   height: 350px;
   padding: 20px;
@@ -1145,6 +1048,16 @@ sup {
   color: rgb(70, 55, 60);
 }
 
+.wrap-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
 #filter.filter_show {
   display: block;
   background-color: rgb(70, 55, 60);
@@ -1154,4 +1067,8 @@ sup {
 #thanks-form h5 {
   font-family: "Akath";
   color: #90A1B3;
+}
+
+#thanks-form {
+  display: none;
 }

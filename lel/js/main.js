@@ -90,8 +90,13 @@ $(document).ready(function () {
 
 })
 // ==========
-$(document).scroll(function (e) {
-  $(window).scrollTop() > 100 ? $('.menu ').addClass('_show') : $('.menu ').removeClass('_show');
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 0) {
+    $('.menu').addClass('_show');
+    console.log('11');
+  } else {
+    $('.menu').removeClass('scroll')
+  }
 });
 // =====================
 $(document).ready(function () {

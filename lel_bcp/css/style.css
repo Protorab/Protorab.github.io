@@ -459,7 +459,7 @@ body {
   grid-gap: 10px;
   grid-template-columns: repeat(3, minmax(min-content, 400px));
   justify-content: center;
-  grid-auto-rows: 550px;
+  /* grid-auto-rows: 600px; */
 }
 
 .product {
@@ -483,7 +483,7 @@ body {
 }
 
 .product h4:nth-child(1) {
-  flex-basis: 35%;
+  margin-bottom: auto;
 }
 
 .product-img {
@@ -498,14 +498,15 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   flex-basis: auto;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .product-img>img {
   min-width: 100px;
+  /* max-width: 260px; */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -606,6 +607,8 @@ body {
 .product a {
   align-self: flex-end;
   min-width: 150px;
+  margin-bottom: 10px;
+
 }
 
 
@@ -698,7 +701,8 @@ body {
 
 .wrapper-content-column p,
 .wrapper-content-column li {
-  color: rgb(70, 55, 60);
+
+  /* color: rgb(70, 55, 60); */
 }
 
 .wrapper-content>.wrapper-content-column {
@@ -713,8 +717,9 @@ body {
 
 .wrapper-content-column h3,
 .wrapper-content-column h4 {
-  color: #A9999C;
-  text-shadow: 2px 2px 2px rgb(207, 207, 207);
+  color: #898989;
+  /* color: #A9999C; */
+  /* text-shadow: 2px 2px 2px rgb(207, 207, 207); */
   font-family: "Akath";
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -727,14 +732,16 @@ body {
 
 .wrapper-content-column p,
 .wrapper-content-column li {
-  color: rgb(135, 100, 105);
+  color: #898989;
+  /* color: rgb(135, 100, 105); */
 }
 
 b {
   font-family: "Akath";
   font-size: 2.4rem;
   font-weight: normal;
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
 }
 
 .sign {
@@ -777,7 +784,8 @@ b {
 
 .wrapper-content-column a,
 .wrapper-content-column i {
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
   font-weight: 700;
 }
 
@@ -803,7 +811,8 @@ b {
 }
 
 .icons i {
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
   font-size: 4rem;
   transition: .2s linear;
   -webkit-transition: .2s linear;
@@ -812,8 +821,10 @@ b {
   -o-transition: .2s linear;
 }
 
-.icons i:hover {
-  color: rgb(135, 100, 105);
+.icons i:hover,
+.wrapper-content-column a:hover {
+  color: #6d6d6d;
+  /* color: rgb(135, 100, 105); */
 }
 
 .suptitle {
@@ -828,7 +839,8 @@ sup {
 /* ===================== */
 .form-conteiner {
   text-transform: uppercase;
-  color: rgb(70, 55, 60);
+  color: #898989;
+  /* color: rgb(70, 55, 60); */
   font-weight: 700;
   margin: 0 auto;
   justify-content: space-between;
@@ -974,7 +986,8 @@ sup {
 }
 
 .info-form h4 {
-
+  /* color: #90A1B3; */
+  color: rgb(70, 55, 60);
   margin-bottom: 10px;
 }
 

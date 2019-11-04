@@ -128,7 +128,6 @@ body {
 
 /* меню ====================== */
 .menu {
-  z-index: 5;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -197,7 +196,7 @@ body {
   margin: 6px 0;
   cursor: pointer;
   transition: 0.3s linear;
-  z-index: 6;
+  
   position: relative;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;
@@ -251,12 +250,13 @@ body {
 
 .top-content {
   top: 0;
-  position: absolute;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   height: 100px;
   width: 100%;
   padding: 0 10%;
+  /* z-index: 5; */
 }
 
 
@@ -701,7 +701,8 @@ body {
 
 .wrapper-content-column p,
 .wrapper-content-column li {
-  color: rgb(70, 55, 60);
+
+  /* color: rgb(70, 55, 60); */
 }
 
 .wrapper-content>.wrapper-content-column {
@@ -716,8 +717,9 @@ body {
 
 .wrapper-content-column h3,
 .wrapper-content-column h4 {
-  color: #A9999C;
-  text-shadow: 2px 2px 2px rgb(207, 207, 207);
+  color: #898989;
+  /* color: #A9999C; */
+  /* text-shadow: 2px 2px 2px rgb(207, 207, 207); */
   font-family: "Akath";
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -730,14 +732,16 @@ body {
 
 .wrapper-content-column p,
 .wrapper-content-column li {
-  color: rgb(135, 100, 105);
+  color: #898989;
+  /* color: rgb(135, 100, 105); */
 }
 
 b {
   font-family: "Akath";
   font-size: 2.4rem;
   font-weight: normal;
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
 }
 
 .sign {
@@ -780,7 +784,8 @@ b {
 
 .wrapper-content-column a,
 .wrapper-content-column i {
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
   font-weight: 700;
 }
 
@@ -806,7 +811,8 @@ b {
 }
 
 .icons i {
-  color: #A9999C;
+  color: #898989;
+  /* color: #A9999C; */
   font-size: 4rem;
   transition: .2s linear;
   -webkit-transition: .2s linear;
@@ -815,8 +821,10 @@ b {
   -o-transition: .2s linear;
 }
 
-.icons i:hover {
-  color: rgb(135, 100, 105);
+.icons i:hover,
+.wrapper-content-column a:hover {
+  color: #6d6d6d;
+  /* color: rgb(135, 100, 105); */
 }
 
 .suptitle {
@@ -831,7 +839,8 @@ sup {
 /* ===================== */
 .form-conteiner {
   text-transform: uppercase;
-  color: rgb(70, 55, 60);
+  color: #898989;
+  /* color: rgb(70, 55, 60); */
   font-weight: 700;
   margin: 0 auto;
   justify-content: space-between;
@@ -977,7 +986,8 @@ sup {
 }
 
 .info-form h4 {
-
+  /* color: #90A1B3; */
+  color: rgb(70, 55, 60);
   margin-bottom: 10px;
 }
 

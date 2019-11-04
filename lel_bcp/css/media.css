@@ -1,3 +1,19 @@
+@media (max-width: 1500px) {
+  .product-img {
+    width: 250px;
+    height: 230px;
+
+  }
+}
+
+@media (max-width: 1399px) {
+  .product-img {
+    width: 250px;
+    height: 200px;
+
+  }
+}
+
 @media (max-width: 1299px) {
   .menu ul {
     width: 80%;
@@ -33,10 +49,14 @@
   }
 }
 
-@media (max-width:899px) {
+@media (max-width:999px) {
   .goods {
     grid-template-columns: repeat(2, minmax(min-content, 300px));
   }
+
+  /* .product-img {
+    flex-basis: 20%;
+  } */
 }
 
 @media (max-width:799px) {

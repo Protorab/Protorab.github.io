@@ -1,0 +1,4 @@
+User-agent: *
+Allow:
+Disallow:
+host: http://dodo-kids.ru

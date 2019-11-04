@@ -501,12 +501,11 @@ body {
   width: 200px;
   height: 200px;
   flex-basis: auto;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .product-img>img {
   min-width: 100px;
-  /* max-width: 260px; */
   position: absolute;
   left: 50%;
   top: 50%;

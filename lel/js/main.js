@@ -1,5 +1,4 @@
 function ShowClose(x) {
-
   x.classList.toggle("change");
 }
 // ===================
@@ -26,7 +25,7 @@ $(document).ready(function () {
 var show = function (state) {
   document.getElementById('modalform').style.display = state;
   document.getElementById('filter').style.display = state;
-  document.getElementById('thanks-form').style.display = state;
+  // document.getElementById('thanks-form').style.display = state;
 };
 // ====================================
 $(document).ready(function () {
@@ -48,17 +47,6 @@ $(document).ready(function () {
     $('.info-form').hide();
   });
 });
-// =========info form============
-// $(document).ready(function () {
-//   $('.more-but').click(function ShowMore() {
-//     var i = $(this).data('id');
-//     $('#p' + i).show();
-//   });
-//   $('.info-form .but-cancel').click(function () {
-//     $('.info-form').hide();
-//   });
-// });
-
 
 // =============preview_img_in_infoform================
 $(document).ready(function () {

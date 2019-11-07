@@ -54,11 +54,12 @@ body {
     margin: 0 auto;
     width: 100%;
     font-family: 'Maven Pro', sans-serif;
-    color: #fff;
+    color: #182643;
     line-height: 1;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 
 *,
@@ -96,6 +97,31 @@ html {
     overflow: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+p,
+a,
+i,
+li,
+label,
+input,
+button {
+    font-size: 1.4rem;
 }
 
 
@@ -177,11 +203,11 @@ header {
 .contact-form {
     position: relative;
     z-index: 1;
-    width: 25%;
-    height: 50%;
+    width: 450px;
+    height: 350px;
     background: #849bba;
     border: 2px solid #fff;
-    border-radius: 15px;
+    border-radius: 15px 0 15px 0;
     align-self: flex-end;
     justify-self: flex-end;
     display: flex;
@@ -190,22 +216,22 @@ header {
     justify-content: space-between;
     margin-bottom: 50px;
     padding: 10px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -webkit-border-radius: 15px 0 15px 0;
+    -moz-border-radius: 15px 0 15px 0;
+    -ms-border-radius: 15px 0 15px 0;
+    -o-border-radius: 15px 0 15px 0;
     font-size: 14px;
     text-transform: uppercase;
 }
 
 .form-group label {
     padding: 5px;
+    font-weight: 700;
 }
 
 .form-input {
     transition: .1s linear;
     padding: 5px;
-    border: 1px solid rgb(74, 118, 168);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -214,17 +240,32 @@ header {
 }
 
 .but {
-    background: #2C3D73;
-    border: none;
+    cursor: pointer;
+    background: #849bba;
+    border: 2px solid #fff;
+    transition: .2s linear;
     align-self: flex-end;
-    border-radius: 5px;
+    border-radius: 5px 0 5px 0;
     color: #fff;
     width: 90px;
     height: 30px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius: 5px 0 5px 0;
+    -moz-border-radius: 5px 0 5px 0;
+    -ms-border-radius: 5px 0 5px 0;
+    -o-border-radius: 5px 0 5px 0;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+}
+
+.but:hover {
+    border-radius: 0 5px 0 5px;
+    background: #b0c7e4;
+    -webkit-border-radius: 0 5px 0 5px;
+    -moz-border-radius: 0 5px 0 5px;
+    -ms-border-radius: 0 5px 0 5px;
+    -o-border-radius: 0 5px 0 5px;
 }
 
 .contact-form h4 {
@@ -280,7 +321,6 @@ header {
 }
 
 .table-content {
-    background: #f0f0f0;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 350px);
@@ -289,11 +329,42 @@ header {
     grid-template-areas:
         ".. aa .."
         "bb .. cc"
-        "dd .. ee";
+        "dd ii ee";
+    margin-bottom: 20vh;
+}
+
+content .wrapper {
+    padding-top: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .t-cell {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-cell-container {
+    padding: 15px;
+    border: 3px solid #392033;
+    border-radius: 20px;
+    width: 300px;
+    height: 180px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}
+
+.t-cell-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #t-c1-2 {
@@ -312,6 +383,36 @@ header {
     grid-area: dd;
 }
 
+#t-c3-2 {
+    grid-area: ii;
+    border: none;
+}
+
+#t-c3-2 img {
+    position: relative;
+    align-items: center;
+    width: 350px;
+
+}
+
 #t-c3-3 {
     grid-area: ee;
+}
+
+.content-double-column {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-auto-rows: 250px;
+    grid-column-gap: 250px;
+    grid-row-gap: 50px;
+    width: 100%;
+    background: #392033;
+    color: cornsilk;
+}
+
+.content-double-column .subtitle {
+    grid-column: 1/-1;
 }

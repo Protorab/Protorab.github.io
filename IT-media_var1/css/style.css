@@ -420,11 +420,11 @@ content .wrapper {
 
 
 .rotate {
-    transform: rotate(45deh);
-    -webkit-transform: rotate(45deh);
-    -moz-transform: rotate(45deh);
-    -ms-transform: rotate(45deh);
-    -o-transform: rotate(45deh);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 .column-cell {
@@ -503,18 +503,26 @@ content .wrapper {
 
 footer {
     background: url(..//img/fotter-bg.png)no-repeat center/cover fixed;
-    height: 50vh;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 1% 0;
 }
 
 footer .wrapper {
+    min-height: 50vh;
+}
+
+footer .wrap {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 50vh;
+}
+
+footer .contact-form {
+    margin: 0;
 }
 
 .footer-content {

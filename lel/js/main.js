@@ -1,3 +1,10 @@
+$(document).ready(function fade() {
+  $(".product").attr('data-aos', 'fade-left');
+  $(".product").addClass(' aos-init aos-animate ');
+  // aos-init aos-animate
+});
+
+// =======================
 function ShowClose(x) {
   x.classList.toggle("change");
 }

@@ -110,7 +110,7 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  /* overflow: hidden; */
+
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -127,8 +127,6 @@ body {
   font-family: sans-serif;
   line-height: 1;
   height: 100%;
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
 }
 
 
@@ -265,10 +263,13 @@ body {
   padding: 0 10%;
 }
 
-.logo img {
+.logo {
   position: relative;
-  width: 65px;
   z-index: 10;
+}
+
+.logo img {
+  width: 65px;
 }
 
 
@@ -301,6 +302,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 
@@ -312,11 +314,15 @@ body {
   color: #017eba;
 }
 
+
+
 .to-top i {
   z-index: 0;
+  /* position: -webkit-sticky;
+  position: sticky; */
   position: fixed;
-  left: 50px;
-  bottom: 50px;
+  bottom: 150px;
+  left: 150px;
   font-size: 60px;
   border-radius: 50%;
   width: 40px;
@@ -378,28 +384,24 @@ body {
   align-items: center;
   justify-content: center;
   color: #FFf;
-  /* color: rgb(74,118,168); */
   text-transform: uppercase;
   font-weight: 700;
-  /* border: 2px solid rgb(74,118,168); */
   border-radius: 10px;
   background: rgb(74, 118, 168);
-  /* background-color: #fff;  rgb(134, 171, 216)*/
   min-width: 150px;
   max-height: 50px;
   padding: 10px;
   cursor: pointer;
   font-size: 2rem;
   outline: none;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .tablink:hover {
   background-color: rgb(134, 171, 216);
-  /* background-color: rgb(74,118,168); */
   color: #fff;
 
 }
@@ -436,7 +438,7 @@ body {
 .subtablink {
   background-color: #fff;
   color: #898989;
-  border: 2px solid rgb(74, 118, 168);
+  border: 2px solid rgba(74, 118, 168, .2);
 }
 
 .tabcontent {
@@ -480,6 +482,8 @@ body {
 }
 
 .product {
+  position: relative;
+  z-index: 0;
   background: #fff;
   border: 2px solid rgba(74, 118, 168, .2);
   /*border: 2px solid rgb(74,118,168);
@@ -528,7 +532,6 @@ body {
 
 .product-img>img {
   min-width: 100px;
-  /* max-width: 260px; */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -537,8 +540,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /* border: 2px solid #C0AFB5; */
-  /* border-radius: 10px; */
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -609,7 +610,8 @@ body {
   transition: .2s linear;
   opacity: 0.5;
   border-radius: 5px;
-  border: 2px solid rgb(74, 118, 168);
+  /* border: 2px solid rgb(74, 118, 168); */
+  border: 2px solid rgba(74, 118, 168, .2);
   margin: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -843,11 +845,11 @@ sup {
 /* ===================== */
 .form-conteiner {
   animation: fade-in .4s forwards;
-  -webkit-animation: ;
+  -webkit-animation: fade-in .4s forwards;
   text-transform: uppercase;
   color: #898989;
   font-weight: 700;
-  margin:auto auto;
+  margin: auto auto;
   justify-content: space-between;
   align-items: space-between;
   width: 100%;

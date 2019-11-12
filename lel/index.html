@@ -84,9 +84,12 @@
 						<a class="tablink" onclick="openType(event, 'tumb')">тумбы</a>
 						<a class="tablink" onclick="openType(event, 'skaf')">шкафы </a>
 					</div>
+					<a data-aos="fade-down" href="#katalog" class="to-top">
+						<i class="fas fa-arrow-circle-up"></i>
+					</a>
 				</div>
+
 				<div class="main-content ">
-					<a href="#katalog" class="to-top"> <i class="fas fa-arrow-circle-up"></i></a>
 					<div class="tabcontent" id='bed'>
 						<h3>КРОВАТКИ</h3>
 						<span class="span-under"></span>
@@ -100,7 +103,8 @@
 							<a data-id='11' class="subtablink tablink">колесо-качалка</a>
 						</div>
 						<div id="tovari-bed" class="goods">
-							<div data-aos="fade-right" id="" class="product b0   b3 b4 b5 b6 b7   b10 b11  b13">
+							<div  id=""
+								class="product b0 b3 b4 b5 b6 b7 b10 b11 b13" >
 								<h4 class="product-tittle">Детская кроватка ЛЕЛЬ Кубаночка-1 БИ 37</h4>
 								<div class="product-img main-preview-img-wrap">
 									<img class="__block" id="c1"
@@ -226,7 +230,7 @@
 								</div>
 							</div>
 							<!-- =================================================== -->
-							<div id="" data-aos="fade-right" class="product b0   b3 b4 b5 b6 b7  b9 b10 b11  ">
+							<div id=""  class="product b0   b3 b4 b5 b6 b7  b9 b10 b11  ">
 								<h4 class="product-tittle">Детская кроватка ЛЕЛЬ "Кубаночка-2" (маятник продольный) БИ 38.3</h4>
 								<div class="product-img main-preview-img-wrap">
 									<img id="c20" class="__block"
@@ -368,7 +372,7 @@
 								</div>
 							</div>
 							<!-- ======================================================= -->
-							<div id="" data-aos="fade-right" class="product b0   b3 b4 b5 b6 b7 b8  b10 b11  ">
+							<div id=""  class="product b0   b3 b4 b5 b6 b7 b8  b10 b11  ">
 								<h4 class="product-tittle">Детская кроватка ЛЕЛЬ "Кубаночка-5" (маятник поперечный) БИ 41.2</h4>
 								<div class="product-img main-preview-img-wrap">
 									<img class="__block" id="c30"
@@ -6900,7 +6904,11 @@
 		<script src="//yandex.st/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
-			AOS.init();
+			AOS.init({
+				easing: 'ease-in-out-sine',
+				duration: 1000,
+				offset: 50.
+			});
 		</script>
 	</body>
 

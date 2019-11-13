@@ -117,6 +117,11 @@
     height: 40vh;
   }
 
+  .to-top i {
+
+    right: 10px;
+    bottom: 10px;
+  }
 
 
   .info-form {

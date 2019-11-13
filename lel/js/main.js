@@ -10,10 +10,8 @@ $(document).ready(function () {
     $('#map h3').toggleClass('__fade-out');
     $('.overley').click(function () {
       $('.overley').fadeOut();
-
     });
   });
-
 });
 
 // =======================

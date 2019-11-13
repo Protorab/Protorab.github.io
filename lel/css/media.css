@@ -63,7 +63,7 @@
 
 @media (max-width:799px) {
   .header-title h1 {
-    font-size: 20rem;
+    font-size: 15rem;
   }
 
   /* .to-top i {
@@ -116,6 +116,7 @@
   #map {
     height: 40vh;
   }
+
 
 
   .info-form {

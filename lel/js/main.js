@@ -1,7 +1,19 @@
-$(document).ready(function fade() {
-  $(".product").attr('data-aos', 'fade-left');
-  $(".product").addClass(' aos-init aos-animate ');
-  // aos-init aos-animate
+// $(document).ready(function fade() {
+//   $(".product").attr('data-aos', 'fade-left');
+//   $(".product").addClass(' aos-init aos-animate ');
+//   // aos-init aos-animate
+// });
+
+$(document).ready(function () {
+  $('#map').hover(function () {
+    $('#map h3').toggleClass('__fade-in');
+    $('#map h3').toggleClass('__fade-out');
+    $('.overley').click(function () {
+      $('.overley').fadeOut();
+
+    });
+  });
+
 });
 
 // =======================

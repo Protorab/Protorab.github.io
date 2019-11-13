@@ -564,6 +564,16 @@ body {
   -webkit-animation: fade-in .2s forwards;
 }
 
+.__fade-in {
+  animation: fade-in .3s forwards;
+  -webkit-animation: fade-in .3s forwards;
+}
+
+.__fade-out {
+  animation: fade-out .3s forwards;
+  -webkit-animation: ;
+}
+
 .product-img-watermark {
   position: absolute;
   width: 40px;
@@ -767,6 +777,37 @@ b {
   z-index: 1;
   width: 100%;
   height: 50vh;
+}
+
+#map h3 {
+  font-size: 2rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgb(74, 118, 168);
+  opacity: 0;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+.overley {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(74, 118, 168, .4);
+}
+
+.map:hover #map h3 {
+  opacity: 1;
 }
 
 #map iframe {

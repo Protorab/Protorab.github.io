@@ -41,6 +41,8 @@ h6 {
     color: inherit;
 }
 
+* {}
+
 html {
     height: 100%;
     font-size: 10px;
@@ -48,8 +50,9 @@ html {
     scrollbar-width: none;
     scroll-behavior: smooth;
     /* overflow: hidden; */
-    overflow-x: hidden;
-    overflow-y: scroll;
+
+
+
     -ms-overflow-style: none;
     scrollbar-width: none;
     text-rendering: optimizeLegibility
@@ -127,7 +130,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
 }
 
 .wrapper {
@@ -212,19 +215,11 @@ a {
 }
 
 #hand.__nan-hand {
-    transform: translateX(90%);
-    -webkit-transform: translateX(90%);
-    -moz-transform: translateX(90%);
-    -ms-transform: translateX(90%);
-    -o-transform: translateX(90%);
+    width: 5%;
 }
 
 #hand.__nan-hand:hover {
-    transform: translateX(80%);
-    -webkit-transform: translateX(80%);
-    -moz-transform: translateX(80%);
-    -ms-transform: translateX(80%);
-    -o-transform: translateX(80%);
+    width: 10%;
 }
 
 #more-info {

@@ -61,7 +61,7 @@
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
-    display:none;
+
   }
 
   100% {
@@ -76,6 +76,21 @@
 
   100% {
     opacity: 0;
-    display:none;
+
+  }
+}
+
+@-webkit-keyframes shine {
+  0% {
+    text-shadow: 0 0 7px rgb(80, 50, 50);
+  }
+
+  50% {
+    text-shadow: 0 0 50px #fff;
+    color: blanchedalmond; 
+  }
+
+  100% {
+    text-shadow: 0 0 20px #fff;
   }
 }

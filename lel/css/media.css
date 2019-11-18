@@ -110,6 +110,9 @@
     width: 95%;
   }
 
+  .info-form-content {
+    flex-direction: column;
+  }
 }
 
 @media (max-width:699px) {
@@ -127,10 +130,14 @@
   .info-form {
     height: 100%;
   }
+
+
 }
 
 @media(max-width:599px) {
   .icons {
     width: 100%;
   }
+
+
 }

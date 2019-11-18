@@ -3,6 +3,22 @@
 //   $(".product").addClass(' aos-init aos-animate ');
 //   // aos-init aos-animate
 // });
+$(document).ready(function stok() {
+  $(".product-img-not-in-stock").click(function () {
+    $('.small-img-box-discription .in-stock').hide();
+    $('.small-img-box-discription .not-in-stock').show();
+  });
+});
+$(document).ready(function () {
+  $(".product-img-in-stock").click(function () {
+    // console.log(+1);
+    $('.small-img-box-discription .in-stock').show();
+    $('.small-img-box-discription .not-in-stock').hide();
+
+  });
+});
+
+
 
 $(document).ready(function () {
   $('#map').hover(function () {
@@ -56,6 +72,8 @@ $(document).ready(function () {
     $('.product-img-container>.product-img__default').show();
     $('#filter').hide();
     $('.info-form').hide();
+    $('.small-img-box-discription .in-stock').show();
+    $('.small-img-box-discription .not-in-stock').hide();
   });
   $('#filter').click(function () {
     $('.product-img-container>.product-img ').hide();

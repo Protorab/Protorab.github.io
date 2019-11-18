@@ -311,7 +311,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  color: #017eba;
+  color: rgb(74, 118, 168);
 }
 
 
@@ -418,7 +418,7 @@ body {
   padding-top: 50px;
   text-transform: uppercase;
   padding-bottom: 60px;
-  color: #017eba;
+  color: rgb(74, 118, 168);
 }
 
 .subtabs {
@@ -510,7 +510,7 @@ body {
 }
 
 .product h4:nth-child(1) {
-  color: #017eba;
+  color: rgb(74, 118, 168);
   margin-bottom: auto;
 }
 

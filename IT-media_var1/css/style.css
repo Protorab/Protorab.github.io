@@ -130,10 +130,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    position: relative;
 }
 
 .wrapper {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -143,18 +144,22 @@ a {
 }
 
 .wrap {
+    position: relative;
     width: 85%;
 }
 
 .header-top {
     background-color: #fff;
-    padding: 0 15%;
+    padding: 0 5%;
     width: 100%;
     height: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 }
 
 .logo a,
@@ -164,7 +169,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    /* text-shadow: 0 0 7px #849bba; */
+    text-shadow: 0 0 7px #849bba;
 }
 
 .logo sub {
@@ -174,15 +179,61 @@ a {
 .logo .logo-shine {
     animation: shine ease-in .3s;
     -webkit-animation: shine ease-in .3s;
-    animation: shine ease-in .3s;
-    -webkit-animation: shine ease-in .3s;
+}
+
+nav {
+    width: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -ms-flex-direction: column;
+}
+
+.menu a {
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    opacity: .7;
+    background-color: #182643;
+    transition: ease-in .3s;
+    -webkit-transition: ease-in .3s;
+    -moz-transition: ease-in .3s;
+    -ms-transition: ease-in .3s;
+    -o-transition: ease-in .3s;
+
+}
+
+.menu a:hover::after {
+    /*border-bottom: 2px solid green;
+    */
+    width: 100%;
 }
 
 .header-middle {
     padding: 0 5%;
     position: relative;
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -204,7 +255,7 @@ a {
     background: url(..//img/hand.png)no-repeat;
     width: 730px;
     height: 580px;
-    top: 0px;
+    top: 20%;
     right: 0px;
     cursor: pointer;
     transition: ease-in-out .3s;
@@ -449,6 +500,8 @@ a {
     align-items: center;
     justify-content: center;
     display: grid;
+    display: -webkit-grid;
+    -webkit-display: grid;
     grid-template-columns: repeat(2, 480px);
     grid-auto-rows: 250px;
     grid-column-gap: 250px;

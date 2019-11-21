@@ -704,6 +704,11 @@ body {
   background: url("..//img/logo1.png")no-repeat center/cover;
   bottom: 10px;
   display: none;
+  z-index: 1;
+}
+
+.__block {
+  display: block;
 }
 
 .product-img-watermark-not-in-stock {
@@ -718,9 +723,7 @@ body {
   display: none !important;
 }
 
-.__block {
-  display: block;
-}
+
 
 .product-img-watermark-color-conteiner {
   position: absolute;

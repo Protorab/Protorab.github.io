@@ -14,7 +14,6 @@ $(document).ready(function () {
     // console.log(+1);
     $('.small-img-box-discription .in-stock').show();
     $('.small-img-box-discription .not-in-stock').hide();
-
   });
 });
 
@@ -158,5 +157,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#back').click(function () {
     $('#thanks-form').hide();
+  });
+});
+
+// ==========================================
+$(document).ready(function () {
+  $('.small-img img').click(function () {
+    color_text = $(this).attr('alt');
+    $('.info-form .product-tittle').text(' ' + color_text);
   });
 });

@@ -1257,8 +1257,9 @@ sup {
   font-weight: 500;
 }
 
-.info-form h4 {
+.info-form .product-tittle {
   color: rgb(74, 118, 168);
+  min-height: 10%;
   margin-bottom: 10px;
 }
 

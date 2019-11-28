@@ -65,6 +65,8 @@ $(document).ready(function () {
     $('#filter').show();
     var i = $(this).data('id');
     $('#p' + i).show();
+    var dt = $("#mt"+i).text();
+    $('#t' + i).text(dt);
   });
   $('.but-cancel').click(function () {
     $('.product-img-container>.product-img ').hide();

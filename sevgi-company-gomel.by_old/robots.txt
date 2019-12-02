@@ -1,4 +1,0 @@
-User-agent: *
-Allow:
-Disallow:
-host: https://sevgi-company-gomel.by

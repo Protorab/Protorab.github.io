@@ -163,6 +163,7 @@
       background: url(../img/bcp_heder_bg.png)no-repeat center;
       background-size: cover;
       width: 100%;
+      position: relative;
     }
 
     .top-content {
@@ -296,75 +297,42 @@
       margin-bottom: 40px;
     }
 
-    .main-text a {
-      float: right;
-      display: block;
-      width: 390px;
-      padding: 40px 80px;
-      font-weight: 700;
-      font-size: 48px;
+    .arrow {
+      padding: 0;
+      margin: 0;
       text-transform: uppercase;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 75px;
+      height: 75px;
+      background-color: #1f2a30;
       color: #f0efef;
-      background: #1f2a30;
       border: 2px solid #f0efef;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
-
-    .main-text a:hover {
-      color: #1f2a30;
-      border-color: #1f2a30;
-      background: #f0efef;
+.arrow-down{
+  position: absolute;
+  z-index:2;
+  bottom: 5%;
+  right: 10%;
+}
+    .arrow-down i {
+      margin-top: -50%;
+      font-size: 75px;
     }
-
-    .slider-box {
-      position: relative;
-      overflow: hidden;
-      z-index: 0;
-      width: 530px;
-    }
-
-    .slider {
-      position: relative;
-      width: 10000px;
-      z-index: -1;
-    }
-
-    .slider img {
-      position: relative;
-      float: left;
-      width: 530px;
-      height: 400px;
-      z-index: -1;
-    }
-
-    .slider-box .prev,
-    .slider-box .next {
-      position: absolute;
-      top: 200px;
-      z-index: 0;
-      display: block;
-      color: #f0efef;
-      cursor: pointer;
-    }
-
-    .slider-box .prev i,
-    .slider-box .next i {
-      font-size: 50px;
-    }
-
-    .slider-box .prev {
-      left: 10px;
-      font-size: 2rem;
-    }
-
-    .slider-box .next {
-      right: 10px;
-      font-size: 2rem;
-    }
+.arrow-up{
+  z-index:0;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+}
 
     /* =====================================================================================================================header end==========================================*/
     /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ service ++++++++++++++++++++++++++++++++++++++++++++++++ */

@@ -116,7 +116,7 @@ html {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeLegibility;
 }
 
 

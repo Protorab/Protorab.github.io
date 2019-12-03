@@ -75,14 +75,20 @@ $(function call() {
         trigger_status.toggleClass('full');
     });
 })
+$(function () {
+    $('.more-btn').click(function () {
+        $('.info-form').show();
 
+    })
+
+})
 // ======================================================================
 // ============
-// var show = function (state) {
-//     document.getElementById('modalform').style.display = state;
-//     document.getElementById('filter').style.display = state;
-//     // document.getElementById('thanks-form').style.display = state;
-// };
+var show = function (state) {
+    // document.getElementById('modalform').style.display = state;
+    document.getElementById('filter').style.display = state;
+    // document.getElementById('thanks-form').style.display = state;
+};
 // ============
 
 $(function () {

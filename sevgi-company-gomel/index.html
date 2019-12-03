@@ -61,21 +61,21 @@
   </head>
 
   <body>
+    <div id="filter" onclick="show('none')"></div>
     <ul class="m-menu">
       <li class="close-menu">&times;</li>
       <li><a href="#header">ГЛАВНАЯ</a></li>
       <li><a href="#services">УСЛУГИ</a></li>
       <li><a href="#price">ЦЕНЫ</a> </li>
       <li><a href="#footer">О НАС</a></li>
-      <li><a class="order" href=" " title="заказать уборку">ЗАКАЗАТЬ</a></li>
+      <li><a class="order trigger" href="#ordercall" title="заказать звонк">ЗАКАЗАТЬ</a></li>
     </ul>
-    <!-- ========================================================================================= header ===========================================================-->
+    <!-- ======================= header ===================-->
     <header data-aos="fade-down" id="header">
       <div class="main">
         <div class="top-content">
           <div class="contact-social">
             <div class="container">
-              <!-- <div class="contacts"> -->
               <ul class="contacts">
                 <li>
                   <a href="tel:8-0232-23-66-40" title="телефон/факс"> <i class="fas fa-phone"> / </i>
@@ -83,21 +83,40 @@
                     </i> 8-0232-23-66-40
                   </a>
                 </li>
-                <li> <a href="tel:8-029-309-26-37" title="мобильный телефон"><i class="fas fa-mobile-alt"></i>
-                    8-029-309-26-37</a>
+                <li>
+                  <a href="tel:8-029-309-26-37" title="мобильный телефон">
+                    <i class="fas fa-mobile-alt"></i>
+                    8-029-309-26-37
+                  </a>
                 </li>
-                <li> <a href="mailto:sevgi_uborka@mail.ru" title="электронная почта"><i class="fas fa-envelope"></i>
-                    sevgi_uborka@mail.ru</a> </li>
+                <li>
+                  <a href="mailto:sevgi_uborka@mail.ru" title="электронная почта">
+                    <i class="fas fa-envelope"></i>
+                    sevgi_uborka@mail.ru</a>
+                </li>
                 <li> <a href="#" title="время работы"><i class="fas fa-clock"></i> Пн-Вс: 8.00-22.00</a>
                 </li>
               </ul>
               <ul class="social">
-                <li> <a href="#" title="facebook"><i class="fab fa-facebook-square"></i></a> </i>
+                <li>
+                  <a href="#" title="facebook">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
                 </li>
-                <li> <a href="#" title="vk"><i class="fab fa-vk"></i></a> </li>
-                <li> <a href="https://www.instagram.com/vipcleangomel/?igshid=1gfgc7wn467wo" title="instagram"><i
-                      class="fab fa-instagram"></i></a> </li>
-                <li> <a href="#" title="twitter"><i class="fab fa-twitter"></i></a> </li>
+                <li>
+                  <a href="#" title="vk">
+                    <i class="fab fa-vk"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/vipcleangomel/?igshid=1gfgc7wn467wo" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a> </li>
               </ul>
             </div>
           </div>
@@ -114,10 +133,9 @@
               <li><a href="#services">УСЛУГИ</a></li>
               <li><a href="#price">ЦЕНЫ</a> </li>
               <li><a href="#footer">О НАС</a></li>
-              <li><a class="order" title="закать уборку" href=" ">ЗАКАЗАТЬ</a>
+              <li><a class="order trigger" title="закать звонок" href="#">ЗАКАЗАТЬ</a>
               </li>
             </ul>
-
           </div>
         </div>
         <div class="main-text-slideshow">
@@ -126,60 +144,11 @@
             <p>Необходима компания по уборке? <br>Нужна быстрая и качественная уборка помещений?<br> Sevgi Company Gomel
               всегда готова помочь! <br> Заказывайте услуги по уборке прямо сейчас!</p>
           </div>
-          <!-- <div class="slider-box">
-            <div class="slider">
-              <a class="slide" title="Химчистка" href=" "> <img class="slide1" src="img/slideshow/slide1.png"
-                  alt="Химчистка"></a>
-
-              <a class="slide" title="Уборка помещений" href=" ">
-                <img class="slide2" src="img/slideshow/slide2.png" alt="Уборка помещений">
-              </a>
-              <a class="slide" title="Уборка квартир, коттедже" href=" ">
-                <img class="slide3" src="img/slideshow/slide3.png" alt="Уборка квартир, коттеджей">
-              </a>
-              <a class="slide" title="Обучение в области уборки" href=" ">
-                <img class="slide4" src="img/slideshow/slide4.png" alt="Обучение в области уборки">
-              </a>
-              <a class="slide" title="Специализированные услуги" href=" ">
-                <img class="slide5" src="img/slideshow/slide5.png" alt="Специализированные услуги">
-              </a>
-              <a class="slide" title="Вывоз мусора, снега" href=" ">
-                <img class="slide6" src="img/slideshow/slide6.png" alt="Вывоз мусора, снега">
-              </a>
-              <a class="slide" title="Покос травы" href=" ">
-                <img class="slide7" src="img/slideshow/slide7.png" alt="Покос травы">
-              </a>
-              <a class="slide" title="Промышленный альпинизм" href=" ">
-                <img class="slide8" src="img/slideshow/slide8.png" alt="Промышленный альпинизм">
-              </a>
-              <a class="slide" title="Уборка офисов" href=" ">
-                <img class="slide9" src="img/slideshow/slide9.png" alt="Уборка офисов">
-              </a>
-              <a class="slide" title="Уборка после ремонта" href=" ">
-                <img class="slide10" src="img/slideshow/slide10.png" alt="Уборка после ремонта">
-              </a>
-              <a class="slide" title="Уборка территории" href=" ">
-                <img class="slide11" src="img/slideshow/slide11.png" alt="Уборка территории">
-              </a>
-              <a class="slide" title="Услуги в области экологии" href=" ">
-                <img class="slide12" src="img/slideshow/slide12.png" alt="Услуги в области экологии">
-              </a>
-            </div>
-            <div class="prev">
-              <i class="fas fa-angle-left"></i>
-            </div>
-            <div class="next">
-              <i class="fas fa-angle-right"></i>
-            </div>
-          </div> -->
         </div>
-
-        <a href="#services" class="arrow arrow-down">Заказывайте<i class="fas fa-sort-down"></i></a>
       </div>
     </header>
-    <!-- ====================================================================================== services ===========================================================-->
+    <!-- ================ services ===================-->
     <div id="services">
-
       <div class="services-container container">
         <h2>Наши услуги</h2>
         <div class="services-items">
@@ -190,7 +159,7 @@
               <h3>Химчистка мебели</h3>
               <span></span>
               <p class="item-content-discription">ковровых поверхностей, мягкой мебели </p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="1">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-left" class="item">
@@ -200,7 +169,7 @@
               <h3>Услуги в области экологии</h3>
               <span></span>
               <p class="item-content-discription">разработка и ведение экологического паспорта предприятия</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="2">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-left" class="item">
@@ -210,7 +179,7 @@
               <h3>Уборка территории</h3>
               <span></span>
               <p class="item-content-discription">благоустройстве прилегающейтерритории</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="3">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-right" class="item">
@@ -220,7 +189,7 @@
               <h3>Уборка после ремонта</h3>
               <span></span>
               <p class="item-content-discription">"заключительный аккорд" в конце строительно-ремонтного процесса </p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="4">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-right" class="item">
@@ -230,7 +199,7 @@
               <h3>Уборка помещений</h3>
               <span></span>
               <p class="item-content-discription">генеральная, регулярная</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="5">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-right" class="item">
@@ -240,7 +209,7 @@
               <h3>Уборка офисов</h3>
               <span></span>
               <p class="item-content-discription">генеральная, регулярная</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="6">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-left" class="item">
@@ -251,7 +220,7 @@
               <span></span>
               <p class="item-content-discription">Уборка квартир, коттеджей загородных домов
               </p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="7">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-left" class="item">
@@ -261,7 +230,7 @@
               <h3>Спец услуги</h3>
               <span></span>
               <p class="item-content-discription">уборка в сжатые сроки</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="8">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-left" class="item">
@@ -273,7 +242,7 @@
               <p class="item-content-discription">
                 работы с применением альпинистских методов
               </p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="9">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-right" class="item">
@@ -283,10 +252,9 @@
               <h3>Покос травы</h3>
               <span></span>
               <p class="item-content-discription">уход за газоном</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="10">подробнее</button>
             </div>
           </div>
-
           <div data-aos="fade-right" class="item">
             <img src="img/services/teaching-cleaning.jpg" alt="Обучение в области уборки">
             <div class="overlay-item"></div>
@@ -296,7 +264,7 @@
               <p class="item-content-discription">
                 обучение персонала в области клининга навыкам по набору и работе с персоналом ...
               </p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="11">подробнее</button>
             </div>
           </div>
           <div data-aos="fade-right" class="item">
@@ -306,14 +274,13 @@
               <h3>Вывоз мусора, снега</h3>
               <span></span>
               <p class="item-content-discription">уборка, погрузка, транспортировка</p>
-              <button>подробнее</button>
+              <button onclick="show('block')" data-id="12">подробнее</button>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-    <!-- =========================================================================================================================================================================price -->
+    <!-- ==========================price -->
     <div id="price">
       <div class="container">
         <h2>СТОИМОСТЬ КЛИНИНГОВЫХ УСЛУГ</h2>
@@ -464,7 +431,7 @@
         </table>
       </div>
     </div>
-    <!-- ==========================================================================================================================================================footer======================================================== -->
+    <!--======footer============================= -->
     <footer id="footer" class="footer">
       <div class="container">
         <div class="address-phone">
@@ -472,7 +439,8 @@
             <h3>Адрес
             </h3>
             <p>РБ г. Минск, индекс 220099 ул. Кижеватова 8, пом.14 <br> е-mail:
-              <a href="mailto:sevgi_uborka@mail.ru">sevgi_uborka@mail.ru</a>
+              <a href="mailto:sevgi_uborka@mail.ru">
+                sevgi_uborka@mail.ru</a>
               <br> сайт:
               <a href="http://sevgi-uborka.by">
                 www.sevgi-uborka.by
@@ -482,12 +450,14 @@
           <div class="phone">
             <h3>Контакты</h3>
             <p>г.Гомель <br> телефон/факс:
-              <a href="tel:8-0232-23-66-40">8-0232-23-66-40</a>
+              <a href="tel:8-0232-23-66-40">
+                8-0232-23-66-40
+              </a>
               <br> мобильный:
               <br> Velcom
-              <a href="tel:8-029-309-26-37">8-029-309-26-37</a>
-              <!-- <br> МТС <a
-                            href="tel:8-029-736-45-67">8-029-736-45-67</a><br> -->
+              <a href="tel:8-029-309-26-37">
+                8-029-309-26-37
+              </a>
             </p>
           </div>
         </div>
@@ -511,15 +481,68 @@
               <li><a href="#services">УСЛУГИ</a></li>
               <li><a href="#price">ЦЕНЫ</a> </li>
               <li><a href="#footer">О НАС</a></li>
-              <li><a class="order" href=" ">ЗАКАЗАТЬ</a></li>
+              <li><a class="order" href="#inf_frm">ЗАКАЗАТЬ</a></li>
             </ul>
           </div>
         </div>
-        <a target="_blank" href="https://vk.com/protorab">
-          <p class="author">© Leonid Rudenkov</p>
-        </a>
+        <a target="_blank" class="author" href="https://vk.com/protorab">© Leonid Rudenkov</a>
       </div>
+
     </footer>
+    <div class="form-conteiner info-form" id="inf_frm">
+      <h4 id="mt" class="product-tittle"></h4>
+    </div>
+    <form id="modalform" action="https://formspree.io/" method="POST">
+      <div class="form-group" id="form-control">
+        <span class="form-group-wrap-button trigger">
+          <p class="full"></p>
+      </div>
+      <div class="form-conteiner">
+
+        <h4>Заказать звонок</h4>
+        <span></span>
+        <div class="form-group">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Звонок с сайта">
+          <input type="hidden" name="admin_email" value="zakaz.korzyna@gmail.com">
+          <input type="hidden" name="form_subject" value="Закза с сайта dodo-kids.ru">
+          <!-- <input type="hidden" name="_subject" value="заказ с сайта"> -->
+          <!-- END Hidden Required Fields -->
+        </div>
+        <div class="form-group">
+          <label for="ExampleInputName">Ваше имя<sup>*</sup></label>
+          <input type="text" class="form-input" id="ExampleInputName" name="Имя" required
+            placeholder="Введите ваше имя">
+          <input id="gotcha" type="text" name="_gotcha" style="display:none">
+        </div>
+        <div class="form-group">
+          <label for="ExampleInputPhone">Ваш Телефон<sup>*</sup></label>
+          <input type="text" class="form-input" id="ExampleInputPhone" name="Телефон" required
+            placeholder="Введите ваш телефон">
+        </div>
+        <div class="form-group" id="text-group">
+          <label for="ExampleInputText">Ваш Комментарий<sup>*</sup></label>
+          <textarea name="message" id="ExampleInputText" rows="10" cols="45" placeholder="Ваш Комментарий"></textarea>
+        </div>
+        <div class="form-group form-but-group">
+          <button type="submit" class="form-but but">позвоните мне</button>
+
+        </div>
+      </div>
+    </form>
+    <!-- <div id=thanks-form onclick="show('none')">
+      <div class="wrap-form">
+        <h2>Спасибо за ваш заказ</h2>
+        <span class="span-under"></span>
+        <p>
+          <b>М</b>ы постараемся как можно быстрее его обработать и связаться с Вами
+        </p>
+        <div class="sign">
+          <h5> С уважением, Ваша команда :)</h5>
+        </div>
+        <button id="back" class="form-but but " onclick="show('none')">назад</button>
+      </div>
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -527,7 +550,7 @@
       AOS.init({
         easing: 'ease-in-out-sine',
         duration: 1000,
-        offset: 50.
+        offset: 100.
       });
     </script>
   </body>

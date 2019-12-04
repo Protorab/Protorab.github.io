@@ -65,7 +65,7 @@ $(document).ready(function () {
     $('#filter').show();
     var i = $(this).data('id');
     $('#p' + i).show();
-    var dt = $("#mt"+i).text();
+    var dt = $("#mt" + i).text();
     $('#t' + i).text(dt);
   });
   $('.but-cancel').click(function () {
@@ -169,3 +169,11 @@ $(document).ready(function () {
     $('.info-form .product-tittle').text(' ' + color_text);
   });
 });
+// ===============
+$(document).ready(function () {
+  $('#defoult').click(function () {
+    $('#defoult').attr("href", "#katalog");
+    console.log(1);
+
+  })
+})

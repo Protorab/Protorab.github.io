@@ -314,6 +314,31 @@
     }
 
     /* ============================ */
+    .logo {
+      display: flex;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgb(223, 214, 211);
+    }
+
+    .logo>* {
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #3C2923;
+    }
+
+    .italic {
+      font-family: 'Charm', cursive;
+    }
+
     .main {
       display: flex;
       flex-direction: column;
@@ -397,8 +422,8 @@
 
     .logo-menu {
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: space-between;
+      align-items: center;
       width: 80%;
       padding: 20px 0;
     }

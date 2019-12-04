@@ -757,9 +757,12 @@
       width: 100%;
       align-items: center;
       justify-content: center;
+      position: relative;
       background: url(../img/footter_bg.png) no-repeat center;
       background-size: cover;
+
     }
+
 
     #footer>.container {
       flex-direction: column;

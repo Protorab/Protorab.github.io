@@ -454,11 +454,13 @@
 
     .main-text {
       border: 3px solid #f0f0f0;
+      box-shadow: 0px 0px 10px 10px #3C2923;
       padding: 10px;
       position: relative;
     }
 
     .main-text-wrap {
+
       background-color: #fff;
       padding: 10px;
     }

@@ -13,9 +13,10 @@ $(document).ready(function () {
         var i = $(this).data('id');
         var mt = $("#mt" + i).text();
         var mi = $("#mi" + i).data("src");
-        var fd = $('#m-discription' + i).text();
+        $('#discription-' + i + '.discription').show();
+        // var fd = $('#m-discription' + i).text();
         $('#fi').attr('src', mi);
-        $('#f-discription').text(fd)
+        // $('#f-discription').text(fd)
         $('#ft').text(mt);
         $('.info-form').show();
     })

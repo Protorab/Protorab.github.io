@@ -42,7 +42,8 @@
 
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
       text-transform: uppercase;
     }
 
@@ -59,12 +60,16 @@
       font-size: 3rem;
     }
 
+    h4 {
+      font-size: 2.6rem
+    }
+
     li {
       font-size: 2rem;
     }
 
     p {
-      font-size: 2.6rem;
+      font-size: 2.4rem;
     }
 
     ul {
@@ -484,6 +489,11 @@
       /* margin-top: auto; */
     }
 
+    .form-discription {
+      font-size: 1.6rem;
+      text-transform: none;
+    }
+
     .form-but-group button {
       padding: 10px;
       cursor: pointer;
@@ -818,13 +828,13 @@
 
     .info-form-wrap {
       display: grid;
-      grid-template-columns: repeat(3, minmax(100px, 1fr));
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
       grid-auto-rows: repeat(3, minmax(100px, 1fr));
       /* grid-gap: 10px; */
       grid-template-areas:
-        "aa aa aa"
-        "bb cc cc"
-        "dd .. ee";
+        "aa aa aa aa"
+        "bb .. cc cc"
+        "dd .. .. ee";
       width: 100%;
       height: 100%;
     }
@@ -854,8 +864,8 @@
 
     #form-content {
       grid-area: cc;
-    flex-direction:column;
-    justify-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     #form-button1 {
@@ -874,13 +884,13 @@
 
     .form-buttons {
       align-items: flex-end;
-      justify-content:center ;
+      justify-content: center;
     }
 
     .form-buttons .form-but {
       height: 30px;
       width: 150px;
-      cursor:pointer;
+      cursor: pointer;
     }
 
     /* =====================================================================================================================header end==========================================*/
@@ -960,6 +970,10 @@
       -moz-transform: translateY(100%);
       -ms-transform: translateY(100%);
       -o-transform: translateY(100%);
+    }
+
+    .discription {
+      display: none
     }
 
     .item:hover .overlay-item {
@@ -1181,8 +1195,12 @@
       margin-bottom: 140px;
     }
 
+    iframe {
+      border: none;
+    }
+
     .address,
-    .phone {
+    #phone {
       width: 25%;
     }
 
@@ -1260,7 +1278,7 @@
     .author {
       position: absolute;
       bottom: 10px;
-      right: 10px;
+      left: 10px;
     }
 
     .author:hover {

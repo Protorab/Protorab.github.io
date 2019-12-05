@@ -166,7 +166,7 @@
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-}
+    }
 
     textarea:focus::-webkit-input-placeholder {
       text-indent: 200px;
@@ -818,20 +818,33 @@
 
     .info-form-wrap {
       display: grid;
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+      grid-auto-rows: repeat(3, minmax(100px, 1fr));
+      /* grid-gap: 10px; */
+      grid-template-areas:
+        "aa aa aa"
+        "bb cc cc"
+        "dd .. ee";
+      width: 100%;
+      height: 100%;
     }
 
     .info-form-wrap .form-group {
       width: 100%;
+      padding: 10px;
     }
 
     #f-tittle {
       background-color: #3C2923;
-      height: 150px;
       color: #f0f0f0;
       padding: 10px;
+      grid-area: aa;
+      height: 150px;
+      width: 100%;
     }
 
     #form-img {
+      grid-area: bb;
       width: 400px;
       height: 250px;
       position: absolute;
@@ -839,10 +852,35 @@
       left: 40px;
     }
 
+    #form-content {
+      grid-area: cc;
+    flex-direction:column;
+    justify-content: flex-start;
+    }
+
+    #form-button1 {
+
+      grid-area: dd;
+    }
+
+    #form-button2 {
+      grid-area: ee;
+    }
+
     #form-img img {
       width: 100%;
       height: 100%;
+    }
 
+    .form-buttons {
+      align-items: flex-end;
+      justify-content:center ;
+    }
+
+    .form-buttons .form-but {
+      height: 30px;
+      width: 150px;
+      cursor:pointer;
     }
 
     /* =====================================================================================================================header end==========================================*/

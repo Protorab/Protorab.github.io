@@ -251,7 +251,7 @@ nav {
     bottom: -5px;
     width: 0;
     height: 2px;
-    opacity: .7;
+    /* opacity: .7; */
     background-color: #182643;
     transition: ease-in .3s;
     -webkit-transition: ease-in .3s;

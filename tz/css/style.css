@@ -123,7 +123,9 @@ input:focus:-ms-input-placeholder {
   transition: text-indent 0.3s ease;
 }
 
-
+#tc-1 .mobile {
+  display: none;
+}
 
 .wrap {
   display: -webkit-box;
@@ -141,7 +143,7 @@ input:focus:-ms-input-placeholder {
 
 .menu-panel {
   position: fixed;
-  width: 640px;
+  width: 33%;
   right: 0;
   top: 0;
   bottom: 0;
@@ -168,13 +170,13 @@ input:focus:-ms-input-placeholder {
   -o-transform: translateX(0%);
 }
 
-#tc-1 svg {
+#logo {
   position: absolute;
   left: 67px;
   top: 46px;
 }
 
-#tc-1 svg:hover {
+#logo:hover {
   transform: rotate(-720deg);
   -webkit-transform: rotate(-720deg);
   -moz-transform: rotate(-720deg);
@@ -230,6 +232,8 @@ input:focus:-ms-input-placeholder {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .search-input {
@@ -251,13 +255,13 @@ input:focus:-ms-input-placeholder {
   line-height: 21px;
 }
 
-.main-table-cell .search {
+.search {
   position: absolute;
   top: 46px;
   right: 120px;
 }
 
-.main-table-cell .search:after {
+.search:after {
   content: "";
   display: block;
   position: absolute;
@@ -272,7 +276,7 @@ input:focus:-ms-input-placeholder {
   -o-transition: ease-in .2s;
 }
 
-.main-table-cell .search:hover:after {
+.search:hover:after {
   width: 100%;
 }
 
@@ -431,10 +435,10 @@ input:focus:-ms-input-placeholder {
 
 .main-table {
   display: grid;
-  grid-template-columns: repeat(3, 640px);
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(4, 242px);
-  width: 100%;
-  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .main-table-cell {

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <head>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+      <meta charset="UTF-8">
+      <title>Оптовые товары</title>
+      <style type="text/css">
+        *,
+        *:before,
+        *:after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          transition: linear .2s;
+        }
+
+        body {
+          color: #2D1933;
+          margin: auto auto;
+          padding: 0px;
+          font-family: Lato, sans-serif;
+          background: #EDE8FF;
+          max-width: 1200px;
+          overflow: hidden;
+        }
+
+        img {
+          width: 100%;
+          padding-top: 5%;
+        }
+
+        .all-inOne {
+          /* width: 50%; */
+          /* margin: 0 auto; */
+          /* width: 100%;
+          height: 100%; */
+          padding: 25%;
+          display: grid;
+          /* grid-template-columns: repeat(auto-fill, minmax(100px, 25%)); */
+          grid-template-columns: repeat(2, 400px);
+          grid-gap: 10px;
+          justify-content: center;
+          justify-items: stretch;
+          align-items: stretch;
+          align-content: center;
+
+          /* grid-template-rows: repeat(auto-fill, minmax(50vh, 1fr)) */
+        }
+
+        .block {
+          width: 100%;
+          height: 45vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          transition: .2s linear;
+        }
+
+        .all-inOne .block:nth-child(1),
+        .all-inOne .block:nth-child(4) {
+          background: #00D0A6;
+        }
+
+        .all-inOne .block:nth-child(2),
+        .all-inOne .block:nth-child(5) {
+          background: #E8BBDB;
+        }
+
+        .all-inOne .block:nth-child(3),
+        .all-inOne .block:nth-child(6) {
+          background: #BBBADF;
+        }
+
+        .block-name {
+          font-size: 18px;
+          text-align: center;
+          width: 100%;
+
+        }
+
+        .all-inOne .block:nth-child(1) .block-name,
+        .all-inOne .block:nth-child(4) .block-name {
+          background: #abdaec;
+        }
+
+        .all-inOne .block:nth-child(2) .block-name,
+        .all-inOne .block:nth-child(5) .block-name {
+          background: #edc9e3;
+        }
+
+        .all-inOne .block:nth-child(3) .block-name,
+        .all-inOne .block:nth-child(6) .block-name {
+          background: #c9c8e7;
+        }
+
+        .logo {
+          flex-basis: 20%;
+          /* border: 1px solid red; */
+          height: 50px;
+        }
+
+        .but {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 150px;
+          height: 40px;
+          border-radius: 20px;
+          background: #EDE8FF;
+          color: #8A71F0;
+          transition: .2s linear;
+          text-decoration: none;
+        }
+
+
+
+        /* .block:hover {
+          transform: scale(1.1, 1.1);
+          -webkit-transform: translate(1.1, 1.1);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .1)
+        } */
+
+        .but:hover {
+          background: #8A71F0;
+          color: #fafafa;
+        }
+
+        @media (max-width: 599px) {
+          .all-inOne {
+            grid-template-columns: repeat(1, 400px);
+          }
+        }
+      </style>
+    </head>
+
+  <body>
+    <div class="all-inOne">
+      <!-- <div class="block">
+        <p class="block-name">Остатки Manuni</p>
+        <p class="logo">
+          <img src="http://manuni.ru/static/img/0000/0000/1748/1748153.fgpcc191uw.W215.jpg" />
+        </p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/1dIBXYeNak_XWzpOjnNTaFAsp_B_Kn8CS8LjOjuYdF5E/pub?output=xlsx">
+          Скачать
+        </a>
+
+      </div> -->
+
+      <!-- <div class="block">
+        <p class="block-name">Остатки Cam</p>
+        <p class="logo">
+          <img src="https://xn--80aalbksjsl.xn--90ais/ostatki/img/cam_logo.png" />
+        </p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT96aYUf18uAFpH8N678DMXprydxWSEY3C9XAWWszbzCZBAANkGJP7Uo5IX0FNtHMP-fIpZM6T6CB7y/pub?output=xlsx">
+          Скачать
+        </a>
+      </div> -->
+      <div class="block">
+        <p class="block-name">Остатки Лель</p>
+        <p class="logo">
+          <img src="https://алданджой.бел/ostatki/img/%D0%9B%D0%B5%D0%BB%D1%8C65.png" />
+        </p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqq5xRmW94hzMFib1zbWzC1TfEdWkdwIVD7KDnpsbQhBtCIwCde7H1Dlj4-bTjy2i3Ay5WDGtdnvqY/pub?output=xlsx">
+          Скачать
+        </a>
+      </div>
+      <div class="block">
+        <p class="block-name">Остатки Papaloni</p>
+        <p class="logo">
+          <img src="https://xn--80aalbksjsl.xn--90ais/logo23.png" />
+        </p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT5JNdYdvIni_Is6gcNkJFJWT6fi0jKY3ZxzD-XyPOXpocY757a0jODdmL0rSqq6RisxwNlzXuzLWJx/pub?output=xlsx">
+          Скачать
+        </a>
+
+      </div>
+      <!-- <div class="block">
+        <p class="block-name">Остатки Comfortbaby</p>
+        <p class="logo"><img src="https://xn--80aalbksjsl.xn--90ais/comfortbaby23.png" /></p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSGOqJ6WWsuqsEjTA7t9IdaBWli0AYhNxvppz3HpYLp2YNEh4dSqdNpoHv_9IiETw/pub?output=xlsx">
+          Скачать
+        </a>
+
+      </div>
+      <div class="block">
+        <p class="block-name">Остатки ByTwinz</p>
+        <p class="logo"><img src="https://xn--80aalbksjsl.xn--90ais/btw.png" /></p>
+        <a class="but"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSGMDwJzwQGTovIJBvVkknXt6Od9lRWYuFAiCcc9E8bo58jPWmfyc-g3rUOiFxSAA/pub?output=xlsx">
+          Скачать
+        </a>
+      </div> -->
+    </div>
+
+  </body>
+
+</html>

@@ -43,3 +43,17 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+
+header {
+  background: url('../img/top-bg.png')no-repeat center/cover;
+  width: 100%;
+  min-height: 870px;
+
+}
+
+#cards {}
+
+.cards-wrapper {
+  background: #26311c;
+  height: 685px;
+}

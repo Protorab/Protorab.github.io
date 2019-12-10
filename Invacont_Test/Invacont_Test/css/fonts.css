@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Helvetica-Black";
+  src: url(../fonts/HelveticaNeueCyr-Black.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica-Roman";
+  src: url(../fonts/HelveticaNeueCyr-Roman.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url(../fonts/HelveticaNeueCyr-Light.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica-Thin";
+  src: url(../fonts/HelveticaNeueCyr-Thin.ttf);
+}

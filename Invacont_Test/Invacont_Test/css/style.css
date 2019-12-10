@@ -33,7 +33,7 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   max-width: 1280px;
   font-family: "Helvetica-Roman";
   /* background-color: #4e5e34 */

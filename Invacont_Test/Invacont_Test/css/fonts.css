@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "NimbusSanTConBold";
+  font-family: "HelveticaNeueCyr-Black";
   src: url("../fonts/HelveticaNeueCyr-Black.ttf");
 }
 
@@ -16,4 +16,9 @@
 @font-face {
   font-family: "Helvetica-Thin";
   src: url("../fonts/HelveticaNeueCyr-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NimbusSanTConBold";
+  src: url("../fonts/NimbusSanTConBold.ttf");
 }

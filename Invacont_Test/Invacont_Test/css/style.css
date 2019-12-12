@@ -217,6 +217,8 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header {
@@ -309,6 +311,7 @@ li {
   font-weight: bold;
   text-shadow: 0px 0px 6px rgba(31, 88, 0, 0.75);
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .container {
@@ -541,3 +544,28 @@ footer .wrapper-row {
     display: none;
   }
 }
+
+@media (max-width: 599px) {
+
+  .wrapper h1 {
+    font-size: 3.4rem;
+  }
+
+  .wrapper-content h3 {
+    font-size: 1.5rem;
+
+  }
+
+  .wrapper-content p {
+    font-size: 1rem;
+
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .footer-menu .item {
+    padding: 0 0 0 10px;
+    font-size: 1rem;
+  }}

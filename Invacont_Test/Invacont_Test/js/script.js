@@ -4,5 +4,10 @@ $(document).ready(function () {
     $('.menu-bar').toggleClass('change');
     $('.m-menu').toggleClass('__menu-show');
   })
+  $('.m-menu a').click(function () {
+    $('.bar').toggleClass('change');
+    $('.menu-bar').toggleClass('change');
+    $('.m-menu').toggleClass('__menu-show');
+  })
 
 })

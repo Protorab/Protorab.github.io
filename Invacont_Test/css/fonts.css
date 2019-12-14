@@ -28,10 +28,6 @@
   src: url("../fonts/HelveticaNeueCyr-UltraLight.otf");
 }
 
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Light.ttf");
-}
 
 @font-face {
   font-family: "HelveticaNeueCyr-Light";

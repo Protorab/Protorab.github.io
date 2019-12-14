@@ -33,7 +33,8 @@ a:hover {
 
 a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
+  font-family: "NIMBSTB";
 }
 
 body {
@@ -218,7 +219,7 @@ html {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 header {
@@ -274,11 +275,11 @@ li {
 
 
 .item {
-  font-family: "NimbusSanTConBold";
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 1.9rem;
   color: #fff;
   text-transform: uppercase;
@@ -325,7 +326,7 @@ li {
   /* padding: 0 12.5%; */
   background-color: rgba(38, 49, 28, 0.702);
   text-align: center;
-  font-family: "Helvetica-Thin";
+  font-family: "HelveticaNeueCyr-Thin";
   border-radius: 5px;
 }
 
@@ -378,7 +379,7 @@ header .wrapper:nth-child(3) {
 }
 
 .card-title {
-  font-family: "Helvetica-Thin";
+  font-family: "HelveticaNeueCyr-Thin";
   font-size: 3rem;
   font-weight: 100;
   text-transform: capitalize;
@@ -388,7 +389,7 @@ header .wrapper:nth-child(3) {
 
 
 .but {
-  font-family: "NimbusSanTConBold";
+
   transform: scaleY(1);
   color: #fff;
   padding: 20px 45px;
@@ -425,7 +426,7 @@ header .wrapper:nth-child(3) {
 
 .wrapper-title {
   font-size: 3.4rem;
-  font-family: "Helvetica-Thin";
+  font-family: "HelveticaNeueCyr-Thin";
   font-weight: 100;
   text-align: left;
   -webkit-box-align: start;
@@ -435,8 +436,8 @@ header .wrapper:nth-child(3) {
 }
 
 .bold {
-  font-family: "HelveticaNeueCyr-Roman";
-  font-weight: 700;
+  font-family: "HelveticaNeueCyr-Bold";
+  /* font-weight: 700; */
   letter-spacing: 2px;
   font-size: 5.4rem;
   color: #48890a;
@@ -568,4 +569,5 @@ footer .wrapper-row {
   .footer-menu .item {
     padding: 0 0 0 10px;
     font-size: 1rem;
-  }}
+  }
+}

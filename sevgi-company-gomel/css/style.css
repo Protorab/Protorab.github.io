@@ -97,6 +97,18 @@
       transition: text-indent 0.3s ease;
     }
 
+    .form-input[placeholder] {
+      text-indent: 0px;
+      -webkit-transition: text-indent 0.3s ease;
+      transition: text-indent 0.3s ease;
+    }
+
+    .form-input:focus[placeholder] {
+      text-indent: 500px;
+      -webkit-transition: text-indent 0.3s ease;
+      transition: text-indent 0.3s ease;
+    }
+
     .form-input::-moz-placeholder {
       text-indent: 0px;
       -webkit-transition: text-indent 0.3s ease;
@@ -152,7 +164,26 @@
     textarea::-moz-placeholder {
       text-indent: 0px;
       -webkit-transition: text-indent 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
+    }
+
+    textarea[placeholder] {
+      text-indent: 0px;
+      -webkit-transition: text-indent 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    textarea:focus[placeholder] {
+      text-indent: 200px;
+      color: transparent;
+      -webkit-transition: ;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: ;
+      -ms-transition: ;
+      -o-transition: ;
     }
 
     textarea:-moz-placeholder {
@@ -177,6 +208,7 @@
       text-indent: 200px;
       color: transparent;
       -webkit-transition: ;
+      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       -moz-transition: ;
       -ms-transition: ;
@@ -497,6 +529,15 @@
       padding: 2px;
     }
 
+    .form-discription li {
+      font-size: 1.6rem;
+    }
+
+    .form-discription ul {
+      list-style: square outside;
+      padding-left: 40px;
+    }
+
     .form-discription a {
       font-weight: 700;
     }
@@ -556,9 +597,14 @@
       -ms-flex-align: center;
       align-items: center;
       min-height: 100vh;
-      /* min-height: 600px; */
-      background: url(../img/bcp_heder_bg.png)no-repeat center/cover fixed;
-      /* background-size: cover; */
+      background: url(../img/bcp_heder_bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: unset;
+      background-position: center center;
       width: 100%;
       position: relative;
     }
@@ -881,7 +927,12 @@
 
     #form-content {
       grid-area: cc;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
       padding-right: 40px;
     }
@@ -896,12 +947,16 @@
     }
 
     #form-img img {
-      width: 100%;
+      width: auto;
       height: 100%;
     }
 
     .form-buttons {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
       align-items: flex-end;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 

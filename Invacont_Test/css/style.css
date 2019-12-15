@@ -246,7 +246,7 @@ html {
 header {
   background: url('../img/top-bg.png')no-repeat center/cover;
   width: 100%;
-  min-height: 870px;
+  height: 870px;
   padding-top: 15px;
   border-bottom: 4px solid #e46107;
 }
@@ -268,10 +268,30 @@ header {
 }
 
 
-#menu {
+.shadow {
+  width: 880px;
+  height: 185px;
+  background-image: radial-gradient(ellipse at top, rgb(19, 71, 8)0%, transparent 50%);
   position: absolute;
   top: 183px;
+  border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
+  -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
+  -moz-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
+  -ms-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
+  -o-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
+}
+
+#menu {
+  position: absolute;
+  top: 177px;
+  height: 75px;
   background: transparent;
+  border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+  -webkit-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+  -moz-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+  -ms-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+  -o-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+  overflow: hidden;
 }
 
 

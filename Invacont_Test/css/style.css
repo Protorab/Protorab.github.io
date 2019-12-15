@@ -443,8 +443,14 @@ header .wrapper:nth-child(3) {
   -o-border-radius: 50%;
   margin-bottom: 34px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -467,9 +473,18 @@ header .wrapper:nth-child(3) {
 
 .but {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 168px;
   height: 60px;
@@ -591,6 +606,9 @@ footer .wrapper>.wrapper:nth-child(2) {
 }
 
 footer .footer-menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   color: #919191;
   -webkit-box-pack: justify;
@@ -599,7 +617,11 @@ footer .footer-menu {
 }
 
 footer .container .wrapper-row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 

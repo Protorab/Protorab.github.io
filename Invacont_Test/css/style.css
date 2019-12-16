@@ -65,13 +65,13 @@ html {
   position: absolute;
   top: 30px;
   right: 30px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  background: #347710;
+  /* border: 2px solid #fff; */
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   z-index: 15;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -84,6 +84,12 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   display: none;
+  cursor: pointer;
+}
+
+.menu-bar:hover {
+  background: #e46107;
+
 }
 
 .close {
@@ -91,7 +97,7 @@ html {
 }
 
 .menu-bar.change {
-  border-color: #26311c;
+  /* border-color: #26311c; */
 }
 
 .bar {
@@ -104,6 +110,7 @@ html {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+
 }
 
 
@@ -114,7 +121,7 @@ html {
   -ms-transform: rotate(45deg)translate(5px, 5px);
   -o-transform: rotate(45deg)translate(5px, 5px);
   -webkit-transform: rotate();
-  background: #26311c;
+  /* background: #26311c; */
 }
 
 #bar-2.change {
@@ -128,7 +135,7 @@ html {
   -ms-transform: rotate(-45deg)translate(6px, -6px);
   -o-transform: rotate(-45deg)translate(6px, -6px);
   -webkit-transform: rotate();
-  background: #26311c;
+  /* background: #26311c; */
 }
 
 .m-menu {
@@ -151,10 +158,11 @@ html {
   top: 0;
   bottom: 0;
   width: 50%;
-  background: #fff;
+  height: 100%;
+  background: rgba(52, 119, 16, .9);
   z-index: 10;
-  color: #26311c;
-  border: 2px solid rgba(38, 49, 28, 0.702);
+  color: #fff;
+
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -179,8 +187,8 @@ html {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 20%;
+  justify-content: flex-start;
+  height: 90%;
   font-size: 1.6rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -189,7 +197,7 @@ html {
 }
 
 .m-menu li {
-  color: #7b7b7b;
+  color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,13 +210,14 @@ html {
   justify-content: center;
   width: 100%;
   height: 70px;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  /* border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent; */
 }
 
 .m-menu li:hover {
-  color: #8dc705;
-  border-color: #8dc705;
+  color: #fff;
+  background: #e46107;
+  /* border-color: #8dc705; */
 }
 
 .wrap {
@@ -317,11 +326,11 @@ li {
 
 
 .item {
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* font-weight: 500; */
+  /*font-weight: 500;
+  */
   font-size: 1.9rem;
   color: #fff;
   text-transform: uppercase;
@@ -335,11 +344,11 @@ li {
   position: relative;
   z-index: 1;
   padding: 25px 15px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
 }
 
 .item::before {

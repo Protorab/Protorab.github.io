@@ -13,6 +13,15 @@
   }
 }
 
+@media (max-width: 1199px) {
+
+  #b0,
+  #b3 {
+    display: none;
+
+  }
+}
+
 @media (max-width: 999px) {
   html {
     font-size: 12px;
@@ -25,8 +34,13 @@
   }
 
   #menu,
-  #b2 {
+  #b2,
+  #b4 {
     display: none;
+  }
+
+  #b3 {
+    display: block;
   }
 
   .wrapper-row {
@@ -83,7 +97,38 @@
   }
 }
 
-@media (max-width: 599px) {
+@media(max-width: 699px) {
+
+  #b0,
+  #b1,
+  #b2,
+  #b3,
+  #b4 {
+    width: 55px;
+  }
+}
+
+@media(max-width: 599px) {
+
+  #b0,
+  #b1,
+  #b2,
+  #b3,
+  #b4 {
+    display: none;
+  }
+
+  .card-logo-wrap {
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+  }
+
+  .card {
+    margin-bottom: 60px;
+  }
 
   .wrapper h1 {
     font-size: 3.4rem;

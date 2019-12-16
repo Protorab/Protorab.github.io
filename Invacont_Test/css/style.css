@@ -49,13 +49,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  /* background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-image: url('../img/invacont_test.png'); */
+  /* background: url("../img/invacont_test.png")no-repeat center/cover; */
 }
 
-/* html * {
-  opacity: 1;
+
+/* html {
   opacity: .7;
 } */
 
@@ -250,6 +248,7 @@ html {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 90%;
 }
 
 header {
@@ -259,8 +258,6 @@ header {
   padding-top: 15px;
   border-bottom: 4px solid #e46107;
 }
-
-
 
 .logo img {
   width: 100%;
@@ -275,7 +272,6 @@ header {
   margin-bottom: 85px;
   position: relative;
 }
-
 
 .shadow {
   width: 880px;
@@ -292,7 +288,7 @@ header {
 
 #menu {
   position: absolute;
-  top: 177px;
+  top: 180px;
   height: 75px;
   background: transparent;
   border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
@@ -302,8 +298,6 @@ header {
   -o-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
   overflow: hidden;
 }
-
-
 
 .menu {
   position: relative;
@@ -315,15 +309,13 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
+  width: 100%;
 }
 
 li {
   background: transparent;
   border-left: 1px solid transparent;
 }
-
-
 
 .item {
   display: -webkit-box;
@@ -377,10 +369,6 @@ li {
   background: #e46107;
 }
 
-
-
-
-
 .wrapper h1 {
   text-align: center;
   font-size: 6.8rem;
@@ -392,7 +380,6 @@ li {
   width: 100%;
   line-height: 0.882;
 }
-
 
 .container {
   padding: 0 160px;

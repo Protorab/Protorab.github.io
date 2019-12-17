@@ -638,10 +638,13 @@ footer .container .wrapper-row a:hover {
 @media all and (-ms-high-contrast:none) {
   a {
     font-family: "Arial";
+    letter-spacing: -.5px;
+    font-stretch: ultra-condensed
   }
 
   .item {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
   }
 
   #menu {

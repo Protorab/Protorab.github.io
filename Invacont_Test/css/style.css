@@ -657,9 +657,8 @@ footer .container .wrapper-row a:hover {
 
   .card-logo {
     width: 220px;
-    min-height: 100%;
+    height: 100%;
     cursor: pointer;
-    vertical-align: middle;
   }
 
   /* IE11 */

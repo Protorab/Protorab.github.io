@@ -35,7 +35,10 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: "NIMBSTB";
+  /* font-family: "Arial"; */
 }
+
+
 
 body {
   margin: 0 auto;
@@ -52,8 +55,7 @@ html {
   /* background: url("../img/invacont_test.png")no-repeat center/cover; */
 }
 
-
-/* html {
+/* html * {
   opacity: .7;
 } */
 
@@ -540,9 +542,7 @@ li {
   align-items: flex-start;
 }
 
-#pre-fotter .container .wrapper {
-  width: 50%;
-}
+#pre-fotter .container .wrapper {}
 
 .pre-fotter-wrapper-content {
   font-family: "Arial";
@@ -550,6 +550,7 @@ li {
   margin-bottom: 45px;
   font-weight: 500;
   line-height: 1.786;
+  width: 50%;
 }
 
 .reversive {
@@ -632,6 +633,36 @@ footer .container .wrapper-row a {
 
 footer .container .wrapper-row a:hover {
   color: #8dc705;
+}
+
+@media all and (-ms-high-contrast:none) {
+  a {
+    font-family: "Arial";
+  }
+
+  .item {
+    font-size: 1.5rem;
+  }
+
+  #menu {
+    top: -210px;
+    height: 80px;
+    border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+    -webkit-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+    -moz-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+    -ms-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+    -o-border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
+    max-width: 940px;
+  }
+
+  .card-logo {
+    width: 220px;
+    min-height: 100%;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  /* IE11 */
 }
 
 /* ================ */

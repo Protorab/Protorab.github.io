@@ -4,6 +4,8 @@
     padding-bottom: 150px;
   }
 
+
+
   #menu {
     top: 185px;
   }
@@ -51,7 +53,7 @@
     background-position-x: left;
   }
 
-  #pre-fotter .container .wrapper {
+  #pre-fotter .pre-fotter-wrapper-content {
     width: 100%;
   }
 

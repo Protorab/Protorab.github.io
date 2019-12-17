@@ -234,6 +234,7 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  -ms-width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -369,8 +370,8 @@ li {
 }
 
 .wrapper-content {
+  max-width: 960px;
   padding: 30px 40px 40px;
-
   color: rgb(241, 242, 245);
   /* padding: 0 12.5%; */
   background-color: rgba(38, 49, 28, 0.702);

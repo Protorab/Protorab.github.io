@@ -274,11 +274,12 @@ header {
 }
 
 .shadow {
+  overflow: hidden;
   width: 880px;
-  height: 185px;
+  height: 175px;
   background-image: radial-gradient(ellipse at top, rgb(19, 71, 8)0%, transparent 50%);
   position: absolute;
-  top: 183px;
+  top: 175px;
   border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
   -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
   -moz-border-radius: 50% 50% 50% 50% / 15% 15% 100% 100%;
@@ -287,8 +288,9 @@ header {
 }
 
 #menu {
+
   position: absolute;
-  top: 180px;
+  top: 178px;
   height: 75px;
   background: transparent;
   border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;

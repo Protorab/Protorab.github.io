@@ -48,7 +48,7 @@
     }
 
     h1 {
-      font-size: 7.2rem;
+      font-size: 4.2rem;
       color: #3C2923;
     }
 
@@ -788,9 +788,15 @@
     }
 
     .main-text-wrap {
-
       background-color: #fff;
       padding: 10px;
+    }
+
+    .main-text-wrap span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #3C2923;
     }
 
     .main-text h1,
@@ -862,8 +868,8 @@
       bottom: 0;
       right: 0;
       left: 0;
-      width: 80%;
-      height: 80%;
+      width: 60%;
+      height: 70%;
       display: none;
       z-index: 99;
     }
@@ -1156,90 +1162,12 @@
       opacity: .8;
     }
 
+    .more-btn {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
     /* =============================================================================================================================================================price */
-
-    #price {
-      padding-top: 90px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      width: 100%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding-bottom: 220px;
-      background: #a87a6d;
-      overflow-x: hidden;
-    }
-
-    #price>.container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
-
-    .table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .table a {
-      color: #3C2923;
-    }
-
-    .table a:hover {
-      color: #f0efef;
-      text-shadow: #a87a6d -1px -1px 10px;
-      transition: .2s linear;
-      -webkit-transition: .2s linear;
-      -moz-transition: .2s linear;
-      -ms-transition: .2s linear;
-      -o-transition: .2s linear;
-    }
-
-    tr {
-      height: 100px;
-    }
-
-    .number {
-      width: 100px;
-      text-align: center;
-    }
-
-    .service-name {
-      padding-left: 35px;
-    }
-
-    .service-price {
-      text-align: center;
-    }
-
-    tr th:nth-child(2) {
-      text-align: left;
-      padding-left: 35px;
-    }
-
-    .table tr:nth-child(odd) {
-      background: #f0efef;
-    }
-
-    .table tr:nth-child(odd) th,
-    .table tr:nth-child(odd) td:not(:last-child) {
-      border-right: #a87a6d 10px solid;
-    }
-
-    .table tr:nth-child(even) td:not(:last-child) {
-      border-right: #f0efef 10px solid;
-    }
-
     /* =========================================================================================footer=================================================================== */
 
     #footer {

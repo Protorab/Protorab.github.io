@@ -139,6 +139,7 @@ html {
 }
 
 .m-menu {
+  padding-top: 100px;
   transform: translateX(100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +297,7 @@ header {
 #menu {
   /* border: 1px solid red; */
   position: relative;
-  top: -205px;
+  top: -202px;
   height: 77px;
   background: transparent;
   border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;

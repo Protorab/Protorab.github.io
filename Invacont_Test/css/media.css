@@ -4,12 +4,6 @@
     padding-bottom: 150px;
   }
 
-
-
-  #menu {
-    top: 185px;
-  }
-
   .container {
     padding: 0 60px;
   }
@@ -25,9 +19,9 @@
 }
 
 @media (max-width: 999px) {
-  html {
+  /* html {
     font-size: 12px;
-  }
+  } */
 
   .menu-bar {
     display: -webkit-box;

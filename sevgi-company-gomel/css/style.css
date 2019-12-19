@@ -868,39 +868,21 @@
       bottom: 0;
       right: 0;
       left: 0;
-      width: 60%;
-      height: 70%;
+      width: 80%;
+      height: 80%;
       display: none;
       z-index: 99;
     }
 
-
-    /* .info-form-wrap {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(100px, 1fr));
-      grid-auto-rows: 200px;
-      grid-template-areas:
-        "aa aa aa aa"
-        "bb .. cc cc"
-        "dd .. .. ee";
-      width: 100%;
-    } */
     .info-form-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
       width: 100%;
       height: 100%;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
       align-items: flex-start;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
 
     .info-form-wrap .form-group {
@@ -932,28 +914,28 @@
     #form-img-wrap {
       display: flex;
       flex-direction: row-reverse;
-      /* grid-area: bb; */
+
       width: 400px;
       height: 400px;
       position: sticky;
       top: 80px;
-      left: 40px;
+      left: 60px;
 
     }
 
     .form-img-wrap-roundabout {
       height: 350px;
-      /* border: 1px solid red; */
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       position: absolute;
       top: -20px;
-      left: -20px;
+      left: -50px;
       padding: 10px;
       background: rgba(60, 41, 35, .5);
-     
+
     }
 
     .preview-img {
@@ -970,20 +952,17 @@
     }
 
     #form-img {
-      /* grid-area: bb; */
+
       width: 400px;
       height: 250px;
       overflow: hidden;
-      /* position: sticky;
-      top: 80px;
-      left: 40px; */
+
     }
 
     #form-content {
       -ms-flex-item-align: end;
       align-self: flex-end;
       width: 60%;
-      /* grid-area: cc; */
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -994,12 +973,18 @@
       padding-right: 40px;
     }
 
+    #ft {
+      margin-bottom: 10px;
+    }
+
     #form-img img {
       width: auto;
       height: 100%;
     }
 
     .form-buttons {
+      margin-top: auto;
+      align-self: flex-end;
       width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;

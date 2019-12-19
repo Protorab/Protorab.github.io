@@ -14,7 +14,10 @@ $(document).ready(function () {
     var mt = $("#mt" + i).text();
     var mi = $("#mi" + i).data("src");
     $(".form-discription").hide();
+    $(".form-img-wrap-roundabout").hide();
     $("#discription-" + i + ".form-discription").show();
+    $("#roundabout-" + i + ".form-img-wrap-roundabout").show();
+    // $("roundabout-" + i).show();
     // var fd = $('#m-discription' + i).text();
     $("#fi").attr("src", mi);
     // $('#f-discription').text(fd)
@@ -22,6 +25,16 @@ $(document).ready(function () {
     $(".info-form").show();
   });
 });
+$(document).ready(function () {
+  $(".preview-img img").click(function () {
+    var i = $(this).data("id");
+    console.log(i);
+    var sm_img = $("#prev-" + i + " img").attr("src");
+    $("#fi").attr("src", sm_img);
+
+  })
+
+})
 // ======================================================================
 // ============
 var show = function (state) {

@@ -1,3 +1,15 @@
+$(document).ready(function () {
+  var windowWidth = $(window).width();
+  if (windowWidth > 999) $(".item").removeClass("bt-trigger");
+  else $(".item").addClass("bt-trigger");
+
+  $(window).resize(function () {
+    var windowWidth = $(window).width();
+    if (windowWidth < 999) $(".item").addClass("bt-trigger");
+    else $(".item").removeClass("bt-trigger");
+  });
+});
+// =============
 $(function call() {
   var trigger = $(".trigger");
   var form = $("#modalform");
@@ -8,8 +20,9 @@ $(function call() {
     trigger_status.toggleClass("full");
   });
 });
+// ===========================
 $(document).ready(function () {
-  $(".more-btn").click(function () {
+  $(".bt-trigger").click(function () {
     var i = $(this).data("id");
     var mt = $("#mt" + i).text();
     var mi = $("#mi" + i).data("src");
@@ -35,6 +48,7 @@ $(document).ready(function () {
   })
 
 })
+
 // ======================================================================
 // ============
 var show = function (state) {

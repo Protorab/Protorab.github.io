@@ -175,16 +175,16 @@
       transition: all 0.3s ease;
     }
 
-    textarea:focus[placeholder] {
+    /* textarea:focus[placeholder] {
       text-indent: 200px;
-      color: transparent;
+
       -webkit-transition: ;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       -moz-transition: ;
       -ms-transition: ;
       -o-transition: ;
-    }
+    } */
 
     textarea:-moz-placeholder {
       text-indent: 0px;
@@ -402,7 +402,7 @@
 
     #form-control p {
       color: #f0f0f0;
-      font-size: 12px;
+      font-size: 1.4rem;
       justify-self: flex-start;
     }
 
@@ -441,7 +441,7 @@
       background-color: #fff;
       border: 1px solid #3C2923;
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 600;
     }
 
@@ -473,7 +473,7 @@
       justify-content: flex-start;
       background-color: #fff;
       color: #3C2923;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       width: 100%;
       height: 100%;
       padding: 10px;
@@ -915,16 +915,17 @@
       display: flex;
       flex-direction: row-reverse;
 
-      width: 400px;
-      height: 400px;
-      position: sticky;
+      width: 600px;
+      height: 600px;
+      position: relative;
       top: 80px;
       left: 60px;
+      margin-bottom: 50px;
 
     }
 
     .form-img-wrap-roundabout {
-      height: 350px;
+      height: 450px;
 
       display: flex;
       flex-direction: column;
@@ -934,6 +935,7 @@
       top: -20px;
       left: -50px;
       padding: 10px;
+      z-index: 3;
       background: rgba(60, 41, 35, .5);
 
     }
@@ -953,8 +955,8 @@
 
     #form-img {
 
-      width: 400px;
-      height: 250px;
+      width: 600px;
+      height: 350px;
       overflow: hidden;
 
     }
@@ -962,7 +964,7 @@
     #form-content {
       -ms-flex-item-align: end;
       align-self: flex-end;
-      width: 60%;
+      width: 50%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1028,6 +1030,10 @@
     h2 {
       color: #3C2923;
       margin-bottom: 50px;
+    }
+
+    .bt-trigger {
+      cursor: pointer;
     }
 
     #services>.services-container {

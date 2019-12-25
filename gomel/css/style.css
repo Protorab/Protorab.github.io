@@ -6,6 +6,7 @@
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -74,25 +75,44 @@ body {
   /* max-width: 1920px; */
   background-color: #282E34;
   color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* background-color: #646464; */
 }
 
 .top-content {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 80%;
   font-family: 'Lato', sans-serif;
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #1D242C;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
   font-size: 18px;
@@ -164,7 +184,11 @@ body {
 
 /* ---------------------- */
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
   position: absolute;
@@ -196,8 +220,14 @@ body {
 
 .menu ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 50%;
   height: 150px;
@@ -216,17 +246,35 @@ body {
 .header,
 .pbg2-img {
   font-family: 'Lato', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
 }
 
 .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 50%;
   color: #fafaff;
@@ -248,9 +296,18 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 50px;
 }
@@ -264,24 +321,38 @@ body {
 .pbg1-img {
   position: relative;
   z-index: 1;
-  background: url(../img/pic-1.jpg)center no-repeat /cover;
-  background-attachment: fixed;
-  height: 100vh;
+  background: url("../img/pic-1.jpg")no-repeat center /cover fixed;
+  min-height: 100vh;
   width: 100%;
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 80%;
   height: 800px;
 }
 
 .content-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   color: #ECE3DB;
@@ -317,9 +388,18 @@ body {
 /* ===================================================================== */
 .tabcontent {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 60%;
 }
@@ -347,6 +427,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -375,7 +457,11 @@ body {
 /* Container for image text */
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 50px;
@@ -416,11 +502,19 @@ body {
 /* ====================================================================== */
 .pbg2-img {
   height: 500px;
-  background: url(../img/pic-2.jpg)center no-repeat/cover fixed;
+  background: url(../img/pic-2.jpg)no-repeat center /cover fixed;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -431,9 +525,18 @@ body {
 }
 
 .white-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #1D242C;
   background-color: #fafafa;
@@ -442,15 +545,28 @@ body {
 }
 
 .content-map {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 .content-map-discription,
 .map {
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   border: #1D242C 1px solid;
   height: 80%;
@@ -461,9 +577,20 @@ body {
   position: absolute;
   top: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 90%;
   transition: .5s ease-in;
@@ -519,7 +646,7 @@ path.__opacity,
 /* =========================================================================== */
 .pbg3-img {
   min-height: 500px;
-  background: url(../img/pic-3.jpg)center no-repeat/cover fixed;
+  background: url(../img/pic-3.jpg) no-repeat center/cover fixed;
   width: 100%;
 }
 
@@ -528,7 +655,7 @@ path.__opacity,
 }
 
 .footer-pbg-img {
-  background: url(../img/pic-4.jpg)center no-repeat/cover fixed;
+  background: url(../img/pic-4.jpg)no-repeat center /cover fixed;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }

@@ -480,6 +480,10 @@
 
     }
 
+    #modalform .form-but-group {
+      justify-content: space-between;
+    }
+
     .form-group {
       width: 100%;
       display: -webkit-box;
@@ -670,6 +674,19 @@
 
     .contacts {
       width: 55%;
+    }
+
+    .contacts li {
+      width: 100%;
+    }
+
+
+
+    .contacts a {
+      display: flex;
+      width: 70%;
+      align-items: flex-end;
+      justify-content: space-between;
     }
 
     .contacts i {
@@ -1186,8 +1203,9 @@
       -ms-flex-item-align: end;
       align-self: flex-end;
       margin-top: auto;
-      width: 100px;
-      height: 30px;
+      /* width: 100px;
+height: 30px; */
+      padding: 5px 10px;
     }
 
     .item-content button:hover {
@@ -1195,7 +1213,7 @@
     }
 
     .more-btn {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
     }
 
@@ -1323,7 +1341,7 @@
     }
 
     .footer-bottom .social a {
-      color: #3C2923;
+      color: rgb(60, 41, 35);
     }
 
     .author {
@@ -1334,4 +1352,72 @@
 
     .author:hover {
       color: #a87a6d;
+    }
+
+    /* =================== */
+    #call-round {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: rgba(155, 120, 119, 0.7);
+      font-size: 4rem;
+      color: #fff;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+    }
+
+    #call-round-1 {
+      width: 150px;
+      height: 150px;
+      background: rgba(161, 107, 107, 0.39);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: roundation 4s ease-in-out infinite;
+      -webkit-animation: roundation 4s ease-in-out infinite;
+    }
+
+    #call-round-2 {
+      animation: roundation 3s ease-in-out infinite;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: rgba(78, 58, 58, 0.39);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-animation: roundation 3s ease-in-out infinite;
+    }
+
+    @keyframes roundation {
+      0% {
+        width: 10px;
+        height: 10px;
+      }
+
+      50% {
+        width: 150px;
+        height: 150px;
+      }
+
+      100% {
+        width: 10px;
+        height: 10px;
+      }
     }

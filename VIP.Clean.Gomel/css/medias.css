@@ -158,6 +158,10 @@
     #modalform.full_size {
         height: 70%;
     }
+
+    #call-round {
+        display: flex;
+    }
 }
 
 

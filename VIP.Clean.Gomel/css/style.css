@@ -691,7 +691,14 @@
 
     .contacts i {
       color: #a87a6d;
+    }
 
+    .contacts .fa-phone {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
     }
 
     .social {
@@ -1373,11 +1380,8 @@ height: 30px; */
       background: rgba(155, 120, 119, 0.7);
       font-size: 4rem;
       color: #fff;
-      transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
+
+      display: none;
     }
 
     #call-round-1 {

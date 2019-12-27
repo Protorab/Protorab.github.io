@@ -360,7 +360,7 @@
       border-radius: 10px;
       right: 50px;
       bottom: 0;
-      width: 300px;
+      width: 360px;
       height: 30px;
       z-index: 161;
       background-color: #3C2923;
@@ -375,7 +375,7 @@
     }
 
     #modalform.full_size {
-      height: 420px;
+      height: 480px;
     }
 
     .form-conteiner span {
@@ -441,7 +441,7 @@
       background-color: #fff;
       border: 1px solid #3C2923;
       text-transform: uppercase;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 600;
     }
 
@@ -538,8 +538,10 @@
     }
 
     .form-but-group button {
-      padding: 10px;
+      min-width: 130px;
+      padding: 5px;
       cursor: pointer;
+      color: rgba(60, 41, 35, .8);
     }
 
     /* ============================ */

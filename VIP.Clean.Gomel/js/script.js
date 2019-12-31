@@ -1,12 +1,22 @@
 $(document).ready(function () {
   var windowWidth = $(window).width();
-  if (windowWidth > 999) $(".item").removeClass("bt-trigger");
-  else $(".item").addClass("bt-trigger");
+  if (windowWidth > 999) {
+    $(".item").attr('onclick', "");
+    $(".item").removeClass("bt-trigger");
+  } else {
+    $(".item").attr('onclick', "show( 'block')");
+    $(".item").addClass("bt-trigger");
+  }
 
   $(window).resize(function () {
     var windowWidth = $(window).width();
-    if (windowWidth < 999) $(".item").addClass("bt-trigger");
-    else $(".item").removeClass("bt-trigger");
+    if (windowWidth < 999) {
+      $(".item").addClass("bt-trigger");
+      $(".item").attr('onclick', "show( 'block')");
+    } else {
+      $(".item").removeClass("bt-trigger");
+      $(".item").attr('onclick', "");
+    }
   });
 });
 // =============

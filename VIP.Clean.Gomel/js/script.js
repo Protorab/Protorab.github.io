@@ -46,6 +46,7 @@ $(document).ready(function () {
     // $('#f-discription').text(fd)
     $("#ft").text(mt);
     $(".info-form").show();
+    console.log(i)
   });
 });
 $(document).ready(function () {

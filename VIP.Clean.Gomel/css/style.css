@@ -104,7 +104,7 @@
     }
 
     .form-input:focus[placeholder] {
-      text-indent: 500px;
+      text-indent: -100%;
       -webkit-transition: text-indent 0.3s ease;
       transition: text-indent 0.3s ease;
     }
@@ -128,25 +128,25 @@
     }
 
     .form-input:focus::-webkit-input-placeholder {
-      text-indent: 500px;
+      text-indent: -100%;
       -webkit-transition: text-indent 0.3s ease;
       transition: text-indent 0.3s ease;
     }
 
     .form-input:focus::-moz-placeholder {
-      text-indent: 500px;
+      text-indent: -100%;
       -webkit-transition: text-indent 0.3s ease;
       transition: text-indent 0.3s ease;
     }
 
     .form-input:focus:-moz-placeholder {
-      text-indent: 500px;
+      text-indent: -100%;
       -webkit-transition: text-indent 0.3s ease;
       transition: text-indent 0.3s ease;
     }
 
     .form-input:focus:-ms-input-placeholder {
-      text-indent: 500px;
+      text-indent: -100%;
       -webkit-transition: text-indent 0.3s ease;
       transition: text-indent 0.3s ease;
     }
@@ -205,7 +205,7 @@
     }
 
     textarea:focus::-webkit-input-placeholder {
-      text-indent: 200px;
+      text-indent: -100%;
       color: transparent;
       -webkit-transition: ;
       -webkit-transition: all 0.3s ease;
@@ -216,7 +216,7 @@
     }
 
     textarea:focus::-moz-placeholder {
-      text-indent: 200px;
+      text-indent: -100%;
       color: transparent;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
@@ -226,7 +226,7 @@
     }
 
     textarea:focus:-moz-placeholder {
-      text-indent: 200px;
+      text-indent: -100%;
       color: transparent;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
@@ -236,7 +236,7 @@
     }
 
     textarea:focus:-ms-input-placeholder {
-      text-indent: 200px;
+      text-indent: -100%;
       color: transparent;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;

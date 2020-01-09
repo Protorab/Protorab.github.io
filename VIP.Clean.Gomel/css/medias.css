@@ -189,9 +189,15 @@
         -ms-transform: scale(.85) translateX(-5%);
         -o-transform: scale(.85) translateX(-5%);
     }
+
+    html {
+        font-size: 16px;
+    }
 }
 
-@media (max-width: 750px) {
+
+
+/* @media (max-width: 750px) {
     #form-img-wrap {
         transform: scale(.75) translateX(-20%);
         position: relative;
@@ -201,7 +207,7 @@
         -ms-transform: scale(.75) translateX(-20%);
         -o-transform: scale(.75) translateX(-20%);
     }
-}
+} */
 
 @media (max-width: 499px) {
 
@@ -218,9 +224,9 @@
         left: 0;
     }
 
-    #modalform.full_size {
+    /* #modalform.full_size {
         height: 520px;
-    }
+    } */
 
     .services-items {
         display: flex;

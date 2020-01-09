@@ -97,11 +97,11 @@
 }
 
 @media (max-width: 999px) {
-    html {
+    /* html {
         font-size: 14px;
-    }
+    } */
 
-    .m-menu li {}
+
 
     .services-items {
         grid-template-rows: repeat(12, 340px);

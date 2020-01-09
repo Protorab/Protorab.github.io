@@ -181,13 +181,13 @@
 
 @media (max-width: 750px) {
     #form-img-wrap {
-        transform: scale(.85) translateX(-5%);
+        transform: scale(.75) translateX(-20%);
         position: relative;
         margin-top: 30px;
-        -webkit-transform: scale(.85) translateX(-5%);
-        -moz-transform: scale(.85) translateX(-5%);
-        -ms-transform: scale(.85) translateX(-5%);
-        -o-transform: scale(.85) translateX(-5%);
+        -webkit-transform: scale(.75) translateX(-20%);
+        -moz-transform: scale(.75) translateX(-20%);
+        -ms-transform: scale(.75) translateX(-20%);
+        -o-transform: scale(.75) translateX(-20%);
     }
 
     html {
@@ -198,15 +198,7 @@
 
 
 /* @media (max-width: 750px) {
-    #form-img-wrap {
-        transform: scale(.75) translateX(-20%);
-        position: relative;
-        margin-top: 30px;
-        -webkit-transform: scale(.75) translateX(-20%);
-        -moz-transform: scale(.75) translateX(-20%);
-        -ms-transform: scale(.75) translateX(-20%);
-        -o-transform: scale(.75) translateX(-20%);
-    }
+    
 } */
 
 @media (max-width: 499px) {

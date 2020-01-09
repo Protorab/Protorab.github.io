@@ -71,18 +71,18 @@ var show = function (state) {
 
 $(function () {
   var close = $(".close-menu");
-  var link = $(".m-menu-link");
+  var link = $(".m-menu-links");
   var menu = $(".m-menu");
   link.on("click", function (event) {
     event.preventDefault();
     menu.toggleClass("m-menu__active");
-    link.hide();
+    $(".m-menu-link").hide();
     close.show();
   });
   close.on("click", function (event) {
     event.preventDefault();
     menu.toggleClass("m-menu__active");
-    link.show();
+    $(".m-menu-link").show();
     close.hide();
   });
 });

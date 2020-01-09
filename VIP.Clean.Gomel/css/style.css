@@ -675,24 +675,25 @@
     }
 
     .contacts {
-      width: 55%;
+      width: 75%;
     }
 
     .contacts li {
-      width: 100%;
+      width: 50%;
     }
 
 
 
     .contacts a {
       display: flex;
-      width: 70%;
+      /* width: 70%; */
       align-items: flex-end;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
 
     .contacts i {
       color: #a87a6d;
+      padding-right: 15px;
     }
 
     .contacts .fa-phone {
@@ -1372,8 +1373,8 @@ height: 30px; */
       position: fixed;
       right: 50px;
       bottom: 50px;
-      width: 180px;
-      height: 180px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -1387,11 +1388,12 @@ height: 30px; */
     }
 
     #call-round-1 {
-      width: 150px;
-      height: 150px;
+      width: 90px;
+      height: 90px;
       background: rgba(161, 107, 107, 0.39);
       border-radius: 50%;
       display: flex;
+      position: absolute;
       align-items: center;
       justify-content: center;
       animation: roundation 4s ease-in-out infinite;
@@ -1413,13 +1415,13 @@ height: 30px; */
 
     @keyframes roundation {
       0% {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
       }
 
       50% {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
       }
 
       100% {

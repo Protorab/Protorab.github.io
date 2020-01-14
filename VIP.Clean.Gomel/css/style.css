@@ -35,7 +35,10 @@
     input:focus,
     textarea:active,
     textarea:hover,
-    textarea:focus {
+    textarea:focus,
+    img:active,
+    img:hover,
+    img:focus {
       outline: 0;
       outline-offset: 0;
     }
@@ -676,6 +679,7 @@
 
     .contacts {
       width: 75%;
+
     }
 
     .contacts li {
@@ -689,6 +693,10 @@
       /* width: 70%; */
       align-items: flex-end;
       justify-content: flex-start;
+    }
+
+    .contacts p {
+      font-size: 2rem;
     }
 
     .contacts i {
@@ -709,6 +717,7 @@
     }
 
     .contacts a,
+    .contacts p,
     .social a {
       color: #f0efef;
       font-weight: 500;
@@ -719,7 +728,7 @@
       -o-transition: .3s linear;
     }
 
-    .contacts a:hover {
+    .contacts p:hover {
       color: #a87a6d;
     }
 

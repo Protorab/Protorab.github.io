@@ -31,7 +31,10 @@
 
 
      .address-phone {
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
      }
 
      .address,
@@ -64,14 +67,24 @@
  @media (max-width: 1200px) {
 
      .contacts {
-         flex-direction: column;
-         align-items: flex-start;
-         justify-content: space-around;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-align: start;
+             -ms-flex-align: start;
+                 align-items: flex-start;
+         -ms-flex-pack: distribute;
+             justify-content: space-around;
      }
 
      .contact-social>.social {
-         align-items: flex-start;
-         justify-content: flex-start;
+         -webkit-box-align: start;
+             -ms-flex-align: start;
+                 align-items: flex-start;
+         -webkit-box-pack: start;
+             -ms-flex-pack: start;
+                 justify-content: flex-start;
      }
 
      .menu {
@@ -127,7 +140,8 @@
      }
 
      #form-content {
-         align-self: center;
+         -ms-flex-item-align: center;
+             align-self: center;
          width: 70%;
 
          -webkit-box-orient: vertical;
@@ -171,10 +185,13 @@
      }
 
      .input-group {
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
      }
 
      #call-round {
+         display: -webkit-box;
+         display: -ms-flexbox;
          display: flex;
      }
  }
@@ -211,7 +228,9 @@
      }
 
      .contacts a {
-         justify-content: space-between;
+         -webkit-box-pack: justify;
+             -ms-flex-pack: justify;
+                 justify-content: space-between;
 
 
      }
@@ -244,10 +263,19 @@
 
 
      .services-items {
+         display: -webkit-box;
+         display: -ms-flexbox;
          display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          grid-gap: 0px;
          width: 100%;
      }

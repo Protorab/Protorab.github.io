@@ -177,6 +177,11 @@
      #call-round {
          display: flex;
      }
+
+     .address,
+     #phone {
+         width: 100%;
+     }
  }
 
 
@@ -201,6 +206,7 @@
      .m-menu__active {
          width: 100%;
      }
+
 
  }
 
@@ -255,5 +261,3 @@
          -o-transform: scale(.55) translateX(-45%);
      }
  }
-
- */

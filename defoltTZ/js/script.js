@@ -11,6 +11,14 @@ $(document).ready(function () {
     $("#sbm-" + i).toggleClass("_actived");
     $(".content-block img").hide();
     $("#ci-" + i).show();
+    $(".mb-" + i).click(function () {
+      $(".mb-" + i).toggleClass("_active");
+      $(".mb-" + i + " .arrow").toggleClass("arrow_show");
+      $(".mb-" + i + " path").toggleClass("_active");
+      $("#sbm-" + i).toggleClass("_actived");
+      $(".content-block img").hide();
+      $("#ci-" + i).show();
+    })
   })
 
 })

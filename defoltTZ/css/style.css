@@ -415,13 +415,12 @@
       width: 22px;
       height: 22px;
       margin-left: 10px;
-
     }
 
     input {
       border: 1px solid #bcbdc0;
       padding: 10px;
-      width: 200px;
+      /* width: 200px; */
       text-align: center;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -432,6 +431,7 @@
     }
 
     .btn-wrap {
+      transition: ease-in-out 1s;
       background: radial-gradient(at bottom, #fdef9f 20%, #b37e2c);
       padding: 5px;
       display: -webkit-box;
@@ -441,6 +441,19 @@
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
+      -webkit-transition: ease-in-out 1s;
+      -moz-transition: ease-in-out 1s;
+      -ms-transition: ease-in-out 1s;
+      -o-transition: ease-in-out 1s;
+    }
+
+    .btn:hover {
+      transition: ease-in-out .1s;
+      background: #b37e2c;
+      -webkit-transition: ease-in-out .1s;
+      -moz-transition: ease-in-out .1s;
+      -ms-transition: ease-in-out .1s;
+      -o-transition: ease-in-out .1s;
     }
 
     .btn {

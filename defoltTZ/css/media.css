@@ -2,6 +2,18 @@
   #header>.wrap {
     width: 80%;
     margin-bottom: 100px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrap-block {
+    padding: 0;
+  }
+
+  .menu-block {
+    margin: 0;
+
   }
 
   .wrap-block {
@@ -17,4 +29,32 @@
   }
 }
 
-@media (max-width: 720px) {}
+@media (max-width: 729px) {
+  #footer>.wrap {
+    width: 80%;
+    margin-bottom: 100px;
+
+  }
+
+  .button-wrap {
+    flex-wrap: wrap;
+  }
+
+  .wrap-block {
+    height: auto;
+  }
+
+  .content-block {
+    display: none;
+  }
+}
+
+@media(max-width:559px) {
+  h1 {
+    padding: 0 20px;
+  }
+
+  #header>.wrap {
+    width: 100%;
+  }
+}

@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -ms-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy-Regular', sans-serif;
+  /* background-color: #6e7b92; */
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+button:active,
+button:hover,
+button:focus,
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+a,
+li {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  line-height: 30px;
+}
+
+li {
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+body {
+  background: #fefefe;
+  color: #333333;
+  min-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.bgc {
+  background: #005455;
+  box-shadow: 0px 5.09091px 25.4545px rgba(0, 0, 0, 0.2);
+}
+
+.bgc-w {
+  background: #fefefe;
+}
+
+.bgc-drc-w {
+  background: #EEEFF3;
+}
+
+.dgrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    ".. aa .."
+    "bb cc dd"
+    "ee cc ff"
+    ".. gg ..";
+}
+
+.dgrid img {
+  grid-area: cc;
+}
+
+.dgrid p:nth-child(1) {
+  grid-area: aa;
+}
+
+.dg-tc-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dg-tr-4 {
+  grid-template-rows: repeat(4, 1fr);
+
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dflex-jc-sb {
+  justify-content: space-between;
+}
+
+.dflex-jc-fe {
+  justify-content: flex-end;
+}
+
+.dflex-rw {
+  flex-direction: row;
+}
+
+.dflex-cl {
+  flex-direction: column;
+}
+
+.container-fl {
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  /* border: solid 1px red; */
+}
+
+
+
+.container-25-per {
+  width: 25%;
+}
+
+.top-bg {
+  background: url("../img/top-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 742px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social svg {
+  padding-left: 10px;
+}
+
+.courses {
+  min-height: 820px;
+}
+
+.educational {
+  background: url("../img/learn_kurs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50%;
+}

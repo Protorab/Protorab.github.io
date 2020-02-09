@@ -68,6 +68,7 @@ ul {
 h1 {
   font-size: 40px;
   line-height: 48px;
+  font-family: 'Gilroy-Bold';
 }
 
 body {
@@ -126,7 +127,7 @@ body {
 
 .container {
   position: relative;
-  width: 85%;
+  width: 75%;
   /* border: solid 1px red; */
 }
 
@@ -175,7 +176,7 @@ nav {
 }
 
 .contact {
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 .tel {
@@ -361,15 +362,143 @@ nav {
   margin-bottom: 100px;
 }
 
+.choose-courses h1 {
+  margin-bottom: 70px;
+
+}
+
 .courses {
   min-height: 820px;
 }
 
 .courses-blocks {
   min-height: 50%;
+  position: relative;
 
+}
+
+.img-wrap {
+
+  height: 410px;
+  overflow: hidden;
+}
+
+.img-wrap-sm {
+  width: 566px;
+}
+
+.img-wrap-bg {
+  width: 806px;
+}
+
+.courses-block img {
+  height: 100%;
+  width: auto;
 }
 
 .courses-blocks h2 {
   position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  top: 50px;
+  left: 106px;
+  font-family: 'Gilroy-Bold';
+}
+
+.blocks-wt-tittle {
+  color: #FFFFFF;
+}
+
+.reviews h1 {
+  margin-bottom: 70px;
+}
+
+.reviews-area {
+  position: relative;
+  border: 1px solid red
+}
+
+.review-cotrol {
+  cursor: pointer;
+  top: 50%;
+  position: absolute;
+  background: #EBEBEB;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.review-cotrol:hover {
+  background: #005455;
+}
+
+.review-cotrol:hover path {
+  fill: #fff;
+}
+
+.review-prev {
+  left: 89px;
+}
+
+.review-next {
+  right: 89px;
+}
+
+.review-next {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.reviews-blocks {
+  height: 100%;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.review-img-wrap {
+  width: 593px;
+  height: 460px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+
+.review-img-wrap img {
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  transform: translate(-5%);
+  -webkit-transform: translate(-5%);
+  -moz-transform: translate(-5%);
+  -ms-transform: translate(-5%);
+  -o-transform: translate(-5%);
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+
+.review-content {
+  max-width: 833px;
+  background: #EEEFF3;
+  height: 100%;
 }

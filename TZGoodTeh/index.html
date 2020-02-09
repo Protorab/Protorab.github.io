@@ -151,39 +151,62 @@
 				<h1>Отзывы</h1>
 			</div>
 			<div class="container-fl dflex reviews-area">
-				<div class="review-cotrol review-prev dflex">
+				<div class="review-cotrol review-prev dflex" onclick="plusSlides(-1)">
 					<svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M1.02905 17.7624L18.4832 0.30822C18.8942 -0.10274 19.5533 -0.10274 19.9642 0.30822C20.3752 0.719181 20.3752 1.37827 19.9642 1.78923L3.25443 18.499L19.9642 35.2088C20.3752 35.6198 20.3752 36.2789 19.9642 36.6898C19.7626 36.8914 19.4912 37 19.2276 37C18.964 37 18.6926 36.8992 18.491 36.6898L1.0368 19.2357C0.625839 18.8325 0.625841 18.1656 1.02905 17.7624Z"
 							fill="#292929" />
 					</svg>
 				</div>
-				<div class="review-cotrol review-next dflex">
+				<div class="review-cotrol review-next dflex " onclick="plusSlides(1)">
 					<svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M1.02905 17.7624L18.4832 0.30822C18.8942 -0.10274 19.5533 -0.10274 19.9642 0.30822C20.3752 0.719181 20.3752 1.37827 19.9642 1.78923L3.25443 18.499L19.9642 35.2088C20.3752 35.6198 20.3752 36.2789 19.9642 36.6898C19.7626 36.8914 19.4912 37 19.2276 37C18.964 37 18.6926 36.8992 18.491 36.6898L1.0368 19.2357C0.625839 18.8325 0.625841 18.1656 1.02905 17.7624Z"
 							fill="#292929" />
 					</svg>
 				</div>
-				<div class="container dflex reviews-blocks">
-					<div class="review-img-wrap dflex">
-						<img src="img/review_2.png" alt="фото" title="фото">
+				<div class="container review-slider dflex ">
+					<div class="container-fl dflex reviews-blocks fade">
+						<div class="review-img-wrap dflex">
+							<img src="img/review_1.png" alt="фото" title="фото">
+						</div>
+						<div class="review-content">
+							<p class="review-text">Большое спасибо за прекрасно структурированные курсы. Все понятно, доступно:
+								видно,
+								что
+								работали профессионалы своего дела. Давно хотела повысить свой уровень и какая удача была наткнуться на
+								онлайн-платформу SUPP! Буду советовать всем коллегам. Это 5 из 5 баллов!</p>
+							<p class="review-reviewer-name">Елена Матюшева, 21 год</p>
+							<p class="review-reviewer-work">Психолог</p>
+						</div>
 					</div>
-					<div class="review-content">
-						<p class="review-text">Большое спасибо за прекрасно структурированные курсы. Все понятно, доступно: видно,
-							что
-							работали профессионалы своего дела. Давно хотела повысить свой уровень и какая удача была наткнуться на
-							онлайн-платформу SUPP! Буду советовать всем коллегам. Это 5 из 5 баллов!</p>
-						<p class="review-reviewer-name">Елена Матюшева, 21 год</p>
-						<p class="review-reviewer-work">Психолог</p>
+					<div class="container-fl dflex reviews-blocks fade">
+						<div class="review-img-wrap dflex">
+							<img src="img/review_2.png" alt="фото" title="фото">
+						</div>
+						<div class="review-content">
+							<p class="review-text">С таким преподавателем просто невозможно не делать успехи! Он все очень доходчиво
+								объясняет и отвечает на вопросы каждого ученика.</p>
+							<p class="review-reviewer-name">Василий Патешев, 27 лет</p>
+							<p class="review-reviewer-work">Психолог</p>
+						</div>
+					</div>
+					<div class="container-fl dflex reviews-blocks fade">
+						<div class="review-img-wrap dflex">
+							<img src="img/review_3.png" alt="фото" title="фото">
+						</div>
+						<div class="review-content">
+							<p class="review-text">Много изучали теории, ну а потом учились применять на практике. Очень понравилось.</p>
+							<p class="review-reviewer-name">Михаил Ватюшин, 44 года</p>
+							<p class="review-reviewer-work">Психолог</p>
+						</div>
 					</div>
 				</div>
-
-				<div class="conteiner-fl dflex reviews-navigator">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+			</div>
+			<div class="conteiner-fl dflex dflex-jc-sb reviews-navigator">
+				<span class="dot active" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 			<div class="conteiner-fl dflex">
 				<button type="button" class="bgc btn">Оставить отзыв</button>
@@ -191,6 +214,8 @@
 		</div>
 
 		<!-- ============================== js ======================================== -->
+
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 

@@ -417,12 +417,13 @@ nav {
 
 .reviews-area {
   position: relative;
-  border: 1px solid red
+  /* border: 1px solid red; */
 }
 
 .review-cotrol {
   cursor: pointer;
-  top: 50%;
+  top: 200px;
+
   position: absolute;
   background: #EBEBEB;
   width: 70px;
@@ -459,13 +460,16 @@ nav {
 }
 
 .reviews-blocks {
+  margin: 0 10px;
+  min-width: 1426px;
+  position: relative;
   height: 100%;
-
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+
 }
 
 .review-img-wrap {
@@ -475,10 +479,13 @@ nav {
   background-size: cover;
   position: relative;
   border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
 }
 
 .review-img-wrap img {
-  border-radius: 10px 0 0 10px;
   position: absolute;
   left: 0;
   right: 0;
@@ -486,19 +493,75 @@ nav {
   bottom: 0;
   margin: auto;
   height: 100%;
-  transform: translate(-5%);
-  -webkit-transform: translate(-5%);
-  -moz-transform: translate(-5%);
-  -ms-transform: translate(-5%);
-  -o-transform: translate(-5%);
-  -webkit-border-radius: 10px 0 0 10px;
-  -moz-border-radius: 10px 0 0 10px;
-  -ms-border-radius: 10px 0 0 10px;
-  -o-border-radius: 10px 0 0 10px;
 }
 
 .review-content {
+  padding: 89px 155px 102px 88px;
   max-width: 833px;
   background: #EEEFF3;
-  height: 100%;
+  height: 460px;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+
+.review-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+.review-reviewer-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.review-reviewer-work {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews-navigator {
+  width: 60px;
+  margin-bottom: 60px;
+}
+
+.reviews-navigator span {
+  cursor: pointer;
+  display: inline-block;
+  background: #C4C4C4;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.reviews-navigator span:hover {
+  background: #292929;
+}
+
+.reviews .btn {
+  margin-bottom: 100px;
+}
+
+.review-slider {
+  height: 460px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.d-none {
+  /* display: none; */
 }

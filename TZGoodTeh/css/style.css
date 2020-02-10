@@ -158,6 +158,12 @@ body {
   z-index: 2;
 }
 
+.mobile-burger-menu._fixible {
+  position: fixed;
+  top: 35px;
+  right: 10px;
+}
+
 .bars {
   display: inline-block;
   width: 40px;
@@ -659,12 +665,12 @@ nav {
 .m-menu {
   padding: 150px 0;
   background: rgba(45, 67, 68, 0.7);
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 0;
   z-index: 1;
   top: 0;
-  height: 100vh;
+  min-height: 100vh;
   right: 0;
 }
 

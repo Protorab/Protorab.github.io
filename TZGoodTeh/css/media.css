@@ -147,6 +147,11 @@
   .img-wrap-bg {
     width: 365px;
   }
+
+  .m-menu.__show {
+    width: 60%;
+
+  }
 }
 
 @media(max-width:599px) {
@@ -155,11 +160,43 @@
   }
 
   .sabmit-app-container img {
-    transform: translate(-25%);
+    width: 50%;
+  }
+
+  .dgrid p {
+    font-size: 1.7rem;
+  }
+
+  .courses-blocks h2 {
+    top: 50px;
+    left: 56px;
+  }
+
+  .img-wrap img {
+    left: -200px;
+    right: 100px;
+  }
+
+  .review-cotrol {
+    top: -70px;
+  }
+
+  .review-prev {
+    left: 25px;
+  }
+
+  .review-next {
+    right: 25px;
+  }
+
+  .m-menu.__show {
+    width: 70%;
+
+  }
+}
+
+@media(max-width:399px) {
+  .m-menu.__show {
     width: 100%;
-    -webkit-transform: translate(-25%);
-    -moz-transform: translate(-25%);
-    -ms-transform: translate(-25%);
-    -o-transform: translate(-25%);
   }
 }

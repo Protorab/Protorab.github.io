@@ -32,8 +32,10 @@ function showSlides(n) {
 $(".dot").click(function () {
   $(this).addClass("active")
 });
+
 $(".mobile-burger-menu").click(function () {
   $(".bars").toggleClass("change");
+  $(".mobile-burger-menu").toggleClass("_fixible");
   $(".m-menu").toggleClass("__show");
 })
 

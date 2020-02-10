@@ -32,3 +32,16 @@ function showSlides(n) {
 $(".dot").click(function () {
   $(this).addClass("active")
 });
+$(".mobile-burger-menu").click(function () {
+  $(".bars").toggleClass("change");
+  $(".m-menu").toggleClass("__show");
+})
+
+$(window).resize(function () {
+  if ($(window).width() <= 1399) {
+    $('.reviews-blocks').addClass('dflex-cl');
+  };
+  if ($(window).width() >= 1399) {
+    $('.reviews-blocks').removeClass('dflex-cl');
+  };
+})

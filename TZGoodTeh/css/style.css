@@ -18,7 +18,7 @@ body {
 }
 
 html {
-  font-size: 12px;
+  font-size: 10px;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
 }
@@ -47,7 +47,7 @@ a:hover {
 p,
 a,
 li {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
   font-style: normal;
 
@@ -66,7 +66,7 @@ ul {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 48px;
   font-family: 'Gilroy-Bold';
 }
@@ -74,7 +74,7 @@ h1 {
 body {
   background: #fefefe;
   color: #333333;
-  min-width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -88,36 +88,48 @@ body {
 
 
 .dflex {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 
 .dflex-jc-sb {
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 .dflex-rw {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
 }
 
 .dflex-cl {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
 .dflex-jc-fe {
+  -webkit-box-pack: end;
   justify-content: flex-end;
 }
 
 .dflex-jc-fs {
+  -webkit-box-pack: start;
   justify-content: flex-start;
 }
 
 .dflex-ai-fe {
+  -webkit-box-align: end;
   align-items: flex-end;
 }
 
 .dflex-ai-fs {
+  -webkit-box-align: start;
   align-items: flex-start;
 }
 
@@ -135,6 +147,48 @@ body {
   padding: 30px 0;
 }
 
+.mobile-burger-menu {
+  padding: 10px 0;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: 2px solid #D7D6DE;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.bars {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background: #D7D6DE;
+}
+
+.bar1.change {
+  transform: rotate(-405deg) translate(-7px, 7px);
+  -webkit-transform: rotate(-405deg) translate(-7px, 7px);
+  -moz-transform: rotate(-405deg) translate(-7px, 7px);
+  -ms-transform: rotate(-405deg) translate(-7px, 7px);
+  -o-transform: rotate(-405deg) translate(-7px, 7px);
+}
+
+.bar2.change {
+  transform: translate(100px);
+  -webkit-transform: translate(100px);
+  -moz-transform: translate(100px);
+  -ms-transform: translate(100px);
+  -o-transform: translate(100px);
+}
+
+.bar3.change {
+  transform: rotate(405deg) translate(-8px, -8px);
+  -webkit-transform: rotate(405deg) translate(-8px, -8px);
+  -moz-transform: rotate(405deg) translate(-8px, -8px);
+  -ms-transform: rotate(405deg) translate(-8px, -8px);
+  -o-transform: rotate(405deg) translate(-8px, -8px);
+}
+
 .logo {
   background: #D7D6DE;
   padding: 18px 77px;
@@ -147,20 +201,18 @@ body {
 }
 
 nav {
-  margin-right: 65px;
+  margin-right: 55px;
 }
 
 .menu li {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-left: 60px;
   cursor: pointer;
-  display: flex;
-
 }
 
 .menu li::after {
@@ -176,7 +228,7 @@ nav {
 }
 
 .contact {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .tel {
@@ -184,7 +236,7 @@ nav {
   color: #fff;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 38px;
 }
 
@@ -198,7 +250,7 @@ nav {
   color: #fff;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 24px;
   margin-bottom: 5px;
   /* text-decoration-line: underline; */
@@ -232,7 +284,7 @@ nav {
 .top-bg-content h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 48px;
 
 }
@@ -240,7 +292,7 @@ nav {
 .top-bg-content p {
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 30px;
   display: inline-block;
   max-width: 472px;
@@ -250,7 +302,7 @@ nav {
   padding: 17px 30px;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 26px;
   border: 2px solid #005455;
   box-sizing: border-box;
@@ -271,7 +323,9 @@ nav {
 
 .dgrid {
   display: grid;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   grid-template-areas:
     ".. aa .."
@@ -282,7 +336,7 @@ nav {
   /* grid-template-rows: repeat(4, 80px); */
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 2rem;
   line-height: 27px;
 }
 
@@ -330,7 +384,7 @@ nav {
   margin-bottom: 45px;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 40px;
   text-align: center;
 }
@@ -352,7 +406,7 @@ nav {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 27px;
   text-align: center;
 
@@ -367,9 +421,6 @@ nav {
 
 }
 
-.courses {
-  min-height: 820px;
-}
 
 .courses-blocks {
   min-height: 50%;
@@ -378,9 +429,11 @@ nav {
 }
 
 .img-wrap {
-
   height: 410px;
   overflow: hidden;
+  background-size: cover;
+  position: relative;
+
 }
 
 .img-wrap-sm {
@@ -391,16 +444,21 @@ nav {
   width: 806px;
 }
 
-.courses-block img {
+.img-wrap img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   height: 100%;
-  width: auto;
 }
 
 .courses-blocks h2 {
   position: absolute;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 36px;
   top: 50px;
   left: 106px;
@@ -511,7 +569,7 @@ nav {
 .review-text {
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 30px;
   margin-bottom: 28px;
 }
@@ -519,7 +577,7 @@ nav {
 .review-reviewer-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 30px;
   margin-bottom: 10px;
 }
@@ -527,7 +585,7 @@ nav {
 .review-reviewer-work {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 30px;
 }
 
@@ -574,22 +632,43 @@ nav {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
 
-  to {
-    opacity: 1
-  }
+
+.m-menu * {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
+.m-menu a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
-  to {
-    opacity: 1
-  }
+.more::after {
+  margin-left: 11px;
+  content: "";
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+}
+
+.m-menu {
+  padding: 150px 0;
+  background: rgba(45, 67, 68, 0.7);
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  height: 100vh;
+  right: 0;
+}
+
+.m-menu.__show {
+  width: 40%;
+
 }

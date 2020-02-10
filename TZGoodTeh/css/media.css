@@ -1,0 +1,165 @@
+@media(max-width: 1899px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media(max-width: 1799px) {
+  .review-slider {
+    width: 75%;
+  }
+
+  .reviews-blocks {
+    min-width: 100px;
+  }
+
+
+
+  .review-content {
+    padding: 89px 55px 102px 28px;
+    width: 550px;
+  }
+
+}
+
+@media(max-width: 1599px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media(max-width: 1399px) {
+  .container {
+    width: 85%;
+  }
+
+  .top-bg {
+    min-height: 100vh;
+  }
+
+  .img-wrap-sm {
+    width: 366px;
+  }
+
+  .img-wrap-bg {
+    width: 606px;
+  }
+
+  .top-header .menu-w,
+  .top-header .contact,
+  .top-header .enter {
+    display: none;
+  }
+
+  .mobile-burger-menu {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .btn {
+    padding: 17px 20px;
+  }
+
+  .review-slider {
+    height: 100%;
+  }
+
+  .review-img-wrap {
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+  }
+
+  .review-content {
+    width: 593px;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+  }
+
+  .fake {
+    display: none;
+  }
+}
+
+@media(max-width: 999px) {
+
+  .top-bg-btns.dflex,
+  .choose-courses .dflex,
+  .three-ways .dflex,
+  .sabmit-app.dflex {
+    flex-wrap: wrap;
+  }
+
+  .top-bg-btns .btn {
+    margin-bottom: 40px;
+  }
+
+  .sabmit-app-content,
+  .three-ways-container {
+    margin: 80px 0;
+  }
+
+  .img-wrap-sm,
+  .img-wrap-bg {
+    width: 565px;
+  }
+
+  .review-next {
+    right: -45px;
+  }
+
+  .reviews-area {
+    width: 90%;
+  }
+
+  .review-prev {
+    left: -45px;
+  }
+
+  .three-ways.dflex
+}
+
+@media(max-width:699px) {
+  .review-next {
+    right: -25px;
+  }
+
+  .review-cotrol {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-prev {
+    left: -25px;
+  }
+
+  .review-content {
+    padding: 90px 128px;
+    width: 550px;
+  }
+
+  .img-wrap-sm,
+  .img-wrap-bg {
+    width: 365px;
+  }
+}
+
+@media(max-width:599px) {
+  .sabmit-app-container {
+    max-width: 368px;
+  }
+
+  .sabmit-app-container img {
+    transform: translate(-25%);
+    width: 100%;
+    -webkit-transform: translate(-25%);
+    -moz-transform: translate(-25%);
+    -ms-transform: translate(-25%);
+    -o-transform: translate(-25%);
+  }
+}

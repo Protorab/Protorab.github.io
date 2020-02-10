@@ -121,7 +121,7 @@
     left: -45px;
   }
 
-  .three-ways.dflex
+
 }
 
 @media(max-width:699px) {
@@ -134,14 +134,17 @@
     height: 50px;
   }
 
+  .review-content {
+    padding: 20px 98px;
+    width: auto;
+    height: auto;
+  }
+
   .review-prev {
     left: -25px;
   }
 
-  .review-content {
-    padding: 90px 128px;
-    width: 550px;
-  }
+
 
   .img-wrap-sm,
   .img-wrap-bg {

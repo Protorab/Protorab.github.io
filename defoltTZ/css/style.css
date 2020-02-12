@@ -375,6 +375,8 @@
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
     }
 
 
@@ -383,13 +385,10 @@
       width: 135px;
       height: 33px;
       background: #d1d3d4;
-      margin-right: 6px;
+      margin: 6px;
       padding: 0;
     }
 
-    .button:last-child {
-      margin-right: 0px;
-    }
 
     .button .tittle {
       margin: 0;
@@ -449,7 +448,7 @@
 
     .btn:hover {
       transition: ease-in-out .1s;
-      background: #b37e2c;
+      background: rgba(179, 126, 44, .5);
       -webkit-transition: ease-in-out .1s;
       -moz-transition: ease-in-out .1s;
       -ms-transition: ease-in-out .1s;

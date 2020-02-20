@@ -297,7 +297,7 @@ header {
 #menu {
   /* border: 1px solid red; */
   position: relative;
-  top: -202px;
+  top: -205px;
   height: 77px;
   background: transparent;
   border-radius: 55% 55% 50% 50% / 100% 100% 0% 0%;
@@ -310,7 +310,7 @@ header {
 
 .menu {
   position: relative;
-  height: 75px;
+  /* height: 80px; */
   background: transparent;
   -webkit-box-align: end;
   -ms-flex-align: end;
